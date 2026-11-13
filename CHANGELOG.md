@@ -45,3 +45,9 @@ Added the same Ko-fi support line used on ammochart.net to every page footer.
 ## Nov 13, 2026 — Footer matches other sites
 
 The page footer is now only the shared Ko-fi line used on ammochart.net and Marcus's other sites. The homepage also has the "Last updated / See what changed" line, like ammochart's home page.
+
+## Nov 13, 2026 — Cost ratings
+
+Added a Cost row (Free / $ / $$ / $$$ / $$$$) to every product card, researched in November 2026 from vendor pricing pages and official shops. Bands: Free (no license fee); $ under about $500/year; $$ about $500–2,000/year; $$$ about $2,000–5,000/year; $$$$ about $5,000+/year or quote-only enterprise with no public list price. Captions cite the source or say the rating is an estimate. No prices were invented. Sort options now include cheapest first and priciest first.
+
+Official figures used include Autodesk list prices for Revit ($3,005/year), AutoCAD ($2,095/year), Navisworks Manage ($2,835/year), 3ds Max ($2,010/year), and Forma Site Design ($700/year); Graphisoft Archicad Studio ($2,414/year); Vectorworks Architect ($1,530/year); ALLPLAN Concept ($2,892/year); SketchUp Pro ($399/year); the RhinoARQ bundle ($1,695 perpetual); Chaos Enscape Solo ($574.80/year), V-Ray Solo ($540/year), and Veras Pro ($348/year); Twinmotion ($445/year over the $1M revenue threshold); Lumion Pro ($1,149/year); AVAIL ($250/year); DiRootsOne Premium ($120/year US / €100); IdeateApps ($495/year); CTC BIM Project Suite ($410); Bird Tools individual apps ($10–$49.50/year); Victaulic Tools for Revit ($200/license); Solibri Essential (€1,428/year); and BIMcollab Zoom Single (about €720/year). Many fabrication, coordination, and specialist tools remain quote-only.

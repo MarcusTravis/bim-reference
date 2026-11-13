@@ -11,11 +11,14 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "16 firms listed Advance Steel in Confluence 2025 \u00b7 checked Nov 2026",
+    "popCaption": "16 firms listed Advance Steel in Confluence 2025 · checked Nov 2026",
     "learn": "Steep",
     "pro": "Shop-level steel detail inside the Autodesk ecosystem",
     "con": "A different environment than Revit; workflow handoffs take discipline",
-    "url": "https://www.autodesk.com/products/advance-steel/overview"
+    "url": "https://www.autodesk.com/products/advance-steel/overview",
+    "cost": 3,
+    "costSourced": false,
+    "costCaption": "Autodesk's buy page did not show a numeric price in this session. Authorized resellers list about $2,450–$2,600/year. Editorial estimate $$$ · checked Nov 2026."
   },
   {
     "name": "Trimble SysQue",
@@ -30,11 +33,14 @@
     "price": null,
     "pop": 3,
     "sourced": true,
-    "popCaption": "Only 5 firms listed Trimble SysQue in Confluence 2025, which is architecture-weighted and under-counts MEP contractors. Capterra showed 1 review. The low review and survey counts are not a good proxy for shop-floor use \u00b7 checked Nov 2026",
+    "popCaption": "Only 5 firms listed Trimble SysQue in Confluence 2025, which is architecture-weighted and under-counts MEP contractors. Capterra showed 1 review. The low review and survey counts are not a good proxy for shop-floor use · checked Nov 2026",
     "learn": "Steep",
     "pro": "LOD 400 content stays in Revit instead of jumping to AutoCAD",
     "con": "Public review volume is tiny; you will need contractor references, not star counts",
-    "url": "https://www.trimble.com/en/products/trimble-sysque"
+    "url": "https://www.trimble.com/en/products/trimble-sysque",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; Trimble sells SysQue by quote (trimble.com/en/products/trimble-sysque, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "Autodesk Fabrication (CADmep, CAMduct, ESTmep)",
@@ -49,11 +55,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. Not listed in the Confluence 2025 architecture-firm inventory.",
+    "popCaption": "Editorial estimate · checked Nov 2026. Not listed in the Confluence 2025 architecture-firm inventory.",
     "learn": "Steep",
     "pro": "Mature ITM content and a direct path to cutting and estimating",
     "con": "Lives in AutoCAD, so Revit-centric teams juggle platforms",
-    "url": "https://www.autodesk.com/products/fabrication-products/overview"
+    "url": "https://www.autodesk.com/products/fabrication-products/overview",
+    "cost": 3,
+    "costSourced": false,
+    "costCaption": "Autodesk's Fabrication buy page did not show a numeric price in this session (template only). Editorial estimate $$$ · checked Nov 2026. Confirm with Autodesk or a reseller."
   },
   {
     "name": "EVOLVE Mechanical / Electrical",
@@ -68,11 +77,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. G2 had only 2 reviews each for EVOLVE Mechanical (4.5) and Electrical (4.0) \u2014 too few to rank by.",
+    "popCaption": "Editorial estimate · checked Nov 2026. G2 had only 2 reviews each for EVOLVE Mechanical (4.5) and Electrical (4.0) — too few to rank by.",
     "learn": "Moderate if you already know Fabrication content",
     "pro": "Built by contractors; can reuse a CADmep database in Revit",
     "con": "Almost no independent review volume; get a demo on your own content",
-    "url": "https://evolvemep.com/"
+    "url": "https://evolvemep.com/",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; eVolve MEP sells by quote (evolvemep.com, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "MSUITE BIM + FAB",
@@ -88,11 +100,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. G2 showed 2 reviews for MSUITE BIM (4.3) and 1 for MSUITE FAB \u2014 too few to rank by.",
+    "popCaption": "Editorial estimate · checked Nov 2026. G2 showed 2 reviews for MSUITE BIM (4.3) and 1 for MSUITE FAB — too few to rank by.",
     "learn": "Moderate",
     "pro": "Connects spool creation to shop tracking in one vendor stack",
     "con": "Public review evidence is thin",
-    "url": "https://www.msuite.com/"
+    "url": "https://www.msuite.com/",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; MSUITE sells by quote (msuite.com, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "Stratus",
@@ -106,11 +121,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. Not found in the Confluence 2025 inventory; Capterra listed the product but without a useful review count this session.",
+    "popCaption": "Editorial estimate · checked Nov 2026. Not found in the Confluence 2025 inventory; Capterra listed the product but without a useful review count this session.",
     "learn": "Moderate",
     "pro": "Tracks assemblies from the model through the shop and onto the site",
-    "con": "It is a production platform, not a detailing tool \u2014 you still need a modeler",
-    "url": "https://www.stratus.build/"
+    "con": "It is a production platform, not a detailing tool — you still need a modeler",
+    "url": "https://www.stratus.build/",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; Stratus sells by quote (stratus.build, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "Tekla PowerFab",
@@ -125,11 +143,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. No firm count in the Confluence 2025 architecture survey.",
+    "popCaption": "Editorial estimate · checked Nov 2026. No firm count in the Confluence 2025 architecture survey.",
     "learn": "Steep",
     "pro": "Purpose-built for steel shop production, not just drawing output",
     "con": "Outside the usual architecture-firm tool conversation; verify with fabricators",
-    "url": "https://www.tekla.com/products/tekla-powerfab"
+    "url": "https://www.tekla.com/products/tekla-powerfab",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; Trimble sells PowerFab by quote (tekla.com/products/tekla-powerfab, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "SDS/2",
@@ -143,11 +164,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. No firm count in the Confluence 2025 inventory.",
+    "popCaption": "Editorial estimate · checked Nov 2026. No firm count in the Confluence 2025 inventory.",
     "learn": "Steep",
     "pro": "Deep connection design and detailing for steel fabricators",
     "con": "A specialist platform; popularity is hard to see in architecture-firm surveys",
-    "url": "https://www.sds2.com/"
+    "url": "https://www.sds2.com/",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; SDS/2 (ALLPLAN) sells by quote (sds2.com, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "Victaulic Tools for Revit",
@@ -162,10 +186,13 @@
     "price": null,
     "pop": 2.5,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026",
+    "popCaption": "Editorial estimate · checked Nov 2026",
     "learn": "Gentler",
     "pro": "Real Victaulic parts instead of generic fittings, when that is the spec",
     "con": "It is manufacturer tooling, not a full shop platform",
-    "url": "https://www.victaulic.com/"
+    "url": "https://www.victaulic.com/",
+    "cost": 1,
+    "costSourced": true,
+    "costCaption": "Official store: $200 per license for the 2026 and 2027 versions (victaulicsoftware.com/store, checked Nov 2026). Sold as a versioned purchase, not clearly an annual subscription."
   }
 ]

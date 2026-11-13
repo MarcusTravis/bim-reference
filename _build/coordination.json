@@ -12,11 +12,14 @@
     "price": null,
     "pop": 5,
     "sourced": true,
-    "popCaption": "Navisworks used by 71% of firms (Confluence 2025). Inventory: Manage 80 firms, Simulate 43 \u00b7 G2: about 193\u2013208 reviews, 4.6/5 \u00b7 checked Nov 2026",
+    "popCaption": "Navisworks used by 71% of firms (Confluence 2025). Inventory: Manage 80 firms, Simulate 43 · G2: about 193–208 reviews, 4.6/5 · checked Nov 2026",
     "learn": "Moderate",
     "pro": "The common exchange format (NWC/NWD) almost every trade can deliver",
     "con": "The interface feels dated; issue tracking often lives in a second tool",
-    "url": "https://www.autodesk.com/products/navisworks/overview"
+    "url": "https://www.autodesk.com/products/navisworks/overview",
+    "cost": 3,
+    "costSourced": true,
+    "costCaption": "Official Autodesk list: Manage $2,835/year or $355/month; Simulate (review only) $1,145/year or $145/month (autodesk.com/products/navisworks/buy, checked Nov 2026). Rated on Manage."
   },
   {
     "name": "Autodesk BIM Collaborate Pro",
@@ -31,11 +34,14 @@
     "price": null,
     "pop": 5,
     "sourced": true,
-    "popCaption": "Autodesk Construction Cloud 94% of firms; Autodesk Docs 76%; BIM 360 63% (72 firms) in Confluence 2025 \u00b7 checked Nov 2026",
+    "popCaption": "Autodesk Construction Cloud 94% of firms; Autodesk Docs 76%; BIM 360 63% (72 firms) in Confluence 2025 · checked Nov 2026",
     "learn": "Moderate",
     "pro": "Live Revit worksharing plus a cloud coordination environment",
     "con": "Pricing and product names (ACC, BIM 360, Collaborate Pro) are easy to confuse",
-    "url": "https://www.autodesk.com/products/bim-collaborate/overview"
+    "url": "https://www.autodesk.com/products/bim-collaborate/overview",
+    "cost": 2,
+    "costSourced": false,
+    "costCaption": "Now sold as Forma Design Collaboration. Autodesk's buy page did not expose a numeric price in this session. Authorized reseller CAD Masters lists $925/year. Editorial estimate $$ · checked Nov 2026."
   },
   {
     "name": "Revizto",
@@ -51,11 +57,14 @@
     "price": null,
     "pop": 4,
     "sourced": true,
-    "popCaption": "46 firms listed Revizto in Confluence 2025 \u00b7 checked Nov 2026",
+    "popCaption": "46 firms listed Revizto in Confluence 2025 · checked Nov 2026",
     "learn": "Gentler",
     "pro": "Easier for non-modelers to walk a federated model and leave issues",
     "con": "Another license on top of whatever you already use for clash",
-    "url": "https://revizto.com/"
+    "url": "https://revizto.com/",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "Plans are per-user, per-project, or enterprise; the pricing page asks you to talk to sales for a quote (revizto.com/pricing, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "Trimble Connect",
@@ -69,11 +78,14 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "36 firms listed Trimble Connect in Confluence 2025 \u00b7 checked Nov 2026",
+    "popCaption": "36 firms listed Trimble Connect in Confluence 2025 · checked Nov 2026",
     "learn": "Gentler",
     "pro": "A natural hub if the team already lives in Tekla, SketchUp, or SysQue",
     "con": "Less universal than ACC/Navisworks in US architecture-led surveys",
-    "url": "https://www.trimble.com/en/products/trimble-connect"
+    "url": "https://www.trimble.com/en/products/trimble-connect",
+    "cost": 1,
+    "costSourced": false,
+    "costCaption": "A free Personal tier exists. Paid Business plans are sold, but a clear US AEC list price was not confirmed on the Trimble Connect product page this session. Editorial estimate $ · checked Nov 2026."
   },
   {
     "name": "Newforma Konekt (formerly BIM Track)",
@@ -87,11 +99,14 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "BIM Track listed by 25 firms in Confluence 2025; Newforma (broader platform) listed by 48 \u2014 the 48 may include project-info tools beyond Konekt \u00b7 checked Nov 2026",
+    "popCaption": "BIM Track listed by 25 firms in Confluence 2025; Newforma (broader platform) listed by 48 — the 48 may include project-info tools beyond Konekt · checked Nov 2026",
     "learn": "Moderate",
     "pro": "Structured BCF-style issues that can live with the model",
     "con": "The rebrand makes historical survey labels a bit messy",
-    "url": "https://www.newforma.com/konekt/"
+    "url": "https://www.newforma.com/konekt/",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; Newforma sells Konekt by quote (newforma.com/konekt/, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   },
   {
     "name": "Solibri",
@@ -106,11 +121,14 @@
     "price": null,
     "pop": 3,
     "sourced": true,
-    "popCaption": "Only 7 firms listed Solibri Office in Confluence 2025 (architecture-weighted, Autodesk-heavy sample). It remains a standard in many openBIM/European specifications \u00b7 checked Nov 2026",
+    "popCaption": "Only 7 firms listed Solibri Office in Confluence 2025 (architecture-weighted, Autodesk-heavy sample). It remains a standard in many openBIM/European specifications · checked Nov 2026",
     "learn": "Steep",
     "pro": "Rules you can rerun, not just a one-off clash test",
     "con": "Low count in this US firm survey; expect more use on IFC-mandated work",
-    "url": "https://www.solibri.com/"
+    "url": "https://www.solibri.com/",
+    "cost": 2,
+    "costSourced": true,
+    "costCaption": "Official: Starter €99/year; Essential €1,428/year (solibri.com/our-offerings, checked Nov 2026). Rated on Essential, the coordination/checking seat."
   },
   {
     "name": "Dalux",
@@ -126,11 +144,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026",
+    "popCaption": "Editorial estimate · checked Nov 2026",
     "learn": "Gentler",
     "pro": "Strong field viewing and a single environment from office to site",
     "con": "No firm count in the Confluence 2025 inventory; US evidence is thinner than in Europe",
-    "url": "https://www.dalux.com/"
+    "url": "https://www.dalux.com/",
+    "cost": 2,
+    "costSourced": false,
+    "costCaption": "No public US list price found; Dalux sells platform plans by quote (dalux.com, checked Nov 2026). Editorial estimate $$ · not a published figure."
   },
   {
     "name": "BIMcollab Zoom",
@@ -146,11 +167,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026",
+    "popCaption": "Editorial estimate · checked Nov 2026",
     "learn": "Moderate",
     "pro": "BCF-native issue workflows that are not locked to one CDE",
     "con": "No independent 2025-2026 firm-survey count found this session",
-    "url": "https://www.bimcollab.com/"
+    "url": "https://www.bimcollab.com/",
+    "cost": 2,
+    "costSourced": true,
+    "costCaption": "BIMcollab order/plans pages list Zoom Single at €60/user/month with annual billing (about €720/year) (helpcenter.bimcollab.com and order pages, checked Nov 2026)."
   },
   {
     "name": "ClearEdge3D Verity",
@@ -164,10 +188,13 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate \u00b7 checked Nov 2026",
+    "popCaption": "Editorial estimate · checked Nov 2026",
     "learn": "Moderate",
     "pro": "A clear answer to whether the install matches the model",
     "con": "Needs good scan data; no Confluence 2025 firm count found this session",
-    "url": "https://www.clearedge3d.com/products/verity/"
+    "url": "https://www.clearedge3d.com/products/verity/",
+    "cost": 4,
+    "costSourced": false,
+    "costCaption": "No public list price found; ClearEdge3D / Topcon sells Verity by quote (clearedge3d.com/products/verity/, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
   }
 ]

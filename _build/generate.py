@@ -20,7 +20,7 @@ COMMON_HOW = """
 <li><strong>Popularity</strong> is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent firm surveys, review directories, or marketplace ranks — relative to the other products on this page, not a computed formula.</li>
 <li><strong>Captions</strong> name the source and a “checked Nov 2026” date. If there was no usable source, the caption says “Editorial estimate.”</li>
 <li><strong>Learning curve</strong> is editorial (Gentler / Moderate / Steep) based on typical new-user experience, not a test score.</li>
-<li><strong>Price</strong> appears only when an official or clearly public figure was verified this session. Many of these tools are quote-only; check the vendor.</li>
+<li><strong>Cost</strong> is a five-step scale (Free / $ / $$ / $$$ / $$$$) for a single commercial seat. See “How cost is rated.” Captions cite a source or say the rating is an estimate.</li>
 """
 
 def e(s):
@@ -122,7 +122,7 @@ def wrap(inner):
 
 def write_catalog(sec):
     data = json.loads((BUILD / sec["json"]).read_text())
-    payload = [{k: d[k] for k in ("name","maker","knownFor","tags","price","pop","popCaption","learn","pro","con","url")} for d in data]
+    payload = [{k: d[k] for k in ("name","maker","knownFor","tags","price","pop","popCaption","cost","costCaption","learn","pro","con","url")} for d in data]
     html = head(sec["title"] + " · BIM Reference Library", sec["description"], "/" + sec["slug"])
     html += "<body>\n" + wrap(nav(sec["file"]))
     html += '<div class="wrap" id="main">\n'
@@ -137,6 +137,8 @@ def write_catalog(sec):
       <select id="sort">
         <option value="pop">Popularity</option>
         <option value="name">Name</option>
+        <option value="cost-asc">Cost: cheapest first</option>
+        <option value="cost-desc">Cost: priciest first</option>
       </select>
     </label>
   </div>
@@ -147,6 +149,18 @@ def write_catalog(sec):
     <section>
       <h2>How the ratings work</h2>
       <ul>{COMMON_HOW}<li>{e(sec["relative"])}</li></ul>
+    </section>
+    <section>
+      <h2>How cost is rated</h2>
+      <ul>
+        <li>Cost uses a published annual price for one commercial seat when we could find one this session: the cheapest official annual rate, or monthly × 12 if only monthly is listed. Perpetual licenses are rated on the first-year purchase price.</li>
+        <li><strong>Free</strong> — no license fee for the core product (open source or free commercial use).</li>
+        <li><strong>$</strong> — under about $500 / year.</li>
+        <li><strong>$$</strong> — about $500–2,000 / year.</li>
+        <li><strong>$$$</strong> — about $2,000–5,000 / year.</li>
+        <li><strong>$$$$</strong> — about $5,000+ / year, or quote-only enterprise pricing with no public list price.</li>
+        <li>If the vendor only quotes, or no public figure turned up, the caption says so and the band is an editorial estimate — never an invented dollar amount. Always confirm current pricing with the vendor.</li>
+      </ul>
     </section>
     <section>
       <h2>Sources and limits</h2>
@@ -201,7 +215,7 @@ def write_home(counts):
   <div class="notes">
     <section>
       <h2>How to use this site</h2>
-      <p>Each section is a set of product cards you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Learning-curve labels are editorial. Official-site links are not affiliate links.</p>
+      <p>Each section is a set of product cards you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption. Learning-curve labels are editorial. Official-site links are not affiliate links.</p>
     </section>
     <section>
       <h2>Where the numbers come from</h2>
@@ -255,6 +269,11 @@ def write_updates():
       <h3>Footer matches other sites</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>The page footer is now only the shared Ko-fi line used on ammochart.net and Marcus's other sites. The homepage also has the "Last updated / See what changed" line, like ammochart's home page.</p>
+    </div>
+    <div class="log">
+      <h3>Cost ratings on every card</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>Each product card now has a Cost row on a Free / $ / $$ / $$$ / $$$$ scale, with a caption citing a published price or marking the band as an estimate. You can sort each guide cheapest-first or priciest-first.</p>
     </div>
   </article>
 </div>
@@ -391,6 +410,12 @@ Added the same Ko-fi support line used on ammochart.net to every page footer.
 ## {CHECKED} — Footer matches other sites
 
 The page footer is now only the shared Ko-fi line used on ammochart.net and Marcus's other sites. The homepage also has the "Last updated / See what changed" line, like ammochart's home page.
+
+## {CHECKED} — Cost ratings
+
+Added a Cost row (Free / $ / $$ / $$$ / $$$$) to every product card, researched in November 2026 from vendor pricing pages and official shops. Bands: Free (no license fee); $ under about $500/year; $$ about $500–2,000/year; $$$ about $2,000–5,000/year; $$$$ about $5,000+/year or quote-only enterprise with no public list price. Captions cite the source or say the rating is an estimate. No prices were invented. Sort options now include cheapest first and priciest first.
+
+Official figures used include Autodesk list prices for Revit ($3,005/year), AutoCAD ($2,095/year), Navisworks Manage ($2,835/year), 3ds Max ($2,010/year), and Forma Site Design ($700/year); Graphisoft Archicad Studio ($2,414/year); Vectorworks Architect ($1,530/year); ALLPLAN Concept ($2,892/year); SketchUp Pro ($399/year); the RhinoARQ bundle ($1,695 perpetual); Chaos Enscape Solo ($574.80/year), V-Ray Solo ($540/year), and Veras Pro ($348/year); Twinmotion ($445/year over the $1M revenue threshold); Lumion Pro ($1,149/year); AVAIL ($250/year); DiRootsOne Premium ($120/year US / €100); IdeateApps ($495/year); CTC BIM Project Suite ($410); Bird Tools individual apps ($10–$49.50/year); Victaulic Tools for Revit ($200/license); Solibri Essential (€1,428/year); and BIMcollab Zoom Single (about €720/year). Many fabrication, coordination, and specialist tools remain quote-only.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 
