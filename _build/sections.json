@@ -1,0 +1,57 @@
+[
+  {
+    "file": "modeling.html",
+    "slug": "modeling",
+    "json": "modeling.json",
+    "title": "Modeling software",
+    "noun": "authoring tools",
+    "description": "BIM and CAD authoring platforms for design and documentation.",
+    "lede": "The main tools people use to model buildings: Revit, SketchUp, Archicad, Tekla, and the rest of the authoring layer.",
+    "relative": "How popular a modeling tool looks here is relative to the other authoring platforms on this page, not a universal score.",
+    "limits": "Primary source: Confluence 2025 AEC Tech Stack Survey (Q4 2025; design-firm sample; firm penetration and inventory counts). Autodesk Revit 94.7%, AutoCAD 85.8%, SketchUp 73.5%, Rhino 49.6%. Archicad and ALLPLAN also cite the European Architectural Barometer Q4 2025 (USP Research), because that survey is more representative for Europe. G2 review counts were checked in November 2026 and can differ slightly by page. This is not a live ranking, and a US architecture-heavy sample under-counts structural and MEP shops."
+  },
+  {
+    "file": "revit-addins.html",
+    "slug": "revit-addins",
+    "json": "addins.json",
+    "title": "Revit add-ins",
+    "noun": "add-ins",
+    "description": "Widely used Revit plugins for production, data, content, and automation.",
+    "lede": "The add-ins worth knowing if you work in Revit: pyRevit, DiRoots, Ideate, CTC, and others that save daily clicks.",
+    "relative": "Scores are relative to the other Revit add-ins on this page.",
+    "limits": "Primary source: the same Confluence 2025 inventory (counts of firms indicating use). Autodesk App Store ranks and older review recaps are cited where the inventory is silent (notably Bird Tools and historical COINS Auto-Section Box reviews). COINS has since been reported removed from the App Store \u2014 that status is noted on the card. Xrev Transmit and AGACAD are editorial estimates because no 2025\u20132026 firm count was found this session."
+  },
+  {
+    "file": "coordination.html",
+    "slug": "coordination",
+    "json": "coordination.json",
+    "title": "Coordination and clash detection",
+    "noun": "tools",
+    "description": "Federated-model, clash, issue-tracking, and scan-vs-model tools.",
+    "lede": "The tools teams use to smash models together, find clashes, and track issues: Navisworks, BIM Collaborate, Revizto, and related checkers.",
+    "relative": "Scores are relative to the other coordination tools on this page.",
+    "limits": "Primary source: Confluence 2025 (Navisworks 71% of firms; Autodesk Construction Cloud 94%; Docs 76%; BIM 360 63%; plus inventory counts for Revizto, Trimble Connect, BIM Track/Newforma, and Solibri). Dalux, BIMcollab Zoom, and Verity are editorial estimates \u2014 they are real, widely discussed products, but this session did not find a comparable firm-penetration figure."
+  },
+  {
+    "file": "spooling.html",
+    "slug": "spooling",
+    "json": "spooling.json",
+    "title": "Spooling and fabrication",
+    "noun": "tools",
+    "description": "MEP and steel tools that turn a model into spools, shop drawings, and fabrication packages.",
+    "lede": "Software that takes a constructible model into the shop: SysQue, Fabrication, EVOLVE, MSUITE, Stratus, and steel platforms.",
+    "relative": "Scores are relative to the other fabrication tools on this page. Architecture-firm surveys under-count contractor shops, so several cards are honest editorial estimates.",
+    "limits": "Advance Steel (16 firms) and Trimble SysQue (5) appear in the Confluence 2025 inventory, but that sample is architecture-weighted. G2/Capterra review counts for EVOLVE, MSUITE, and SysQue were 1\u20132 reviews \u2014 too small to rank by, and never invented. Fabrication, EVOLVE, MSUITE, Stratus, Tekla PowerFab, SDS/2, and Victaulic Tools are marked editorial where no survey count was found. Talk to shops that do this work before you buy."
+  },
+  {
+    "file": "visualization.html",
+    "slug": "visualization",
+    "json": "visualization.json",
+    "title": "Visualization and rendering",
+    "noun": "tools",
+    "description": "Real-time, production, and AI visualization tools used with BIM models.",
+    "lede": "The renderers and real-time viewers used with BIM models, from Enscape and Twinmotion to V-Ray, Lumion, and D5.",
+    "relative": "Scores are relative to the other visualization tools on this page.",
+    "limits": "Primary source: Confluence 2025 Visualization and Rendering section. Enscape for Revit 80.5% of firms, far ahead of the next tier (Twinmotion, Lumion, D5 Render, 3ds Max). Inventory counts are cited on each card. G2 review count for Enscape (456, 4.6/5) was checked in November 2026. Fuzor is an editorial estimate (not in that inventory). Generative AI tools appeared in the same survey category but are not listed as BIM visualization products here."
+  }
+]

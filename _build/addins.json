@@ -1,0 +1,216 @@
+[
+  {
+    "name": "pyRevit",
+    "maker": "pyRevitLabs (Ehsan Iran-Nejad and contributors)",
+    "knownFor": "A free, scriptable toolbar for batch tasks, sheets, and custom firm tools.",
+    "tags": [
+      "Free",
+      "Automation",
+      "Windows"
+    ],
+    "price": "Free (open source)",
+    "pop": 5,
+    "sourced": true,
+    "popCaption": "90 firms listed pyRevit in Confluence 2025 \u2014 among the most-used Revit utilities in that survey \u00b7 checked Nov 2026",
+    "learn": "Gentler to start; steeper if you write your own tools",
+    "pro": "Free, extensible, and already on many firm images",
+    "con": "You still need someone who can maintain scripts and upgrades",
+    "url": "https://github.com/pyrevitlabs/pyRevit"
+  },
+  {
+    "name": "Avail",
+    "maker": "Avail",
+    "knownFor": "Firm-wide content and family management so teams insert approved Revit content.",
+    "tags": [
+      "Content",
+      "Windows",
+      "Web"
+    ],
+    "price": null,
+    "pop": 4.5,
+    "sourced": true,
+    "popCaption": "68 firms listed AVAIL in Confluence 2025 \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Keeps office standards out of random desktop folders",
+    "con": "Value depends on how carefully the library is curated",
+    "url": "https://www.getavail.com/"
+  },
+  {
+    "name": "DiRoots Tools (DiRootsOne)",
+    "maker": "DiRoots",
+    "knownFor": "A popular pack of Revit utilities, including SheetLink for Excel round-trips.",
+    "tags": [
+      "Production",
+      "Data",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 4.5,
+    "sourced": true,
+    "popCaption": "63 firms listed DiRoots Tools in Confluence 2025 \u00b7 mid-2024 App Store write-ups cited DiRootsOne at 5 stars with 54 reviews \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "Sheet and parameter tools that pay off on the first project",
+    "con": "Licensing has been shifting toward freemium/paid tiers; confirm the current model",
+    "url": "https://diroots.com/"
+  },
+  {
+    "name": "Ideate Software",
+    "maker": "Ideate Software",
+    "knownFor": "Excel/BIM data (BIMLink), model audit (Explorer), and view/sheet tools used by BIM managers.",
+    "tags": [
+      "Production",
+      "Data",
+      "BIM management",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 4.5,
+    "sourced": true,
+    "popCaption": "Confluence 2025 inventory: Ideate Explorer 51, BIMLink 50, Sticky 48, StyleManager 46, IdeateApps 44. The survey's Productivity category is described as dominated by Ideate and CTC \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Serious data and model-health tools for standards-heavy offices",
+    "con": "A paid suite; each product has its own learning curve",
+    "url": "https://ideatesoftware.com/"
+  },
+  {
+    "name": "CTC Software (BIM suites)",
+    "maker": "CTC Software",
+    "knownFor": "Long-standing production and BIM-management toolkits (Project, Manager, Batch, and Data suites).",
+    "tags": [
+      "Production",
+      "BIM management",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 4.5,
+    "sourced": true,
+    "popCaption": "Confluence 2025: CTC BIM Manager Suite 42 firms, Project Suite 41, Batch Suite 35, Data Suite 25 \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Batch and standards tools BIM managers have relied on for years",
+    "con": "Published street pricing is limited; you usually talk to sales",
+    "url": "https://www.ctcsoftware.com/"
+  },
+  {
+    "name": "RevitLookup",
+    "maker": "Jeremy Tammik and contributors",
+    "knownFor": "A free API inspector that shows what Revit actually stores on an element.",
+    "tags": [
+      "Free",
+      "Developers",
+      "Windows"
+    ],
+    "price": "Free (open source)",
+    "pop": 4,
+    "sourced": true,
+    "popCaption": "50 firms listed RevitLookup in Confluence 2025 \u00b7 checked Nov 2026",
+    "learn": "Moderate \u2014 aimed at power users and developers",
+    "pro": "The fastest way to understand parameters and element data",
+    "con": "It is a diagnostic tool, not a production toolbar for every user",
+    "url": "https://github.com/jeremytammik/RevitLookup"
+  },
+  {
+    "name": "Bird Tools",
+    "maker": "Bird Tools",
+    "knownFor": "Batch Navisworks export, tag cleanup, and in-session clash prevention add-ins.",
+    "tags": [
+      "Coordination",
+      "Production",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3.5,
+    "sourced": true,
+    "popCaption": "Bird Tools Free NavisExport ranked #1 among APS-powered Revit add-ins on the Autodesk App Store as of 7 Feb 2025 (vendor recap of the official store sort). Not listed under this name in Confluence 2025 \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "Practical batch export and annotation tools, including a free NavisExport",
+    "con": "Firm-survey evidence is thinner than for pyRevit, Ideate, or CTC",
+    "url": "https://www.birdtools-developers.com/"
+  },
+  {
+    "name": "COINS Auto-Section Box",
+    "maker": "COINS",
+    "knownFor": "A long-time favorite for quickly building and toggling 3D section boxes, including in links.",
+    "tags": [
+      "Production",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3.5,
+    "sourced": true,
+    "popCaption": "34 firms listed it in Confluence 2025. It was historically a top Autodesk App Store download (including a mid-2024 recap at 5 stars with 130 reviews). Autodesk forum posts in 2025-2026 report the App Store listing was later taken down \u2014 confirm a current official installer before installing \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "Still widely remembered as the fastest section-box workflow",
+    "con": "Official distribution has been disrupted; do not grab unofficial copies",
+    "url": "https://apps.autodesk.com/RVT/en/Detail/Index?id=8920075109543819118&appLang=en&os=Win64"
+  },
+  {
+    "name": "Bonus Tools (Kiwi Codes)",
+    "maker": "Kiwi Codes",
+    "knownFor": "A large collection of everyday Revit utilities sold as one add-in pack.",
+    "tags": [
+      "Production",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": true,
+    "popCaption": "Often named in 2026 best Revit add-ins roundups, but only 2 firms listed Kiwi Codes in Confluence 2025 \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "A lot of small time-savers in one installer",
+    "con": "Survey evidence of firm-wide adoption is weak compared with Ideate or DiRoots",
+    "url": "https://kiwicodes.com/"
+  },
+  {
+    "name": "UNIFI Pro",
+    "maker": "UNIFI Labs",
+    "knownFor": "An older generation of firm-wide Revit content management (the Confluence survey marks it as legacy).",
+    "tags": [
+      "Content",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": true,
+    "popCaption": "15 firms listed UNIFI Pro (legacy) in Confluence 2025, versus 68 for AVAIL \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Some offices still have libraries and workflows built around it",
+    "con": "The 2025 survey already labels the listing as legacy \u2014 check the vendor's current product",
+    "url": "https://unifilabs.com/"
+  },
+  {
+    "name": "Xrev Transmit",
+    "maker": "Xrev / RTV Tools",
+    "knownFor": "Batch printing, PDF/DWF export, and transmittals from Revit.",
+    "tags": [
+      "Production",
+      "Documentation",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "Saves hours on issue sets and plotting",
+    "con": "No firm-penetration figure found in the Confluence 2025 inventory or a current App Store review count this session",
+    "url": "https://xrev.com.au/"
+  },
+  {
+    "name": "AGACAD",
+    "maker": "AGACAD",
+    "knownFor": "Wood and metal framing, cut openings, and other construction-oriented Revit automation.",
+    "tags": [
+      "Production",
+      "Structure",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Purpose-built framing and opening tools that generic Revit lacks",
+    "con": "No independent 2025-2026 firm-survey count found this session",
+    "url": "https://agacad.com/"
+  }
+]

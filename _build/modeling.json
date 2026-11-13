@@ -1,0 +1,217 @@
+[
+  {
+    "name": "Autodesk Revit",
+    "maker": "Autodesk",
+    "knownFor": "The default US production BIM platform for architecture, structure, and MEP documentation.",
+    "tags": [
+      "Authoring",
+      "Architecture",
+      "Structure",
+      "MEP",
+      "Windows"
+    ],
+    "price": "Starts at $251 / month (Autodesk, checked Nov 2026)",
+    "pop": 5,
+    "sourced": true,
+    "popCaption": "94.7% of firms in the Confluence 2025 AEC Tech Stack Survey \u00b7 G2: 1,256 reviews, 4.6/5 \u00b7 checked Nov 2026",
+    "learn": "Steep",
+    "pro": "Deep documentation, worksharing, and a huge add-in ecosystem",
+    "con": "Windows-only, heavy hardware needs, and a long learning curve",
+    "url": "https://www.autodesk.com/products/revit/overview"
+  },
+  {
+    "name": "AutoCAD (including Architecture and MEP)",
+    "maker": "Autodesk",
+    "knownFor": "The production drafting backbone that still sits beside BIM in most offices.",
+    "tags": [
+      "CAD",
+      "Drafting",
+      "MEP",
+      "Windows",
+      "macOS"
+    ],
+    "price": null,
+    "pop": 5,
+    "sourced": true,
+    "popCaption": "AutoCAD 85.8% of firms; AutoCAD Architecture 53.1%; AutoCAD MEP 27.4% (Confluence 2025) \u00b7 G2: about 1,800\u20132,012 AutoCAD reviews, 4.4/5 \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Universal DWG skills and huge existing drawing libraries",
+    "con": "Not a full BIM authoring environment on its own",
+    "url": "https://www.autodesk.com/products/autocad/overview"
+  },
+  {
+    "name": "SketchUp",
+    "maker": "Trimble",
+    "knownFor": "Fast conceptual and schematic modeling used early in design and by many contractors.",
+    "tags": [
+      "Conceptual",
+      "Architecture",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "price": null,
+    "pop": 5,
+    "sourced": true,
+    "popCaption": "73.5% of firms (Confluence 2025) \u00b7 G2: 1,328 reviews, 4.5/5 \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "Quick to learn and excellent for massing and client conversation models",
+    "con": "BIM documentation depth is limited compared with Revit or Archicad",
+    "url": "https://www.sketchup.com/"
+  },
+  {
+    "name": "Rhino + VisualARQ",
+    "maker": "Robert McNeel & Associates / Asuni",
+    "knownFor": "Freeform and computational modeling, with VisualARQ adding BIM objects and IFC to Rhino.",
+    "tags": [
+      "Authoring",
+      "Computational",
+      "Architecture",
+      "Windows",
+      "macOS"
+    ],
+    "price": null,
+    "pop": 4,
+    "sourced": true,
+    "popCaption": "Rhino in 49.6% of firms; Grasshopper 51.3%; Rhino.Inside.Revit 45.1% (Confluence 2025). VisualARQ itself was listed by only 3 firms \u00b7 checked Nov 2026",
+    "learn": "Moderate to steep",
+    "pro": "Unmatched for complex geometry and Grasshopper workflows",
+    "con": "The BIM layer (VisualARQ) is much less widely adopted than Rhino itself",
+    "url": "https://www.rhino3d.com/"
+  },
+  {
+    "name": "Autodesk Forma",
+    "maker": "Autodesk",
+    "knownFor": "Early-stage site, massing, and environmental analysis that can feed a Revit model.",
+    "tags": [
+      "Conceptual",
+      "Planning",
+      "Architecture",
+      "Web"
+    ],
+    "price": null,
+    "pop": 4,
+    "sourced": true,
+    "popCaption": "76 firms listed Forma (Autodesk) in the Confluence 2025 inventory (a second Autodesk Forma row shows 2; treated cautiously) \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "Fast contextual studies without opening a full authoring model",
+    "con": "Inventory counts in the survey are inconsistently labeled, so the exact adoption figure is less clean than Revit's",
+    "url": "https://www.autodesk.com/products/forma/overview"
+  },
+  {
+    "name": "Tekla Structures",
+    "maker": "Trimble",
+    "knownFor": "Structural BIM for steel and concrete detailing through fabrication.",
+    "tags": [
+      "Authoring",
+      "Structure",
+      "Fabrication",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3.5,
+    "sourced": true,
+    "popCaption": "17 firms (~15%) in the architecture-weighted Confluence 2025 survey \u00b7 G2: 63 reviews, 4.5/5. Structural shops are under-counted in that sample \u00b7 checked Nov 2026",
+    "learn": "Steep",
+    "pro": "Constructible steel and concrete detail that can go to the shop",
+    "con": "A specialist tool; few architecture-firm survey respondents listed it",
+    "url": "https://www.tekla.com/products/tekla-structures"
+  },
+  {
+    "name": "Archicad",
+    "maker": "Graphisoft (Nemetschek)",
+    "knownFor": "Full BIM authoring with a strong architecture focus and openBIM/IFC workflows.",
+    "tags": [
+      "Authoring",
+      "Architecture",
+      "Windows",
+      "macOS"
+    ],
+    "price": null,
+    "pop": 3.5,
+    "sourced": true,
+    "popCaption": "Only 10 firms in Confluence 2025 (US-heavy sample). European Architectural Barometer Q4 2025: e.g. 61% of French and 51% of German BIM-user firms reported Archicad \u00b7 G2: 291\u2013298 reviews, 4.6/5 \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Native macOS, strong documentation, and solid IFC round-trips",
+    "con": "Much less common than Revit in US production offices",
+    "url": "https://graphisoft.com/solutions/archicad"
+  },
+  {
+    "name": "Bentley OpenBuildings Designer",
+    "maker": "Bentley Systems",
+    "knownFor": "Building design in Bentley's infrastructure and iTwin world, often on campuses and industrial work.",
+    "tags": [
+      "Authoring",
+      "Architecture",
+      "Infrastructure",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": true,
+    "popCaption": "11 firms listed OpenBuildings Designer (AECOsim) in Confluence 2025 \u00b7 G2: 16 reviews, 4.3/5 \u00b7 checked Nov 2026",
+    "learn": "Steep",
+    "pro": "Fits civil and campus projects already standardized on Bentley",
+    "con": "Small presence in typical building-design office surveys",
+    "url": "https://www.bentley.com/software/openbuildings-designer/"
+  },
+  {
+    "name": "Vectorworks Architect",
+    "maker": "Vectorworks (Nemetschek)",
+    "knownFor": "Design-oriented BIM used in architecture, landscape, and entertainment.",
+    "tags": [
+      "Authoring",
+      "Architecture",
+      "Windows",
+      "macOS"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": true,
+    "popCaption": "6 firms listed Vectorworks Architect in Confluence 2025 \u00b7 G2: 216\u2013264 reviews, 4.4/5 \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Flexible 2D/3D in one file and a loyal design-firm user base",
+    "con": "Low penetration in the large US AEC firms captured by Confluence 2025",
+    "url": "https://www.vectorworks.net/en-US/architect"
+  },
+  {
+    "name": "ALLPLAN",
+    "maker": "ALLPLAN (Nemetschek)",
+    "knownFor": "Architectural and structural BIM, especially strong in Europe and reinforcement detailing.",
+    "tags": [
+      "Authoring",
+      "Architecture",
+      "Structure",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": true,
+    "popCaption": "Not listed in the Confluence 2025 US-heavy inventory. European Architectural Barometer Q4 2025: 19% of German and 14% of Spanish BIM-user firms reported Allplan \u00b7 G2: 25 reviews, 4.4/5 \u00b7 checked Nov 2026",
+    "learn": "Steep",
+    "pro": "Strong concrete reinforcement and European documentation workflows",
+    "con": "Uncommon in US architecture-firm stacks",
+    "url": "https://www.allplan.com/"
+  },
+  {
+    "name": "BricsCAD BIM",
+    "maker": "Bricsys (Hexagon)",
+    "knownFor": "DWG-compatible CAD with BIM tools, often considered as a lower-cost AutoCAD-class alternative.",
+    "tags": [
+      "Authoring",
+      "CAD",
+      "Architecture",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "price": null,
+    "pop": 2.5,
+    "sourced": true,
+    "popCaption": "Only 2 firms listed BricsCAD in Confluence 2025 \u00b7 G2: 135 reviews, 4.5/5 for BricsCAD overall (not BIM-only) \u00b7 checked Nov 2026",
+    "learn": "Moderate",
+    "pro": "Familiar DWG workflows on Windows, macOS, and Linux",
+    "con": "Very little evidence of use as a primary BIM platform in the 2025 firm survey",
+    "url": "https://www.bricsys.com/bricscad-bim"
+  }
+]

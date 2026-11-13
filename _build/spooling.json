@@ -1,0 +1,171 @@
+[
+  {
+    "name": "Autodesk Advance Steel",
+    "maker": "Autodesk",
+    "knownFor": "Structural steel detailing and shop drawings, often used beside Revit.",
+    "tags": [
+      "Steel",
+      "Detailing",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3.5,
+    "sourced": true,
+    "popCaption": "16 firms listed Advance Steel in Confluence 2025 \u00b7 checked Nov 2026",
+    "learn": "Steep",
+    "pro": "Shop-level steel detail inside the Autodesk ecosystem",
+    "con": "A different environment than Revit; workflow handoffs take discipline",
+    "url": "https://www.autodesk.com/products/advance-steel/overview"
+  },
+  {
+    "name": "Trimble SysQue",
+    "maker": "Trimble",
+    "knownFor": "Revit-native constructible MEP content and spool-sheet output from a large manufacturer library.",
+    "tags": [
+      "MEP",
+      "Revit add-in",
+      "Spooling",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": true,
+    "popCaption": "Only 5 firms listed Trimble SysQue in Confluence 2025, which is architecture-weighted and under-counts MEP contractors. Capterra showed 1 review. The low review and survey counts are not a good proxy for shop-floor use \u00b7 checked Nov 2026",
+    "learn": "Steep",
+    "pro": "LOD 400 content stays in Revit instead of jumping to AutoCAD",
+    "con": "Public review volume is tiny; you will need contractor references, not star counts",
+    "url": "https://www.trimble.com/en/products/trimble-sysque"
+  },
+  {
+    "name": "Autodesk Fabrication (CADmep, CAMduct, ESTmep)",
+    "maker": "Autodesk",
+    "knownFor": "The long-standing AutoCAD-based detailing, CAM, and estimating suite for duct and pipe shops.",
+    "tags": [
+      "MEP",
+      "Fabrication",
+      "Estimating",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. Not listed in the Confluence 2025 architecture-firm inventory.",
+    "learn": "Steep",
+    "pro": "Mature ITM content and a direct path to cutting and estimating",
+    "con": "Lives in AutoCAD, so Revit-centric teams juggle platforms",
+    "url": "https://www.autodesk.com/products/fabrication-products/overview"
+  },
+  {
+    "name": "EVOLVE Mechanical / Electrical",
+    "maker": "eVolve MEP",
+    "knownFor": "Contractor-built Revit add-ins for hangers, spools, sleeves, and layout points.",
+    "tags": [
+      "MEP",
+      "Revit add-in",
+      "Spooling",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. G2 had only 2 reviews each for EVOLVE Mechanical (4.5) and Electrical (4.0) \u2014 too few to rank by.",
+    "learn": "Moderate if you already know Fabrication content",
+    "pro": "Built by contractors; can reuse a CADmep database in Revit",
+    "con": "Almost no independent review volume; get a demo on your own content",
+    "url": "https://evolvemep.com/"
+  },
+  {
+    "name": "MSUITE BIM + FAB",
+    "maker": "MSUITE",
+    "knownFor": "Revit auto-spool and shop-drawing tools plus shop-floor fabrication management.",
+    "tags": [
+      "MEP",
+      "Revit add-in",
+      "Shop floor",
+      "Windows",
+      "Web"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. G2 showed 2 reviews for MSUITE BIM (4.3) and 1 for MSUITE FAB \u2014 too few to rank by.",
+    "learn": "Moderate",
+    "pro": "Connects spool creation to shop tracking in one vendor stack",
+    "con": "Public review evidence is thin",
+    "url": "https://www.msuite.com/"
+  },
+  {
+    "name": "Stratus",
+    "maker": "Stratus",
+    "knownFor": "A cloud BIM-to-fab and install platform for spools, work packages, cut lists, and production tracking.",
+    "tags": [
+      "MEP",
+      "Shop floor",
+      "Web"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. Not found in the Confluence 2025 inventory; Capterra listed the product but without a useful review count this session.",
+    "learn": "Moderate",
+    "pro": "Tracks assemblies from the model through the shop and onto the site",
+    "con": "It is a production platform, not a detailing tool \u2014 you still need a modeler",
+    "url": "https://www.stratus.build/"
+  },
+  {
+    "name": "Tekla PowerFab",
+    "maker": "Trimble",
+    "knownFor": "Steel fabrication management from estimate to shop floor, paired with Tekla Structures.",
+    "tags": [
+      "Steel",
+      "Shop floor",
+      "Windows",
+      "Web"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. No firm count in the Confluence 2025 architecture survey.",
+    "learn": "Steep",
+    "pro": "Purpose-built for steel shop production, not just drawing output",
+    "con": "Outside the usual architecture-firm tool conversation; verify with fabricators",
+    "url": "https://www.tekla.com/products/tekla-powerfab"
+  },
+  {
+    "name": "SDS/2",
+    "maker": "SDS/2 (ALLPLAN / Nemetschek)",
+    "knownFor": "Steel detailing and connection-design software used in many North American shops.",
+    "tags": [
+      "Steel",
+      "Detailing",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. No firm count in the Confluence 2025 inventory.",
+    "learn": "Steep",
+    "pro": "Deep connection design and detailing for steel fabricators",
+    "con": "A specialist platform; popularity is hard to see in architecture-firm surveys",
+    "url": "https://www.sds2.com/"
+  },
+  {
+    "name": "Victaulic Tools for Revit",
+    "maker": "Victaulic",
+    "knownFor": "Manufacturer content and fabrication-oriented piping tools inside Revit.",
+    "tags": [
+      "MEP",
+      "Revit add-in",
+      "Content",
+      "Windows"
+    ],
+    "price": null,
+    "pop": 2.5,
+    "sourced": false,
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026",
+    "learn": "Gentler",
+    "pro": "Real Victaulic parts instead of generic fittings, when that is the spec",
+    "con": "It is manufacturer tooling, not a full shop platform",
+    "url": "https://www.victaulic.com/"
+  }
+]

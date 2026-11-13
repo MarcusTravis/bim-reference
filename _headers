@@ -1,0 +1,6 @@
+# Canonical host is the Pages domain until a custom domain is added.
+/*
+  Link: <https://bimchart.pages.dev/:splat>; rel="canonical"
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN

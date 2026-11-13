@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Revit add-ins · BIM Reference Library</title>
+<meta name="description" content="Widely used Revit plugins for production, data, content, and automation.">
+<link rel="canonical" href="https://bimchart.pages.dev/revit-addins">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BIM Reference Library">
+<meta property="og:title" content="Revit add-ins · BIM Reference Library">
+<meta property="og:description" content="Widely used Revit plugins for production, data, content, and automation.">
+<meta property="og:url" content="https://bimchart.pages.dev/revit-addins">
+<meta property="og:image" content="https://bimchart.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BIM Reference Library: a dark blueprint grid and city skyline">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Revit add-ins · BIM Reference Library">
+<meta name="twitter:description" content="Widely used Revit plugins for production, data, content, and automation.">
+<meta name="twitter:image" content="https://bimchart.pages.dev/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="page-bg"></div>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topnav" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" fill="none" stroke="#3de8ff" stroke-width="1"/>
+        <path d="M4 24 V12 H8 V24 M10 24 V8 H16 V24 M18 24 V14 H24 V24" fill="#3de8ff"/>
+        <path d="M4 24 H24" stroke="#3de8ff" fill="none"/>
+      </svg>
+      BIM Reference Library
+    </a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="modeling.html">Modeling</a></li><li><a href="revit-addins.html" aria-current="page">Revit add-ins</a></li><li><a href="coordination.html">Coordination</a></li><li><a href="spooling.html">Spooling</a></li><li><a href="visualization.html">Visualization</a></li><li><a href="updates.html">Updates</a></li></ul>
+  </div>
+</nav>
+<div class="wrap" id="main">
+<header class="hero">
+  <div class="hero-art"><svg class="hero-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07131c"/>
+      <stop offset="55%" stop-color="#0a1824"/>
+      <stop offset="100%" stop-color="#05080c"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3de8ff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#3de8ff" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="bldg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#152433"/>
+      <stop offset="100%" stop-color="#0b141c"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <g stroke="#3de8ff" stroke-opacity="0.28" fill="none" stroke-width="1">
+    <path d="M-80,410 L1280,410"/>
+    <path d="M-40,382 L1240,382" stroke-opacity="0.26"/>
+    <path d="M0,356 L1200,356" stroke-opacity="0.24"/>
+    <path d="M40,332 L1160,332" stroke-opacity="0.22"/>
+    <path d="M80,310 L1120,310" stroke-opacity="0.2"/>
+    <path d="M120,290 L1080,290" stroke-opacity="0.18"/>
+    <path d="M160,272 L1040,272" stroke-opacity="0.16"/>
+    <path d="M200,256 L1000,256" stroke-opacity="0.14"/>
+    <path d="M240,242 L960,242" stroke-opacity="0.12"/>
+    <path d="M280,230 L920,230" stroke-opacity="0.1"/>
+    <path d="M600,200 L-200,420" stroke-opacity="0.16"/>
+    <path d="M600,200 L0,420" stroke-opacity="0.18"/>
+    <path d="M600,200 L200,420" stroke-opacity="0.2"/>
+    <path d="M600,200 L400,420" stroke-opacity="0.22"/>
+    <path d="M600,200 L600,420" stroke-opacity="0.24"/>
+    <path d="M600,200 L800,420" stroke-opacity="0.22"/>
+    <path d="M600,200 L1000,420" stroke-opacity="0.2"/>
+    <path d="M600,200 L1200,420" stroke-opacity="0.18"/>
+    <path d="M600,200 L1400,420" stroke-opacity="0.16"/>
+  </g>
+  <g fill="none" stroke="#8cefff" stroke-opacity="0.55" stroke-width="1.2">
+    <rect x="40" y="300" width="160" height="90"/>
+    <rect x="70" y="318" width="50" height="40"/>
+    <rect x="128" y="318" width="50" height="54"/>
+    <circle cx="95" cy="338" r="6" stroke-opacity="0.7"/>
+    <path d="M40,345 H200"/>
+    <path d="M210,300 v90"/>
+    <rect x="220" y="328" width="110" height="62"/>
+    <path d="M220,350 h110"/>
+    <path d="M70,410 h280" stroke-opacity="0.35"/>
+    <path d="M70,410 v-8 M140,410 v-8 M210,410 v-8 M280,410 v-8" stroke-opacity="0.4"/>
+  </g>
+  <g fill="url(#bldg)" stroke="#3de8ff" stroke-opacity="0.45" stroke-width="1">
+    <rect x="560" y="118" width="36" height="140"/>
+    <rect x="598" y="86" width="44" height="172"/>
+    <rect x="644" y="130" width="30" height="128"/>
+    <rect x="676" y="70" width="52" height="188"/>
+    <rect x="730" y="100" width="38" height="158"/>
+    <rect x="770" y="48" width="48" height="210"/>
+    <rect x="820" y="92" width="34" height="166"/>
+    <rect x="856" y="64" width="58" height="194"/>
+    <rect x="916" y="110" width="40" height="148"/>
+    <rect x="958" y="80" width="46" height="178"/>
+    <rect x="1006" y="128" width="28" height="130"/>
+    <rect x="1036" y="96" width="50" height="162"/>
+    <rect x="1088" y="140" width="32" height="118"/>
+    <rect x="1122" y="108" width="42" height="150"/>
+  </g>
+  <g fill="#3de8ff" filter="url(#soft)" opacity="0.85">
+    <rect x="566" y="128" width="3" height="4"/><rect x="574" y="128" width="3" height="4"/>
+    <rect x="582" y="128" width="3" height="4"/><rect x="566" y="140" width="3" height="4"/>
+    <rect x="574" y="140" width="3" height="4"/><rect x="582" y="152" width="3" height="4"/>
+    <rect x="566" y="164" width="3" height="4"/><rect x="582" y="176" width="3" height="4"/>
+    <rect x="606" y="96" width="3" height="4"/><rect x="616" y="96" width="3" height="4"/>
+    <rect x="626" y="108" width="3" height="4"/><rect x="606" y="120" width="3" height="4"/>
+    <rect x="616" y="132" width="3" height="4"/><rect x="626" y="144" width="3" height="4"/>
+    <rect x="606" y="156" width="3" height="4"/><rect x="616" y="180" width="3" height="4"/>
+    <rect x="686" y="82" width="4" height="5"/><rect x="698" y="82" width="4" height="5"/>
+    <rect x="710" y="94" width="4" height="5"/><rect x="686" y="106" width="4" height="5"/>
+    <rect x="698" y="118" width="4" height="5"/><rect x="710" y="130" width="4" height="5"/>
+    <rect x="686" y="154" width="4" height="5"/><rect x="698" y="178" width="4" height="5"/>
+    <rect x="780" y="60" width="4" height="5"/><rect x="792" y="60" width="4" height="5"/>
+    <rect x="804" y="72" width="4" height="5"/><rect x="780" y="84" width="4" height="5"/>
+    <rect x="792" y="96" width="4" height="5"/><rect x="804" y="120" width="4" height="5"/>
+    <rect x="780" y="144" width="4" height="5"/><rect x="792" y="168" width="4" height="5"/>
+    <rect x="868" y="76" width="4" height="5"/><rect x="880" y="76" width="4" height="5"/>
+    <rect x="892" y="88" width="4" height="5"/><rect x="868" y="100" width="4" height="5"/>
+    <rect x="880" y="124" width="4" height="5"/><rect x="892" y="148" width="4" height="5"/>
+    <rect x="968" y="92" width="4" height="5"/><rect x="980" y="104" width="4" height="5"/>
+    <rect x="992" y="116" width="4" height="5"/><rect x="968" y="140" width="4" height="5"/>
+    <rect x="1046" y="108" width="4" height="5"/><rect x="1058" y="120" width="4" height="5"/>
+    <rect x="1070" y="144" width="4" height="5"/><rect x="1046" y="168" width="4" height="5"/>
+    <rect x="1132" y="120" width="3" height="4"/><rect x="1142" y="132" width="3" height="4"/>
+    <rect x="1152" y="156" width="3" height="4"/>
+  </g>
+  <rect x="0" y="250" width="1200" height="170" fill="url(#glow)" opacity="0.25"/>
+</svg>
+</div>
+  <div class="hero-copy">
+    <span class="eyebrow">Independent BIM software guide</span>
+    <h1>Revit add-ins</h1>
+    <p class="lede">The add-ins worth knowing if you work in Revit: pyRevit, DiRoots, Ideate, CTC, and others that save daily clicks.</p>
+    <p class="checked">Data last checked: <time datetime="2026-11-13">Nov 13, 2026</time> · <a href="updates.html">What changed</a></p>
+  </div>
+</header>
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Filter"><button class="chip" data-f="all" aria-pressed="true">All</button>
+<button class="chip" data-f="Free" aria-pressed="false">Free</button>
+<button class="chip" data-f="Automation" aria-pressed="false">Automation</button>
+<button class="chip" data-f="Windows" aria-pressed="false">Windows</button>
+<button class="chip" data-f="Content" aria-pressed="false">Content</button>
+<button class="chip" data-f="Web" aria-pressed="false">Web</button>
+<button class="chip" data-f="Production" aria-pressed="false">Production</button>
+<button class="chip" data-f="Data" aria-pressed="false">Data</button>
+<button class="chip" data-f="BIM management" aria-pressed="false">BIM management</button>
+<button class="chip" data-f="Developers" aria-pressed="false">Developers</button>
+<button class="chip" data-f="Coordination" aria-pressed="false">Coordination</button>
+<button class="chip" data-f="Documentation" aria-pressed="false">Documentation</button>
+<button class="chip" data-f="Structure" aria-pressed="false">Structure</button></div>
+    <label class="search">Search
+      <input type="search" id="search" placeholder="Name, maker, or tag" autocomplete="off">
+    </label>
+    <label class="sort">Sort
+      <select id="sort">
+        <option value="pop">Popularity</option>
+        <option value="name">Name</option>
+      </select>
+    </label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="pcards" id="cards"></div>
+  <div class="notes">
+    <section>
+      <h2>How the ratings work</h2>
+      <ul>
+<li><strong>Popularity</strong> is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent firm surveys, review directories, or marketplace ranks — relative to the other products on this page, not a computed formula.</li>
+<li><strong>Captions</strong> name the source and a “checked Nov 2026” date. If there was no usable source, the caption says “Editorial estimate.”</li>
+<li><strong>Learning curve</strong> is editorial (Gentler / Moderate / Steep) based on typical new-user experience, not a test score.</li>
+<li><strong>Price</strong> appears only when an official or clearly public figure was verified this session. Many of these tools are quote-only; check the vendor.</li>
+<li>Scores are relative to the other Revit add-ins on this page.</li></ul>
+    </section>
+    <section>
+      <h2>Sources and limits</h2>
+      <p>Primary source: the same Confluence 2025 inventory (counts of firms indicating use). Autodesk App Store ranks and older review recaps are cited where the inventory is silent (notably Bird Tools and historical COINS Auto-Section Box reviews). COINS has since been reported removed from the App Store — that status is noted on the card. Xrev Transmit and AGACAD are editorial estimates because no 2025–2026 firm count was found this session.</p>
+    </section>
+    <section>
+      <h2>Independence</h2>
+      <p>This site is ad-free and has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement.</p>
+    </section>
+  </div>
+</div>
+<footer class="site-footer">
+  <p>This is an independent side project built by Marcus Travis outside work hours. It is not affiliated with any employer or with the software vendors listed here. Product names are trademarks of their owners. Official-site links go to the vendor; there are no affiliate links.</p>
+  <p class="kofi">Free and ad-free. Data last checked <time datetime="2026-11-13">Nov 13, 2026</time> · <a href="updates.html">See what changed</a></p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+const DATA = [{"name": "pyRevit", "maker": "pyRevitLabs (Ehsan Iran-Nejad and contributors)", "knownFor": "A free, scriptable toolbar for batch tasks, sheets, and custom firm tools.", "tags": ["Free", "Automation", "Windows"], "price": "Free (open source)", "pop": 5, "popCaption": "90 firms listed pyRevit in Confluence 2025 — among the most-used Revit utilities in that survey · checked Nov 2026", "learn": "Gentler to start; steeper if you write your own tools", "pro": "Free, extensible, and already on many firm images", "con": "You still need someone who can maintain scripts and upgrades", "url": "https://github.com/pyrevitlabs/pyRevit"}, {"name": "Avail", "maker": "Avail", "knownFor": "Firm-wide content and family management so teams insert approved Revit content.", "tags": ["Content", "Windows", "Web"], "price": null, "pop": 4.5, "popCaption": "68 firms listed AVAIL in Confluence 2025 · checked Nov 2026", "learn": "Moderate", "pro": "Keeps office standards out of random desktop folders", "con": "Value depends on how carefully the library is curated", "url": "https://www.getavail.com/"}, {"name": "DiRoots Tools (DiRootsOne)", "maker": "DiRoots", "knownFor": "A popular pack of Revit utilities, including SheetLink for Excel round-trips.", "tags": ["Production", "Data", "Windows"], "price": null, "pop": 4.5, "popCaption": "63 firms listed DiRoots Tools in Confluence 2025 · mid-2024 App Store write-ups cited DiRootsOne at 5 stars with 54 reviews · checked Nov 2026", "learn": "Gentler", "pro": "Sheet and parameter tools that pay off on the first project", "con": "Licensing has been shifting toward freemium/paid tiers; confirm the current model", "url": "https://diroots.com/"}, {"name": "Ideate Software", "maker": "Ideate Software", "knownFor": "Excel/BIM data (BIMLink), model audit (Explorer), and view/sheet tools used by BIM managers.", "tags": ["Production", "Data", "BIM management", "Windows"], "price": null, "pop": 4.5, "popCaption": "Confluence 2025 inventory: Ideate Explorer 51, BIMLink 50, Sticky 48, StyleManager 46, IdeateApps 44. The survey's Productivity category is described as dominated by Ideate and CTC · checked Nov 2026", "learn": "Moderate", "pro": "Serious data and model-health tools for standards-heavy offices", "con": "A paid suite; each product has its own learning curve", "url": "https://ideatesoftware.com/"}, {"name": "CTC Software (BIM suites)", "maker": "CTC Software", "knownFor": "Long-standing production and BIM-management toolkits (Project, Manager, Batch, and Data suites).", "tags": ["Production", "BIM management", "Windows"], "price": null, "pop": 4.5, "popCaption": "Confluence 2025: CTC BIM Manager Suite 42 firms, Project Suite 41, Batch Suite 35, Data Suite 25 · checked Nov 2026", "learn": "Moderate", "pro": "Batch and standards tools BIM managers have relied on for years", "con": "Published street pricing is limited; you usually talk to sales", "url": "https://www.ctcsoftware.com/"}, {"name": "RevitLookup", "maker": "Jeremy Tammik and contributors", "knownFor": "A free API inspector that shows what Revit actually stores on an element.", "tags": ["Free", "Developers", "Windows"], "price": "Free (open source)", "pop": 4, "popCaption": "50 firms listed RevitLookup in Confluence 2025 · checked Nov 2026", "learn": "Moderate — aimed at power users and developers", "pro": "The fastest way to understand parameters and element data", "con": "It is a diagnostic tool, not a production toolbar for every user", "url": "https://github.com/jeremytammik/RevitLookup"}, {"name": "Bird Tools", "maker": "Bird Tools", "knownFor": "Batch Navisworks export, tag cleanup, and in-session clash prevention add-ins.", "tags": ["Coordination", "Production", "Windows"], "price": null, "pop": 3.5, "popCaption": "Bird Tools Free NavisExport ranked #1 among APS-powered Revit add-ins on the Autodesk App Store as of 7 Feb 2025 (vendor recap of the official store sort). Not listed under this name in Confluence 2025 · checked Nov 2026", "learn": "Gentler", "pro": "Practical batch export and annotation tools, including a free NavisExport", "con": "Firm-survey evidence is thinner than for pyRevit, Ideate, or CTC", "url": "https://www.birdtools-developers.com/"}, {"name": "COINS Auto-Section Box", "maker": "COINS", "knownFor": "A long-time favorite for quickly building and toggling 3D section boxes, including in links.", "tags": ["Production", "Windows"], "price": null, "pop": 3.5, "popCaption": "34 firms listed it in Confluence 2025. It was historically a top Autodesk App Store download (including a mid-2024 recap at 5 stars with 130 reviews). Autodesk forum posts in 2025-2026 report the App Store listing was later taken down — confirm a current official installer before installing · checked Nov 2026", "learn": "Gentler", "pro": "Still widely remembered as the fastest section-box workflow", "con": "Official distribution has been disrupted; do not grab unofficial copies", "url": "https://apps.autodesk.com/RVT/en/Detail/Index?id=8920075109543819118&appLang=en&os=Win64"}, {"name": "Bonus Tools (Kiwi Codes)", "maker": "Kiwi Codes", "knownFor": "A large collection of everyday Revit utilities sold as one add-in pack.", "tags": ["Production", "Windows"], "price": null, "pop": 3, "popCaption": "Often named in 2026 best Revit add-ins roundups, but only 2 firms listed Kiwi Codes in Confluence 2025 · checked Nov 2026", "learn": "Gentler", "pro": "A lot of small time-savers in one installer", "con": "Survey evidence of firm-wide adoption is weak compared with Ideate or DiRoots", "url": "https://kiwicodes.com/"}, {"name": "UNIFI Pro", "maker": "UNIFI Labs", "knownFor": "An older generation of firm-wide Revit content management (the Confluence survey marks it as legacy).", "tags": ["Content", "Windows"], "price": null, "pop": 3, "popCaption": "15 firms listed UNIFI Pro (legacy) in Confluence 2025, versus 68 for AVAIL · checked Nov 2026", "learn": "Moderate", "pro": "Some offices still have libraries and workflows built around it", "con": "The 2025 survey already labels the listing as legacy — check the vendor's current product", "url": "https://unifilabs.com/"}, {"name": "Xrev Transmit", "maker": "Xrev / RTV Tools", "knownFor": "Batch printing, PDF/DWF export, and transmittals from Revit.", "tags": ["Production", "Documentation", "Windows"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026", "learn": "Gentler", "pro": "Saves hours on issue sets and plotting", "con": "No firm-penetration figure found in the Confluence 2025 inventory or a current App Store review count this session", "url": "https://xrev.com.au/"}, {"name": "AGACAD", "maker": "AGACAD", "knownFor": "Wood and metal framing, cut openings, and other construction-oriented Revit automation.", "tags": ["Production", "Structure", "Windows"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026", "learn": "Moderate", "pro": "Purpose-built framing and opening tools that generic Revit lacks", "con": "No independent 2025-2026 firm-survey count found this session", "url": "https://agacad.com/"}];
+initCatalog(DATA, { noun: "add-ins", defaultSort: "pop" });
+</script>
+</body>
+</html>
