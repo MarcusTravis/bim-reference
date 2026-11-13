@@ -33,3 +33,7 @@ Fixed a JavaScript typo (`initCatalog` required a `#catalog` element that the pa
 ## Nov 13, 2026 — Custom domain and Git auto-deploy
 
 The canonical site address is now [https://bimchart.net](https://bimchart.net). `bimchart.pages.dev` remains available and points search engines at the .net copy via canonical tags and `_headers`. Automatic production deploys on push to `main` were enabled by reconnecting the GitHub source on the Cloudflare Pages project.
+
+## Nov 13, 2026 — Auto-deploy on push confirmed
+
+Production deploys now start automatically when commits are pushed to `main`, after the Cloudflare Workers and Pages GitHub App was granted access to this repository.

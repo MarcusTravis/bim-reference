@@ -238,6 +238,11 @@ def write_updates():
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>The site now lives at <a href="https://bimchart.net">bimchart.net</a>. The pages.dev address still works; search engines are pointed at the .net copy. Pushing to the GitHub <code>main</code> branch now publishes automatically.</p>
     </div>
+    <div class="log">
+      <h3>Auto-deploy on push confirmed</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>The Cloudflare Workers and Pages GitHub App now has access to this repository, so a push to <code>main</code> publishes the site without a manual deploy.</p>
+    </div>
   </article>
 </div>
 {footer()}
@@ -361,6 +366,10 @@ Fixed a JavaScript typo (`initCatalog` required a `#catalog` element that the pa
 ## {CHECKED} — Custom domain and Git auto-deploy
 
 The canonical site address is now [https://bimchart.net](https://bimchart.net). `bimchart.pages.dev` remains available and points search engines at the .net copy via canonical tags and `_headers`. Automatic production deploys on push to `main` were enabled by reconnecting the GitHub source on the Cloudflare Pages project.
+
+## {CHECKED} — Auto-deploy on push confirmed
+
+Production deploys now start automatically when commits are pushed to `main`, after the Cloudflare Workers and Pages GitHub App was granted access to this repository.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 
