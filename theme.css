@@ -391,7 +391,7 @@ table.chart {
   font-weight: 700;
   background: #081018;
   position: sticky;
-  top: var(--nav-h);
+  top: 0; /* stick to the table-box, which is the horizontal scrollport */
   white-space: nowrap;
   z-index: 3;
   border-bottom: 1px solid var(--line);
