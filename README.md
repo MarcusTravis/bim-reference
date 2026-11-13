@@ -4,7 +4,7 @@
 
 A free, ad-free field guide to BIM software — modeling tools, Revit add-ins, coordination and clash detection, spooling and fabrication, and visualization. Built as a plain static site (HTML, CSS, and JavaScript, no build step).
 
-This is an independent side project by Marcus Travis, built outside work hours. It is not affiliated with any employer or with the software vendors listed on the site. There are no ads and no affiliate links.
+There are no ads and no affiliate links. Official-site links go to the vendor.
 
 Many ratings are relative judgments with cited sources. Check the vendor and your own office standards before you buy or standardize on a tool.
 

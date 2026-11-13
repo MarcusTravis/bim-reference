@@ -81,11 +81,13 @@ def nav(current):
 </nav>
 """
 
-def footer():
+def footer(home=False):
+    # Same wording and Ko-fi markup as ammo-reference (and date-calculator / tire-size-tool).
+    updated = ""
+    if home:
+        updated = f'<p class="kofi updated">Last updated <time datetime="{CHECKED_ISO}">{CHECKED}</time> · <a href="updates.html">See what changed →</a></p>\n'
     return f"""<footer class="site-footer">
-  <p>This is an independent side project built by Marcus Travis outside work hours. It is not affiliated with any employer or with the software vendors listed here. Product names are trademarks of their owners. Official-site links go to the vendor; there are no affiliate links.</p>
-  <p class="kofi updated">Data last checked <time datetime="{CHECKED_ISO}">{CHECKED}</time> · <a href="updates.html">See what changed</a></p>
-  <p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
+{updated}<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
 </footer>
 """
 
@@ -207,11 +209,11 @@ def write_home(counts):
     </section>
     <section>
       <h2>What this is not</h2>
-      <p>This is not a vendor ranking you should buy from blindly, and it is not affiliated with the companies listed. It is a starting map for people learning the BIM software landscape.</p>
+      <p>This is not a vendor ranking you should buy from blindly. It is a starting map for people learning the BIM software landscape.</p>
     </section>
   </div>
 </div>
-{footer()}
+{footer(home=True)}
 </body>
 </html>
 """
@@ -247,7 +249,12 @@ def write_updates():
     <div class="log">
       <h3>Ko-fi footer</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
-      <p>Every page now has the same Ko-fi support line used on ammochart.net, under the independent side-project note.</p>
+      <p>Every page now has the same Ko-fi support line used on ammochart.net.</p>
+    </div>
+    <div class="log">
+      <h3>Footer matches other sites</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>The page footer is now only the shared Ko-fi line used on ammochart.net and Marcus's other sites. The homepage also has the "Last updated / See what changed" line, like ammochart's home page.</p>
     </div>
   </article>
 </div>
@@ -319,7 +326,7 @@ def write_meta(stats):
 
 A free, ad-free field guide to BIM software — modeling tools, Revit add-ins, coordination and clash detection, spooling and fabrication, and visualization. Built as a plain static site (HTML, CSS, and JavaScript, no build step).
 
-This is an independent side project by Marcus Travis, built outside work hours. It is not affiliated with any employer or with the software vendors listed on the site. There are no ads and no affiliate links.
+There are no ads and no affiliate links. Official-site links go to the vendor.
 
 Many ratings are relative judgments with cited sources. Check the vendor and your own office standards before you buy or standardize on a tool.
 
@@ -379,7 +386,11 @@ Production deploys now start automatically when commits are pushed to `main`, af
 
 ## {CHECKED} — Ko-fi footer
 
-Added the same Ko-fi support line used on ammochart.net to every page footer, under the independent side-project note.
+Added the same Ko-fi support line used on ammochart.net to every page footer.
+
+## {CHECKED} — Footer matches other sites
+
+The page footer is now only the shared Ko-fi line used on ammochart.net and Marcus's other sites. The homepage also has the "Last updated / See what changed" line, like ammochart's home page.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 

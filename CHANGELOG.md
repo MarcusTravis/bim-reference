@@ -40,4 +40,8 @@ Production deploys now start automatically when commits are pushed to `main`, af
 
 ## Nov 13, 2026 — Ko-fi footer
 
-Added the same Ko-fi support line used on ammochart.net to every page footer, under the independent side-project note.
+Added the same Ko-fi support line used on ammochart.net to every page footer.
+
+## Nov 13, 2026 — Footer matches other sites
+
+The page footer is now only the shared Ko-fi line used on ammochart.net and Marcus's other sites. The homepage also has the "Last updated / See what changed" line, like ammochart's home page.
