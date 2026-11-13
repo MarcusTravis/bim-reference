@@ -19,7 +19,9 @@
     "url": "https://www.autodesk.com/products/navisworks/overview",
     "cost": 3,
     "costSourced": true,
-    "costCaption": "Official Autodesk list: Manage $2,835/year or $355/month; Simulate (review only) $1,145/year or $145/month (autodesk.com/products/navisworks/buy, checked Nov 2026). Rated on Manage."
+    "costCaption": "Official Autodesk list: Manage $2,835/year or $355/month; Simulate (review only) $1,145/year or $145/month (autodesk.com/products/navisworks/buy, checked Nov 2026). Rated on Manage.",
+    "icon": "navisworks",
+    "iconOfficial": false
   },
   {
     "name": "Autodesk BIM Collaborate Pro",
@@ -41,7 +43,9 @@
     "url": "https://www.autodesk.com/products/bim-collaborate/overview",
     "cost": 2,
     "costSourced": false,
-    "costCaption": "Now sold as Forma Design Collaboration. Autodesk's buy page did not expose a numeric price in this session. Authorized reseller CAD Masters lists $925/year. Editorial estimate $$ · checked Nov 2026."
+    "costCaption": "Now sold as Forma Design Collaboration. Autodesk's buy page did not expose a numeric price in this session. Authorized reseller CAD Masters lists $925/year. Editorial estimate $$ · checked Nov 2026.",
+    "icon": "bim-collaborate-pro",
+    "iconOfficial": false
   },
   {
     "name": "Revizto",
@@ -64,7 +68,9 @@
     "url": "https://revizto.com/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "Plans are per-user, per-project, or enterprise; the pricing page asks you to talk to sales for a quote (revizto.com/pricing, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "Plans are per-user, per-project, or enterprise; the pricing page asks you to talk to sales for a quote (revizto.com/pricing, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "revizto",
+    "iconOfficial": true
   },
   {
     "name": "Trimble Connect",
@@ -85,7 +91,9 @@
     "url": "https://www.trimble.com/en/products/trimble-connect",
     "cost": 1,
     "costSourced": false,
-    "costCaption": "A free Personal tier exists. Paid Business plans are sold, but a clear US AEC list price was not confirmed on the Trimble Connect product page this session. Editorial estimate $ · checked Nov 2026."
+    "costCaption": "A free Personal tier exists. Paid Business plans are sold, but a clear US AEC list price was not confirmed on the Trimble Connect product page this session. Editorial estimate $ · checked Nov 2026.",
+    "icon": "trimble-connect",
+    "iconOfficial": true
   },
   {
     "name": "Newforma Konekt (formerly BIM Track)",
@@ -106,7 +114,9 @@
     "url": "https://www.newforma.com/konekt/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; Newforma sells Konekt by quote (newforma.com/konekt/, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; Newforma sells Konekt by quote (newforma.com/konekt/, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "konekt",
+    "iconOfficial": false
   },
   {
     "name": "Solibri",
@@ -128,7 +138,9 @@
     "url": "https://www.solibri.com/",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Official: Starter €99/year; Essential €1,428/year (solibri.com/our-offerings, checked Nov 2026). Rated on Essential, the coordination/checking seat."
+    "costCaption": "Official: Starter €99/year; Essential €1,428/year (solibri.com/our-offerings, checked Nov 2026). Rated on Essential, the coordination/checking seat.",
+    "icon": "solibri",
+    "iconOfficial": false
   },
   {
     "name": "Dalux",
@@ -151,7 +163,9 @@
     "url": "https://www.dalux.com/",
     "cost": 2,
     "costSourced": false,
-    "costCaption": "No public US list price found; Dalux sells platform plans by quote (dalux.com, checked Nov 2026). Editorial estimate $$ · not a published figure."
+    "costCaption": "No public US list price found; Dalux sells platform plans by quote (dalux.com, checked Nov 2026). Editorial estimate $$ · not a published figure.",
+    "icon": "dalux",
+    "iconOfficial": true
   },
   {
     "name": "BIMcollab Zoom",
@@ -174,7 +188,9 @@
     "url": "https://www.bimcollab.com/",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "BIMcollab order/plans pages list Zoom Single at €60/user/month with annual billing (about €720/year) (helpcenter.bimcollab.com and order pages, checked Nov 2026)."
+    "costCaption": "BIMcollab order/plans pages list Zoom Single at €60/user/month with annual billing (about €720/year) (helpcenter.bimcollab.com and order pages, checked Nov 2026).",
+    "icon": "bimcollab-zoom",
+    "iconOfficial": true
   },
   {
     "name": "ClearEdge3D Verity",
@@ -195,6 +211,8 @@
     "url": "https://www.clearedge3d.com/products/verity/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; ClearEdge3D / Topcon sells Verity by quote (clearedge3d.com/products/verity/, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; ClearEdge3D / Topcon sells Verity by quote (clearedge3d.com/products/verity/, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "verity",
+    "iconOfficial": true
   }
 ]

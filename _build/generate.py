@@ -122,10 +122,10 @@ def wrap(inner):
 
 def write_catalog(sec):
     data = json.loads((BUILD / sec["json"]).read_text())
-    payload = [{k: d[k] for k in ("name","maker","knownFor","tags","price","pop","popCaption","cost","costCaption","learn","pro","con","url")} for d in data]
+    payload = [{k: d[k] for k in ("name","maker","knownFor","tags","price","pop","popCaption","cost","costCaption","learn","pro","con","url","icon","iconOfficial")} for d in data]
     html = head(sec["title"] + " · BIM Reference Library", sec["description"], "/" + sec["slug"])
     html += "<body>\n" + wrap(nav(sec["file"]))
-    html += '<div class="wrap" id="main">\n'
+    html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent BIM software guide", sec["title"], sec["lede"])
     html += f"""  <div id="catalog">
   <div class="toolbar">
@@ -143,7 +143,22 @@ def write_catalog(sec):
     </label>
   </div>
   <p class="count" id="count"></p>
-  <div class="pcards" id="cards"></div>
+  <div class="table-box">
+    <table class="chart">
+      <thead>
+        <tr>
+          <th><button type="button" class="th-btn" data-k="name">Software</button></th>
+          <th>Known for</th>
+          <th><button type="button" class="th-btn" data-k="pop">Popularity</button></th>
+          <th><button type="button" class="th-btn" data-k="cost">Cost</button></th>
+          <th>Learning curve</th>
+          <th>Pros &amp; cons</th>
+          <th>Official site</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
   </div>
   <div class="notes">
     <section>
@@ -170,10 +185,15 @@ def write_catalog(sec):
       <h2>Independence</h2>
       <p>This site is ad-free and has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement.</p>
     </section>
+    <section>
+      <h2>About the icons</h2>
+      <p>The first column is meant to look like the software’s desktop shortcut. Official vendor or App Store app icons are used when we could find one this session. If not, the tile is a generated initials icon in the same rounded-square style.</p>
+    </section>
   </div>
 </div>
 {footer()}
 <script src="app.js"></script>
+<script src="scroll-hint.js"></script>
 <script>
 const DATA = {json.dumps(payload, ensure_ascii=False)};
 initCatalog(DATA, {{ noun: {json.dumps(sec["noun"])}, defaultSort: "pop" }});
@@ -205,7 +225,7 @@ def write_home(counts):
         "/",
     )
     html += "<body>\n" + wrap(nav("index.html"))
-    html += '<div class="wrap" id="main">\n'
+    html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent BIM software guide", "BIM Reference Library",
                  "A free, ad-free field guide to the software people actually use to design, coordinate, fabricate, and visualize buildings. Popularity is cited, not invented.")
     html += f"""  <section class="grp">
@@ -215,11 +235,11 @@ def write_home(counts):
   <div class="notes">
     <section>
       <h2>How to use this site</h2>
-      <p>Each section is a set of product cards you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption. Learning-curve labels are editorial. Official-site links are not affiliate links.</p>
+      <p>Each section opens as a compact, scrollable comparison chart — one row per product — that you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption. Learning-curve labels are editorial. Official-site links are not affiliate links.</p>
     </section>
     <section>
       <h2>Where the numbers come from</h2>
-      <p>The main firm-adoption source is the Confluence 2025 AEC Tech Stack Survey (Q4 2025). European figures for Archicad and ALLPLAN come from the European Architectural Barometer Q4 2025. Review counts come from G2, checked in November 2026. If a product has no usable source, the card says “Editorial estimate.”</p>
+      <p>The main firm-adoption source is the Confluence 2025 AEC Tech Stack Survey (Q4 2025). European figures for Archicad and ALLPLAN come from the European Architectural Barometer Q4 2025. Review counts come from G2, checked in November 2026. If a product has no usable source, the caption says “Editorial estimate.”</p>
     </section>
     <section>
       <h2>What this is not</h2>
@@ -237,7 +257,7 @@ def write_home(counts):
 def write_updates():
     html = head("Updates · BIM Reference Library", "What changed on the BIM Reference Library, in plain English.", "/updates")
     html += "<body>\n" + wrap(nav("updates.html"))
-    html += '<div class="wrap" id="main">\n'
+    html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Changelog", "Updates", "A short, plain-English record of what changed on this site.", checked=False)
     html += f"""  <article>
     <div class="log">
@@ -274,6 +294,11 @@ def write_updates():
       <h3>Cost ratings on every card</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>Each product card now has a Cost row on a Free / $ / $$ / $$$ / $$$$ scale, with a caption citing a published price or marking the band as an estimate. You can sort each guide cheapest-first or priciest-first.</p>
+    </div>
+    <div class="log">
+      <h3>Comparison charts, not more cards</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>Section pages are now compact, horizontally scrollable comparison charts in the same style as the ammo reference charts: sticky headers, filter chips, click-to-sort columns, and a small visual in the first column. That visual is the product’s desktop or app icon when we could find an official one, or a generated initials tile if we could not.</p>
     </div>
   </article>
 </div>
@@ -355,7 +380,7 @@ Open `index.html` in a browser, or serve the folder with any static file server.
 
 ## Data
 
-Product cards are driven by a `DATA` array on each section page. After changing facts, also update `CHANGELOG.md` and add a short note on `updates.html`.
+Comparison-chart rows are driven by a `DATA` array on each section page. After changing facts, also update `CHANGELOG.md` and add a short note on `updates.html`.
 
 Visitor stats (optional): Cloudflare Web Analytics, from the Pages project Metrics page.
 
@@ -416,6 +441,10 @@ The page footer is now only the shared Ko-fi line used on ammochart.net and Marc
 Added a Cost row (Free / $ / $$ / $$$ / $$$$) to every product card, researched in November 2026 from vendor pricing pages and official shops. Bands: Free (no license fee); $ under about $500/year; $$ about $500–2,000/year; $$$ about $2,000–5,000/year; $$$$ about $5,000+/year or quote-only enterprise with no public list price. Captions cite the source or say the rating is an estimate. No prices were invented. Sort options now include cheapest first and priciest first.
 
 Official figures used include Autodesk list prices for Revit ($3,005/year), AutoCAD ($2,095/year), Navisworks Manage ($2,835/year), 3ds Max ($2,010/year), and Forma Site Design ($700/year); Graphisoft Archicad Studio ($2,414/year); Vectorworks Architect ($1,530/year); ALLPLAN Concept ($2,892/year); SketchUp Pro ($399/year); the RhinoARQ bundle ($1,695 perpetual); Chaos Enscape Solo ($574.80/year), V-Ray Solo ($540/year), and Veras Pro ($348/year); Twinmotion ($445/year over the $1M revenue threshold); Lumion Pro ($1,149/year); AVAIL ($250/year); DiRootsOne Premium ($120/year US / €100); IdeateApps ($495/year); CTC BIM Project Suite ($410); Bird Tools individual apps ($10–$49.50/year); Victaulic Tools for Revit ($200/license); Solibri Essential (€1,428/year); and BIMcollab Zoom Single (about €720/year). Many fabrication, coordination, and specialist tools remain quote-only.
+
+## {CHECKED} — Comparison charts
+
+Replaced the product-card grids on all five section pages with a compact, horizontally scrollable comparison chart in the same layout as the ammo reference charts (filter chips, count, sticky sortable headers, first-column visual, and a mobile scroll hint). The first column shows a 128 px desktop/app icon for each product, stored in /icons and not hotlinked. Official vendor or App Store icons were used when they could be found; the rest are generated initials tiles in the same rounded-square style. Popularity, cost, captions, filters, and cheapest/priciest sort options are unchanged.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 

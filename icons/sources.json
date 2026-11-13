@@ -1,0 +1,314 @@
+{
+  "autocad": {
+    "official": true,
+    "file": "autocad.png",
+    "source": "Official Autodesk AutoCAD app icon, Apple App Store, checked Nov 2026."
+  },
+  "forma": {
+    "official": true,
+    "file": "forma.png",
+    "source": "Official Autodesk Forma app icon, Apple App Store, checked Nov 2026."
+  },
+  "sketchup": {
+    "official": true,
+    "file": "sketchup.png",
+    "source": "Official SketchUp app icon, Apple App Store (Trimble), checked Nov 2026."
+  },
+  "trimble-connect": {
+    "official": true,
+    "file": "trimble-connect.png",
+    "source": "Official Trimble Connect app icon, Apple App Store, checked Nov 2026."
+  },
+  "dalux": {
+    "official": true,
+    "file": "dalux.png",
+    "source": "Official Dalux app icon, Apple App Store, checked Nov 2026."
+  },
+  "revizto": {
+    "official": true,
+    "file": "revizto.png",
+    "source": "Official Revizto Site app icon, Apple App Store, checked Nov 2026."
+  },
+  "fuzor": {
+    "official": true,
+    "file": "fuzor.png",
+    "source": "Official Fuzor Mobile VDC app icon, Apple App Store (Kalloc Studios), checked Nov 2026."
+  },
+  "vectorworks": {
+    "official": true,
+    "file": "vectorworks.png",
+    "source": "Official Vectorworks app icon (Vectorworks Nomad listing), Apple App Store, checked Nov 2026."
+  },
+  "lumion": {
+    "official": true,
+    "file": "lumion.png",
+    "source": "Official Lumion android-chrome / apple-touch icon from lumion.com, checked Nov 2026."
+  },
+  "tekla-structures": {
+    "official": true,
+    "file": "tekla-structures.png",
+    "source": "Official Tekla favicon (256 px) from tekla.com, checked Nov 2026."
+  },
+  "visualarq": {
+    "official": true,
+    "file": "visualarq.png",
+    "source": "Official VisualARQ app icon from visualarq.com, checked Nov 2026."
+  },
+  "rhino": {
+    "official": true,
+    "file": "rhino.png",
+    "source": "Official Rhino mark from rhino3d.com, checked Nov 2026."
+  },
+  "avail": {
+    "official": true,
+    "file": "avail.png",
+    "source": "Official AVAIL logo from getavail.com, checked Nov 2026."
+  },
+  "diroots": {
+    "official": true,
+    "file": "diroots.png",
+    "source": "Official DiRoots favicon from diroots.com, checked Nov 2026."
+  },
+  "ideate": {
+    "official": true,
+    "file": "ideate.png",
+    "source": "Official Ideate Software android-chrome icon from ideatesoftware.com, checked Nov 2026."
+  },
+  "bonus-tools": {
+    "official": true,
+    "file": "bonus-tools.png",
+    "source": "Official Kiwi Codes / Bonus Tools logo from kiwicodes.com, checked Nov 2026."
+  },
+  "msuite": {
+    "official": true,
+    "file": "msuite.png",
+    "source": "Official MSUITE favicon from msuite.com, checked Nov 2026."
+  },
+  "stratus": {
+    "official": true,
+    "file": "stratus.png",
+    "source": "Official Stratus webclip icon from stratus.build, checked Nov 2026."
+  },
+  "d5-render": {
+    "official": true,
+    "file": "d5-render.png",
+    "source": "Official D5 Render logo from d5render.com, checked Nov 2026."
+  },
+  "bimcollab-zoom": {
+    "official": true,
+    "file": "bimcollab-zoom.png",
+    "source": "Official BIMcollab favicon from bimcollab.com, checked Nov 2026."
+  },
+  "verity": {
+    "official": true,
+    "file": "verity.png",
+    "source": "Official ClearEdge3D favicon from clearedge3d.com, checked Nov 2026."
+  },
+  "veras": {
+    "official": true,
+    "file": "veras.png",
+    "source": "Official Veras / EvolveLAB site icon from evolvelab.io/veras, checked Nov 2026."
+  },
+  "evolve": {
+    "official": true,
+    "file": "evolve.png",
+    "source": "Official eVolve MEP favicon from evolvemep.com, checked Nov 2026."
+  },
+  "pyrevit": {
+    "official": true,
+    "file": "pyrevit.png",
+    "source": "Official pyRevit logo from the pyRevit GitHub repository, checked Nov 2026."
+  },
+  "sds2": {
+    "official": true,
+    "file": "sds2.png",
+    "source": "Official SDS/2 mark from sds2.com, checked Nov 2026."
+  },
+  "rhino-visualarq": {
+    "official": true,
+    "file": "rhino-visualarq.png",
+    "source": "Official Rhino mark from rhino3d.com, checked Nov 2026."
+  },
+  "revit": {
+    "official": false,
+    "file": "revit.png",
+    "source": "Generated initials tile (R) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "R",
+    "color": "#186BFF"
+  },
+  "archicad": {
+    "official": false,
+    "file": "archicad.png",
+    "source": "Generated initials tile (AC) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "AC",
+    "color": "#00A39A"
+  },
+  "openbuildings": {
+    "official": false,
+    "file": "openbuildings.png",
+    "source": "Generated initials tile (OB) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "OB",
+    "color": "#1C2833"
+  },
+  "allplan": {
+    "official": false,
+    "file": "allplan.png",
+    "source": "Generated initials tile (AL) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "AL",
+    "color": "#0077C8"
+  },
+  "bricscad-bim": {
+    "official": false,
+    "file": "bricscad-bim.png",
+    "source": "Generated initials tile (Br) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "Br",
+    "color": "#C8102E"
+  },
+  "ctc": {
+    "official": false,
+    "file": "ctc.png",
+    "source": "Generated initials tile (CT) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "CT",
+    "color": "#1F4E79"
+  },
+  "revitlookup": {
+    "official": false,
+    "file": "revitlookup.png",
+    "source": "Generated initials tile (RL) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "RL",
+    "color": "#5B4B8A"
+  },
+  "bird-tools": {
+    "official": false,
+    "file": "bird-tools.png",
+    "source": "Generated initials tile (BT) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "BT",
+    "color": "#E87722"
+  },
+  "coins": {
+    "official": false,
+    "file": "coins.png",
+    "source": "Generated initials tile (CO) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "CO",
+    "color": "#0055A5"
+  },
+  "unifi": {
+    "official": false,
+    "file": "unifi.png",
+    "source": "Generated initials tile (U) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "U",
+    "color": "#2E6BFF"
+  },
+  "xrev-transmit": {
+    "official": false,
+    "file": "xrev-transmit.png",
+    "source": "Generated initials tile (XT) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "XT",
+    "color": "#F15A24"
+  },
+  "agacad": {
+    "official": false,
+    "file": "agacad.png",
+    "source": "Generated initials tile (AG) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "AG",
+    "color": "#0B5CAB"
+  },
+  "navisworks": {
+    "official": false,
+    "file": "navisworks.png",
+    "source": "Generated initials tile (N) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "N",
+    "color": "#0E7C7B"
+  },
+  "bim-collaborate-pro": {
+    "official": false,
+    "file": "bim-collaborate-pro.png",
+    "source": "Generated initials tile (CP) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "CP",
+    "color": "#0696D7"
+  },
+  "konekt": {
+    "official": false,
+    "file": "konekt.png",
+    "source": "Generated initials tile (K) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "K",
+    "color": "#1B365D"
+  },
+  "solibri": {
+    "official": false,
+    "file": "solibri.png",
+    "source": "Generated initials tile (S) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "S",
+    "color": "#E30613"
+  },
+  "advance-steel": {
+    "official": false,
+    "file": "advance-steel.png",
+    "source": "Generated initials tile (AS) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "AS",
+    "color": "#C0392B"
+  },
+  "sysque": {
+    "official": false,
+    "file": "sysque.png",
+    "source": "Generated initials tile (SQ) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "SQ",
+    "color": "#005F46"
+  },
+  "fabrication": {
+    "official": false,
+    "file": "fabrication.png",
+    "source": "Generated initials tile (F) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "F",
+    "color": "#D35400"
+  },
+  "tekla-powerfab": {
+    "official": false,
+    "file": "tekla-powerfab.png",
+    "source": "Generated initials tile (PF) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "PF",
+    "color": "#00529B"
+  },
+  "victaulic": {
+    "official": false,
+    "file": "victaulic.png",
+    "source": "Generated initials tile (V) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "V",
+    "color": "#E31837"
+  },
+  "enscape": {
+    "official": false,
+    "file": "enscape.png",
+    "source": "Generated initials tile (E) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "E",
+    "color": "#00A89A"
+  },
+  "twinmotion": {
+    "official": false,
+    "file": "twinmotion.png",
+    "source": "Generated initials tile (TM) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "TM",
+    "color": "#00A5E3"
+  },
+  "3ds-max": {
+    "official": false,
+    "file": "3ds-max.png",
+    "source": "Generated initials tile (3M) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "3M",
+    "color": "#00A8A8"
+  },
+  "v-ray": {
+    "official": false,
+    "file": "v-ray.png",
+    "source": "Generated initials tile (VR) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "VR",
+    "color": "#E31C3D"
+  },
+  "vantage": {
+    "official": false,
+    "file": "vantage.png",
+    "source": "Generated initials tile (VG) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
+    "initials": "VG",
+    "color": "#4B2C6D"
+  }
+}

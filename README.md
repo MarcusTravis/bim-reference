@@ -14,7 +14,7 @@ Open `index.html` in a browser, or serve the folder with any static file server.
 
 ## Data
 
-Product cards are driven by a `DATA` array on each section page. After changing facts, also update `CHANGELOG.md` and add a short note on `updates.html`.
+Comparison-chart rows are driven by a `DATA` array on each section page. After changing facts, also update `CHANGELOG.md` and add a short note on `updates.html`.
 
 Visitor stats (optional): Cloudflare Web Analytics, from the Pages project Metrics page.
 

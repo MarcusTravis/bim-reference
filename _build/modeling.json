@@ -20,7 +20,9 @@
     "url": "https://www.autodesk.com/products/revit/overview",
     "cost": 3,
     "costSourced": true,
-    "costCaption": "Official Autodesk list: $3,005/year or $380/month for a standard subscription (autodesk.com Revit subscription FAQ, checked Nov 2026)."
+    "costCaption": "Official Autodesk list: $3,005/year or $380/month for a standard subscription (autodesk.com Revit subscription FAQ, checked Nov 2026).",
+    "icon": "revit",
+    "iconOfficial": false
   },
   {
     "name": "AutoCAD (including Architecture and MEP)",
@@ -43,7 +45,9 @@
     "url": "https://www.autodesk.com/products/autocad/overview",
     "cost": 3,
     "costSourced": true,
-    "costCaption": "Official Autodesk list: $2,095/year or $260/month (autodesk.com/products/autocad/buy, checked Nov 2026)."
+    "costCaption": "Official Autodesk list: $2,095/year or $260/month (autodesk.com/products/autocad/buy, checked Nov 2026).",
+    "icon": "autocad",
+    "iconOfficial": true
   },
   {
     "name": "SketchUp",
@@ -66,7 +70,9 @@
     "url": "https://www.sketchup.com/",
     "cost": 1,
     "costSourced": true,
-    "costCaption": "Official Trimble plans: Pro $399/year ($33.25/mo billed annually); Studio $859/year. Rated on Pro, the usual commercial desktop seat (sketchup.trimble.com/en/plans-and-pricing, checked Nov 2026)."
+    "costCaption": "Official Trimble plans: Pro $399/year ($33.25/mo billed annually); Studio $859/year. Rated on Pro, the usual commercial desktop seat (sketchup.trimble.com/en/plans-and-pricing, checked Nov 2026).",
+    "icon": "sketchup",
+    "iconOfficial": true
   },
   {
     "name": "Rhino + VisualARQ",
@@ -89,7 +95,9 @@
     "url": "https://www.rhino3d.com/",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Perpetual licenses, not a subscription: RhinoARQ bundle $1,695, or Rhino 8 commercial about $995 plus VisualARQ 3 about $795 (visualarq.com/sales and McNeel Miami, checked Nov 2026). Rated on the first-year purchase."
+    "costCaption": "Perpetual licenses, not a subscription: RhinoARQ bundle $1,695, or Rhino 8 commercial about $995 plus VisualARQ 3 about $795 (visualarq.com/sales and McNeel Miami, checked Nov 2026). Rated on the first-year purchase.",
+    "icon": "rhino-visualarq",
+    "iconOfficial": true
   },
   {
     "name": "Autodesk Forma",
@@ -111,7 +119,9 @@
     "url": "https://www.autodesk.com/products/forma/overview",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Forma Site Design official list: $700/year, $85/month, or $2,100 for 3 years. Also included in the AEC Collection (autodesk.com/products/forma-site-design/overview, checked Nov 2026)."
+    "costCaption": "Forma Site Design official list: $700/year, $85/month, or $2,100 for 3 years. Also included in the AEC Collection (autodesk.com/products/forma-site-design/overview, checked Nov 2026).",
+    "icon": "forma",
+    "iconOfficial": true
   },
   {
     "name": "Tekla Structures",
@@ -133,7 +143,9 @@
     "url": "https://www.tekla.com/products/tekla-structures",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public US list price found; Trimble sells subscription plans by quote (tekla.com/products/tekla-structures/subscription, checked Nov 2026). Editorial estimate $$$$ (quote-only enterprise)."
+    "costCaption": "No public US list price found; Trimble sells subscription plans by quote (tekla.com/products/tekla-structures/subscription, checked Nov 2026). Editorial estimate $$$$ (quote-only enterprise).",
+    "icon": "tekla-structures",
+    "iconOfficial": true
   },
   {
     "name": "Archicad",
@@ -155,7 +167,9 @@
     "url": "https://graphisoft.com/solutions/archicad",
     "cost": 3,
     "costSourced": true,
-    "costCaption": "Official US list: Archicad Studio $2,414/year per seat; Collaborate $2,840; Max $5,700 (graphisoft.com/en-us/pricing/, checked Nov 2026). Rated on Studio, the entry commercial seat."
+    "costCaption": "Official US list: Archicad Studio $2,414/year per seat; Collaborate $2,840; Max $5,700 (graphisoft.com/en-us/pricing/, checked Nov 2026). Rated on Studio, the entry commercial seat.",
+    "icon": "archicad",
+    "iconOfficial": false
   },
   {
     "name": "Bentley OpenBuildings Designer",
@@ -177,7 +191,9 @@
     "url": "https://www.bentley.com/software/openbuildings-designer/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price confirmed on Bentley.com this session; sold as a subscription or quote. Editorial estimate $$$$ (quote-only enterprise) · checked Nov 2026."
+    "costCaption": "No public list price confirmed on Bentley.com this session; sold as a subscription or quote. Editorial estimate $$$$ (quote-only enterprise) · checked Nov 2026.",
+    "icon": "openbuildings",
+    "iconOfficial": false
   },
   {
     "name": "Vectorworks Architect",
@@ -199,7 +215,9 @@
     "url": "https://www.vectorworks.net/en-US/architect",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Official annual subscription $1,530/year ($127.50/mo equivalent, billed annually) (customers.vectorworks.net/subscriptions, checked Nov 2026)."
+    "costCaption": "Official annual subscription $1,530/year ($127.50/mo equivalent, billed annually) (customers.vectorworks.net/subscriptions, checked Nov 2026).",
+    "icon": "vectorworks",
+    "iconOfficial": true
   },
   {
     "name": "ALLPLAN",
@@ -221,7 +239,9 @@
     "url": "https://www.allplan.com/",
     "cost": 3,
     "costSourced": true,
-    "costCaption": "Official shop: Concept $2,892/year; Basic $1,680; Professional $3,588; Ultimate $4,848 (allplan.com/en-US/shop/products, checked Nov 2026, excl. VAT). Rated on Concept, the essential BIM edition."
+    "costCaption": "Official shop: Concept $2,892/year; Basic $1,680; Professional $3,588; Ultimate $4,848 (allplan.com/en-US/shop/products, checked Nov 2026, excl. VAT). Rated on Concept, the essential BIM edition.",
+    "icon": "allplan",
+    "iconOfficial": false
   },
   {
     "name": "BricsCAD BIM",
@@ -245,6 +265,8 @@
     "url": "https://www.bricsys.com/bricscad-bim",
     "cost": 2,
     "costSourced": false,
-    "costCaption": "US reseller Novedge lists $1,166/year for a 1-year single subscription (checked Nov 2026). A clear USD figure was not confirmed on bricsys.com this session. Editorial estimate $$."
+    "costCaption": "US reseller Novedge lists $1,166/year for a 1-year single subscription (checked Nov 2026). A clear USD figure was not confirmed on bricsys.com this session. Editorial estimate $$.",
+    "icon": "bricscad-bim",
+    "iconOfficial": false
   }
 ]

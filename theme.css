@@ -24,6 +24,8 @@
   --btn: rgba(61, 232, 255, 0.12);
   --btn-h: rgba(61, 232, 255, 0.22);
   --radius: 18px;
+  --bar-bg: rgba(61, 232, 255, 0.12);
+  --nav-h: 57px;
   --display: "Rajdhani", "Segoe UI", sans-serif;
   --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -354,6 +356,128 @@ article.wrap time { color: var(--cyan); font-family: var(--mono); font-size: 13p
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
+}
+
+
+/* Comparison chart (ammo-style table, BIM theme) */
+.wrap.chart-wrap { max-width: 1280px; }
+.table-box {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+}
+table.chart {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1480px;
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+}
+.chart th, .chart td {
+  padding: 11px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.chart tbody tr:last-child td { border-bottom: 0; }
+.chart tbody tr:hover td { background: rgba(61, 232, 255, 0.04); }
+.chart th {
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+  background: #081018;
+  position: sticky;
+  top: var(--nav-h);
+  white-space: nowrap;
+  z-index: 3;
+  border-bottom: 1px solid var(--line);
+}
+.th-btn {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+.th-btn::after { content: "↕"; opacity: .4; font-size: 11px; }
+.th-btn[data-dir="asc"]::after { content: "↑"; opacity: 1; color: var(--cyan); }
+.th-btn[data-dir="desc"]::after { content: "↓"; opacity: 1; color: var(--cyan); }
+.prod {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 220px;
+}
+.app-icon {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  flex: none;
+  background: var(--ink);
+  box-shadow: 0 0 0 1px rgba(61, 232, 255, 0.12);
+}
+.cart {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.08;
+  letter-spacing: 0.01em;
+  display: block;
+}
+.year {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 3px;
+}
+.purpose { max-width: 36ch; min-width: 240px; }
+.chart .tags { margin-top: 6px; }
+.chart .sub {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 3px;
+  max-width: 32ch;
+  white-space: normal;
+}
+.chart .pc { margin-top: 0; }
+.chart .official { margin-top: 0; white-space: nowrap; }
+.chart td.empty { color: var(--muted); font-size: 14px; }
+
+/* Scroll-hint chrome, tinted to the blueprint theme */
+body .sh-hint {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--fg);
+}
+body .sh-btn {
+  border: 1px solid var(--line);
+  background: var(--btn);
+  color: var(--fg);
+  border-radius: 8px;
+}
+body .sh-btn:hover:not(:disabled) { border-color: var(--cyan); color: var(--cyan); }
+body .sh-arrow { color: var(--cyan); }
+body .sh-rail {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  scrollbar-color: var(--cyan) var(--bar-bg);
+}
+body .sh-edge.l { background: linear-gradient(to right, var(--bg-2), transparent); }
+body .sh-edge.r { background: linear-gradient(to left, var(--bg-2), transparent); }
+
+@media (max-width: 800px) {
+  .chart th { position: static; }
 }
 
 @media (max-width: 640px) {

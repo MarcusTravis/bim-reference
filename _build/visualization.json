@@ -20,7 +20,9 @@
     "url": "https://enscape3d.com/",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Official Chaos pricing: Enscape Solo $47.90/month billed annually ($574.80/year); higher Enscape plans from $55.90–$60.90/month billed annually (chaos.com/pricing, checked Nov 2026). Rated on Solo."
+    "costCaption": "Official Chaos pricing: Enscape Solo $47.90/month billed annually ($574.80/year); higher Enscape plans from $55.90–$60.90/month billed annually (chaos.com/pricing, checked Nov 2026). Rated on Solo.",
+    "icon": "enscape",
+    "iconOfficial": false
   },
   {
     "name": "Twinmotion",
@@ -43,7 +45,9 @@
     "url": "https://www.twinmotion.com/",
     "cost": 1,
     "costSourced": true,
-    "costCaption": "Official: free if last-12-month revenue is under $1 million USD; otherwise $445 per seat per year (twinmotion.com/license, checked Nov 2026). Rated on the paid commercial seat."
+    "costCaption": "Official: free if last-12-month revenue is under $1 million USD; otherwise $445 per seat per year (twinmotion.com/license, checked Nov 2026). Rated on the paid commercial seat.",
+    "icon": "twinmotion",
+    "iconOfficial": false
   },
   {
     "name": "Autodesk 3ds Max",
@@ -64,7 +68,9 @@
     "url": "https://www.autodesk.com/products/3ds-max/overview",
     "cost": 3,
     "costSourced": true,
-    "costCaption": "Official Autodesk list: $2,010/year or $255/month; 3-year $6,025 (autodesk.com/products/3ds-max/buy, checked Nov 2026)."
+    "costCaption": "Official Autodesk list: $2,010/year or $255/month; 3-year $6,025 (autodesk.com/products/3ds-max/buy, checked Nov 2026).",
+    "icon": "3ds-max",
+    "iconOfficial": false
   },
   {
     "name": "Lumion",
@@ -85,7 +91,9 @@
     "url": "https://lumion.com/",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Official: Lumion Pro named seat $1,149/year ($96/month); Pro Floating $1,499/year ($125/month) (lumion.com/product/buy, checked Nov 2026). Rated on the named Pro seat."
+    "costCaption": "Official: Lumion Pro named seat $1,149/year ($96/month); Pro Floating $1,499/year ($125/month) (lumion.com/product/buy, checked Nov 2026). Rated on the named Pro seat.",
+    "icon": "lumion",
+    "iconOfficial": true
   },
   {
     "name": "D5 Render",
@@ -105,7 +113,9 @@
     "url": "https://www.d5render.com/",
     "cost": 1,
     "costSourced": false,
-    "costCaption": "Community edition is free for non-commercial use; commercial work needs D5 Pro. A public USD Pro price was not clearly listed on d5render.com/pricing this session (the page notes upcoming plan changes). Editorial estimate $ · checked Nov 2026."
+    "costCaption": "Community edition is free for non-commercial use; commercial work needs D5 Pro. A public USD Pro price was not clearly listed on d5render.com/pricing this session (the page notes upcoming plan changes). Editorial estimate $ · checked Nov 2026.",
+    "icon": "d5-render",
+    "iconOfficial": true
   },
   {
     "name": "Veras",
@@ -126,7 +136,9 @@
     "url": "https://www.evolvelab.io/veras",
     "cost": 1,
     "costSourced": true,
-    "costCaption": "Official Chaos pricing: Veras Starter $16.90/month billed annually ($202.80/year); Veras Pro $29/month billed annually ($348/year) (chaos.com/pricing, checked Nov 2026). Rated on Pro."
+    "costCaption": "Official Chaos pricing: Veras Starter $16.90/month billed annually ($202.80/year); Veras Pro $29/month billed annually ($348/year) (chaos.com/pricing, checked Nov 2026). Rated on Pro.",
+    "icon": "veras",
+    "iconOfficial": true
   },
   {
     "name": "Chaos V-Ray",
@@ -149,7 +161,9 @@
     "url": "https://www.chaos.com/vray",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Official: V-Ray Solo $45/month billed annually ($540/year) (chaos.com/vray/buy-online, checked Nov 2026). Higher Collection plans cost more and can include Vantage."
+    "costCaption": "Official: V-Ray Solo $45/month billed annually ($540/year) (chaos.com/vray/buy-online, checked Nov 2026). Higher Collection plans cost more and can include Vantage.",
+    "icon": "v-ray",
+    "iconOfficial": false
   },
   {
     "name": "Chaos Vantage",
@@ -169,7 +183,9 @@
     "url": "https://www.chaos.com/vantage",
     "cost": 2,
     "costSourced": false,
-    "costCaption": "Chaos no longer sells new standalone Vantage subscriptions (as of 27 May 2026); Vantage is included with V-Ray Collection (Chaos Help, checked Nov 2026). Editorial estimate $$ based on a Collection seat, not a standalone list price."
+    "costCaption": "Chaos no longer sells new standalone Vantage subscriptions (as of 27 May 2026); Vantage is included with V-Ray Collection (Chaos Help, checked Nov 2026). Editorial estimate $$ based on a Collection seat, not a standalone list price.",
+    "icon": "vantage",
+    "iconOfficial": false
   },
   {
     "name": "Fuzor",
@@ -191,6 +207,8 @@
     "url": "https://www.kalloctech.com/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No official USD list price found on kalloctech.com this session; sold by quote. Editorial estimate $$$$ (quote-only) · checked Nov 2026."
+    "costCaption": "No official USD list price found on kalloctech.com this session; sold by quote. Editorial estimate $$$$ (quote-only) · checked Nov 2026.",
+    "icon": "fuzor",
+    "iconOfficial": true
   }
 ]

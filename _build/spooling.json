@@ -18,7 +18,9 @@
     "url": "https://www.autodesk.com/products/advance-steel/overview",
     "cost": 3,
     "costSourced": false,
-    "costCaption": "Autodesk's buy page did not show a numeric price in this session. Authorized resellers list about $2,450–$2,600/year. Editorial estimate $$$ · checked Nov 2026."
+    "costCaption": "Autodesk's buy page did not show a numeric price in this session. Authorized resellers list about $2,450–$2,600/year. Editorial estimate $$$ · checked Nov 2026.",
+    "icon": "advance-steel",
+    "iconOfficial": false
   },
   {
     "name": "Trimble SysQue",
@@ -40,7 +42,9 @@
     "url": "https://www.trimble.com/en/products/trimble-sysque",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; Trimble sells SysQue by quote (trimble.com/en/products/trimble-sysque, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; Trimble sells SysQue by quote (trimble.com/en/products/trimble-sysque, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "sysque",
+    "iconOfficial": false
   },
   {
     "name": "Autodesk Fabrication (CADmep, CAMduct, ESTmep)",
@@ -62,7 +66,9 @@
     "url": "https://www.autodesk.com/products/fabrication-products/overview",
     "cost": 3,
     "costSourced": false,
-    "costCaption": "Autodesk's Fabrication buy page did not show a numeric price in this session (template only). Editorial estimate $$$ · checked Nov 2026. Confirm with Autodesk or a reseller."
+    "costCaption": "Autodesk's Fabrication buy page did not show a numeric price in this session (template only). Editorial estimate $$$ · checked Nov 2026. Confirm with Autodesk or a reseller.",
+    "icon": "fabrication",
+    "iconOfficial": false
   },
   {
     "name": "EVOLVE Mechanical / Electrical",
@@ -84,7 +90,9 @@
     "url": "https://evolvemep.com/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; eVolve MEP sells by quote (evolvemep.com, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; eVolve MEP sells by quote (evolvemep.com, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "evolve",
+    "iconOfficial": true
   },
   {
     "name": "MSUITE BIM + FAB",
@@ -107,7 +115,9 @@
     "url": "https://www.msuite.com/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; MSUITE sells by quote (msuite.com, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; MSUITE sells by quote (msuite.com, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "msuite",
+    "iconOfficial": true
   },
   {
     "name": "Stratus",
@@ -128,7 +138,9 @@
     "url": "https://www.stratus.build/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; Stratus sells by quote (stratus.build, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; Stratus sells by quote (stratus.build, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "stratus",
+    "iconOfficial": true
   },
   {
     "name": "Tekla PowerFab",
@@ -150,7 +162,9 @@
     "url": "https://www.tekla.com/products/tekla-powerfab",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; Trimble sells PowerFab by quote (tekla.com/products/tekla-powerfab, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; Trimble sells PowerFab by quote (tekla.com/products/tekla-powerfab, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "tekla-powerfab",
+    "iconOfficial": false
   },
   {
     "name": "SDS/2",
@@ -171,7 +185,9 @@
     "url": "https://www.sds2.com/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price found; SDS/2 (ALLPLAN) sells by quote (sds2.com, checked Nov 2026). Editorial estimate $$$$ (quote-only)."
+    "costCaption": "No public list price found; SDS/2 (ALLPLAN) sells by quote (sds2.com, checked Nov 2026). Editorial estimate $$$$ (quote-only).",
+    "icon": "sds2",
+    "iconOfficial": true
   },
   {
     "name": "Victaulic Tools for Revit",
@@ -193,6 +209,8 @@
     "url": "https://www.victaulic.com/",
     "cost": 1,
     "costSourced": true,
-    "costCaption": "Official store: $200 per license for the 2026 and 2027 versions (victaulicsoftware.com/store, checked Nov 2026). Sold as a versioned purchase, not clearly an annual subscription."
+    "costCaption": "Official store: $200 per license for the 2026 and 2027 versions (victaulicsoftware.com/store, checked Nov 2026). Sold as a versioned purchase, not clearly an annual subscription.",
+    "icon": "victaulic",
+    "iconOfficial": false
   }
 ]
