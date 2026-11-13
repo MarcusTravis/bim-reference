@@ -4,7 +4,7 @@
     var full = Math.floor(n), half = (n - full) >= 0.5, empty = 5 - full - (half ? 1 : 0);
     var on = "★".repeat(full) + (half ? "½" : "");
     var off = "★".repeat(empty);
-    return '<span class="stars" aria-label="' + n + ' out of 5">' + on + '</span><span class="stars off">' + off + "</span>";
+    return '<span class="starline" aria-label="' + n + ' out of 5"><span class="stars">' + on + '</span><span class="stars off">' + off + "</span></span>";
   }
   function esc(s) {
     return String(s ?? "").replace(/[&<>"]/g, function (c) {

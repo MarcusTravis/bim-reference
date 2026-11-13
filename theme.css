@@ -285,6 +285,7 @@ a.card:hover, a.card:focus-visible,
 .price b, .learn b { color: var(--fg); font-weight: 600; }
 .stars { color: var(--cyan); font-size: 18px; letter-spacing: 1px; line-height: 1; }
 .stars.off { color: rgba(80, 210, 240, 0.22); }
+.starline { white-space: nowrap; }
 .pop-row { display: grid; gap: 2px; }
 .pc { display: grid; gap: 4px; font-size: 14px; margin-top: 4px; }
 .pro { color: var(--pro); font-weight: 600; }
