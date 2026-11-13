@@ -1,6 +1,6 @@
 # BIM Reference Library
 
-**Live site:** [https://bimchart.pages.dev](https://bimchart.pages.dev)
+**Live site:** [https://bimchart.net](https://bimchart.net)
 
 A free, ad-free field guide to BIM software — modeling tools, Revit add-ins, coordination and clash detection, spooling and fabrication, and visualization. Built as a plain static site (HTML, CSS, and JavaScript, no build step).
 

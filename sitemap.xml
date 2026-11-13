@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bimchart.pages.dev/</loc></url>
-  <url><loc>https://bimchart.pages.dev/modeling</loc></url>
-  <url><loc>https://bimchart.pages.dev/revit-addins</loc></url>
-  <url><loc>https://bimchart.pages.dev/coordination</loc></url>
-  <url><loc>https://bimchart.pages.dev/spooling</loc></url>
-  <url><loc>https://bimchart.pages.dev/visualization</loc></url>
-  <url><loc>https://bimchart.pages.dev/updates</loc></url>
+  <url><loc>https://bimchart.net/</loc></url>
+  <url><loc>https://bimchart.net/modeling</loc></url>
+  <url><loc>https://bimchart.net/revit-addins</loc></url>
+  <url><loc>https://bimchart.net/coordination</loc></url>
+  <url><loc>https://bimchart.net/spooling</loc></url>
+  <url><loc>https://bimchart.net/visualization</loc></url>
+  <url><loc>https://bimchart.net/updates</loc></url>
 </urlset>

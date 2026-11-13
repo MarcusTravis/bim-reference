@@ -29,3 +29,7 @@ Popularity scores are 1–5 judgments (halves allowed), relative to other produc
 ## Nov 13, 2026 — Product cards render fix
 
 Fixed a JavaScript typo (`initCatalog` required a `#catalog` element that the pages did not include), which left section pages without product cards after the first deploy. Hover glow now also applies to product cards, not only homepage section tiles.
+
+## Nov 13, 2026 — Custom domain and Git auto-deploy
+
+The canonical site address is now [https://bimchart.net](https://bimchart.net). `bimchart.pages.dev` remains available and points search engines at the .net copy via canonical tags and `_headers`. Automatic production deploys on push to `main` were enabled by reconnecting the GitHub source on the Cloudflare Pages project.

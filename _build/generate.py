@@ -4,7 +4,7 @@ from pathlib import Path
 
 ROOT = Path("/workspace/bim-reference")
 BUILD = ROOT / "_build"
-CANON = "https://bimchart.pages.dev"
+CANON = "https://bimchart.net"
 CHECKED, CHECKED_ISO = "Nov 13, 2026", "2026-11-13"
 NAV = [
     ("index.html", "Home"),
@@ -233,6 +233,11 @@ def write_updates():
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>Fixed a JavaScript typo that left section pages without their product cards after the first deploy. Hover glow now also applies to those cards, not only the homepage section tiles.</p>
     </div>
+    <div class="log">
+      <h3>Custom domain and Git auto-deploy</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>The site now lives at <a href="https://bimchart.net">bimchart.net</a>. The pages.dev address still works; search engines are pointed at the .net copy. Pushing to the GitHub <code>main</code> branch now publishes automatically.</p>
+    </div>
   </article>
 </div>
 {footer()}
@@ -290,7 +295,8 @@ def write_meta(stats):
     (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {CANON}/sitemap.xml\n")
     (ROOT / "_headers").write_text(
-        f"# Canonical host is the Pages domain until a custom domain is added.\n"
+        f"# Tell search engines that bimchart.net is the main address.\n"
+        f"# bimchart.pages.dev keeps working; it just points Google to the .net copy.\n"
         f"/*\n  Link: <{CANON}/:splat>; rel=\"canonical\"\n"
         "  X-Content-Type-Options: nosniff\n"
         "  Referrer-Policy: strict-origin-when-cross-origin\n"
@@ -351,6 +357,10 @@ Popularity scores are 1–5 judgments (halves allowed), relative to other produc
 ## {CHECKED} — Product cards render fix
 
 Fixed a JavaScript typo (`initCatalog` required a `#catalog` element that the pages did not include), which left section pages without product cards after the first deploy. Hover glow now also applies to product cards, not only homepage section tiles.
+
+## {CHECKED} — Custom domain and Git auto-deploy
+
+The canonical site address is now [https://bimchart.net](https://bimchart.net). `bimchart.pages.dev` remains available and points search engines at the .net copy via canonical tags and `_headers`. Automatic production deploys on push to `main` were enabled by reconnecting the GitHub source on the Cloudflare Pages project.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 

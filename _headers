@@ -1,6 +1,7 @@
-# Canonical host is the Pages domain until a custom domain is added.
+# Tell search engines that bimchart.net is the main address.
+# bimchart.pages.dev keeps working; it just points Google to the .net copy.
 /*
-  Link: <https://bimchart.pages.dev/:splat>; rel="canonical"
+  Link: <https://bimchart.net/:splat>; rel="canonical"
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
