@@ -331,7 +331,10 @@ a.card:hover, a.card:focus-visible,
   line-height: 1.55;
 }
 .site-footer p { margin: 0 0 10px; }
-.kofi { text-align: center; }
+.kofi { text-align: center; color: var(--muted); }
+.kofi a { color: var(--cyan); text-decoration: none; }
+.kofi a:hover { color: var(--cyan-2); text-decoration: underline; }
+.kofi.updated { margin-bottom: 4px; }
 
 /* Updates / article pages */
 article.wrap h2 { font-family: var(--display); letter-spacing: 0.03em; }

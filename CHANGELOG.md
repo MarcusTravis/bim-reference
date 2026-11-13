@@ -37,3 +37,7 @@ The canonical site address is now [https://bimchart.net](https://bimchart.net). 
 ## Nov 13, 2026 — Auto-deploy on push confirmed
 
 Production deploys now start automatically when commits are pushed to `main`, after the Cloudflare Workers and Pages GitHub App was granted access to this repository.
+
+## Nov 13, 2026 — Ko-fi footer
+
+Added the same Ko-fi support line used on ammochart.net to every page footer, under the independent side-project note.

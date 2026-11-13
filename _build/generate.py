@@ -84,7 +84,8 @@ def nav(current):
 def footer():
     return f"""<footer class="site-footer">
   <p>This is an independent side project built by Marcus Travis outside work hours. It is not affiliated with any employer or with the software vendors listed here. Product names are trademarks of their owners. Official-site links go to the vendor; there are no affiliate links.</p>
-  <p class="kofi">Free and ad-free. Data last checked <time datetime="{CHECKED_ISO}">{CHECKED}</time> · <a href="updates.html">See what changed</a></p>
+  <p class="kofi updated">Data last checked <time datetime="{CHECKED_ISO}">{CHECKED}</time> · <a href="updates.html">See what changed</a></p>
+  <p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
 </footer>
 """
 
@@ -243,6 +244,11 @@ def write_updates():
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>The Cloudflare Workers and Pages GitHub App now has access to this repository, so a push to <code>main</code> publishes the site without a manual deploy.</p>
     </div>
+    <div class="log">
+      <h3>Ko-fi footer</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>Every page now has the same Ko-fi support line used on ammochart.net, under the independent side-project note.</p>
+    </div>
   </article>
 </div>
 {footer()}
@@ -370,6 +376,10 @@ The canonical site address is now [https://bimchart.net](https://bimchart.net). 
 ## {CHECKED} — Auto-deploy on push confirmed
 
 Production deploys now start automatically when commits are pushed to `main`, after the Cloudflare Workers and Pages GitHub App was granted access to this repository.
+
+## {CHECKED} — Ko-fi footer
+
+Added the same Ko-fi support line used on ammochart.net to every page footer, under the independent side-project note.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 
