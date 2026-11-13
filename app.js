@@ -35,8 +35,9 @@
     opts = opts || {};
     var noun = opts.noun || "products";
     var filter = "all", query = "", sortKey = opts.defaultSort || "pop";
-    var root = document.getElementById("catalog");
-    if (!root) return;
+    var cardsEl = document.getElementById("cards");
+    var countEl = document.getElementById("count");
+    if (!cardsEl) return;
 
     function matches(d) {
       if (filter !== "all" && !(d.tags || []).includes(filter)) return false;
@@ -52,9 +53,9 @@
     }
     function render() {
       var rows = sorted(DATA.filter(matches));
-      document.getElementById("cards").innerHTML = rows.map(card).join("") ||
+      cardsEl.innerHTML = rows.map(card).join("") ||
         '<p class="count">No products match those filters. Clear search or choose All.</p>';
-      document.getElementById("count").textContent = "Showing " + rows.length + " of " + DATA.length + " " + noun;
+      if (countEl) countEl.textContent = "Showing " + rows.length + " of " + DATA.length + " " + noun;
     }
 
     document.querySelectorAll(".chip").forEach(function (b) {

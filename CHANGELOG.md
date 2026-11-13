@@ -25,3 +25,7 @@ Popularity scores are 1–5 judgments (halves allowed), relative to other produc
 - Coordination & clash: 9 (sourced 6, editorial 3)
 - Spooling & fabrication: 9 (sourced 2, editorial 7)
 - Visualization: 9 (sourced 8, editorial 1)
+
+## Nov 13, 2026 — Product cards render fix
+
+Fixed a JavaScript typo (`initCatalog` required a `#catalog` element that the pages did not include), which left section pages without product cards after the first deploy. Hover glow now also applies to product cards, not only homepage section tiles.

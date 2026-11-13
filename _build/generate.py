@@ -124,7 +124,8 @@ def write_catalog(sec):
     html += "<body>\n" + wrap(nav(sec["file"]))
     html += '<div class="wrap" id="main">\n'
     html += hero("Independent BIM software guide", sec["title"], sec["lede"])
-    html += f"""  <div class="toolbar">
+    html += f"""  <div id="catalog">
+  <div class="toolbar">
     <div class="chips" role="group" aria-label="Filter">{chips(data)}</div>
     <label class="search">Search
       <input type="search" id="search" placeholder="Name, maker, or tag" autocomplete="off">
@@ -138,6 +139,7 @@ def write_catalog(sec):
   </div>
   <p class="count" id="count"></p>
   <div class="pcards" id="cards"></div>
+  </div>
   <div class="notes">
     <section>
       <h2>How the ratings work</h2>
@@ -225,6 +227,11 @@ def write_updates():
       <h3>Site launch</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>The first public version of the BIM Reference Library went live, with five guides — Modeling, Revit add-ins, Coordination &amp; clash, Spooling &amp; fabrication, and Visualization — plus this updates page. Popularity captions were researched in November 2026. See CHANGELOG.md in the repository for sources.</p>
+    </div>
+    <div class="log">
+      <h3>Product cards render fix</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>Fixed a JavaScript typo that left section pages without their product cards after the first deploy. Hover glow now also applies to those cards, not only the homepage section tiles.</p>
     </div>
   </article>
 </div>
@@ -340,6 +347,10 @@ Popularity scores are 1–5 judgments (halves allowed), relative to other produc
 - Coordination & clash: {stats['coordination'][0]} (sourced {stats['coordination'][1]}, editorial {stats['coordination'][2]})
 - Spooling & fabrication: {stats['spooling'][0]} (sourced {stats['spooling'][1]}, editorial {stats['spooling'][2]})
 - Visualization: {stats['visualization'][0]} (sourced {stats['visualization'][1]}, editorial {stats['visualization'][2]})
+
+## {CHECKED} — Product cards render fix
+
+Fixed a JavaScript typo (`initCatalog` required a `#catalog` element that the pages did not include), which left section pages without product cards after the first deploy. Hover glow now also applies to product cards, not only homepage section tiles.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 
