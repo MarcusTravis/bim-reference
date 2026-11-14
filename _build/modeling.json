@@ -4,7 +4,7 @@
     "maker": "Autodesk",
     "knownFor": "The default US production BIM platform for architecture, structure, and MEP documentation.",
     "tags": [
-      "Authoring",
+      "Model authoring",
       "Architecture",
       "Structure",
       "MEP",
@@ -54,11 +54,11 @@
     "maker": "Trimble",
     "knownFor": "Fast conceptual and schematic modeling used early in design and by many contractors.",
     "tags": [
-      "Conceptual",
+      "Concept design",
       "Architecture",
       "Windows",
       "macOS",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 5,
@@ -79,8 +79,8 @@
     "maker": "Robert McNeel & Associates / Asuni",
     "knownFor": "Freeform and computational modeling, with VisualARQ adding BIM objects and IFC to Rhino.",
     "tags": [
-      "Authoring",
-      "Computational",
+      "Model authoring",
+      "Computational design",
       "Architecture",
       "Windows",
       "macOS"
@@ -104,10 +104,10 @@
     "maker": "Autodesk",
     "knownFor": "Early-stage site, massing, and environmental analysis that can feed a Revit model.",
     "tags": [
-      "Conceptual",
-      "Planning",
+      "Concept design",
+      "Site planning",
       "Architecture",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 4,
@@ -128,7 +128,7 @@
     "maker": "Trimble",
     "knownFor": "Structural BIM for steel and concrete detailing through fabrication.",
     "tags": [
-      "Authoring",
+      "Model authoring",
       "Structure",
       "Fabrication",
       "Windows"
@@ -152,7 +152,7 @@
     "maker": "Graphisoft (Nemetschek)",
     "knownFor": "Full BIM authoring with a strong architecture focus and openBIM/IFC workflows.",
     "tags": [
-      "Authoring",
+      "Model authoring",
       "Architecture",
       "Windows",
       "macOS"
@@ -176,7 +176,7 @@
     "maker": "Bentley Systems",
     "knownFor": "Building design in Bentley's infrastructure and iTwin world, often on campuses and industrial work.",
     "tags": [
-      "Authoring",
+      "Model authoring",
       "Architecture",
       "Infrastructure",
       "Windows"
@@ -200,7 +200,7 @@
     "maker": "Vectorworks (Nemetschek)",
     "knownFor": "Design-oriented BIM used in architecture, landscape, and entertainment.",
     "tags": [
-      "Authoring",
+      "Model authoring",
       "Architecture",
       "Windows",
       "macOS"
@@ -224,7 +224,7 @@
     "maker": "ALLPLAN (Nemetschek)",
     "knownFor": "Architectural and structural BIM, especially strong in Europe and reinforcement detailing.",
     "tags": [
-      "Authoring",
+      "Model authoring",
       "Architecture",
       "Structure",
       "Windows"
@@ -248,7 +248,7 @@
     "maker": "Bricsys (Hexagon)",
     "knownFor": "DWG-compatible CAD with BIM tools, often considered as a lower-cost AutoCAD-class alternative.",
     "tags": [
-      "Authoring",
+      "Model authoring",
       "CAD",
       "Architecture",
       "Windows",

@@ -7,7 +7,7 @@
       "Enterprise",
       "LiDAR",
       "Photogrammetry",
-      "RTK"
+      "RTK positioning"
     ],
     "payload": "Zenmuse L2 LiDAR or Zenmuse P1 45 MP photogrammetry (and other Zenmuse payloads)",
     "flightTime": "Up to 55 minutes max (official M350 page, with noted conditions)",
@@ -34,7 +34,7 @@
     "tags": [
       "Compact",
       "Photogrammetry",
-      "RTK",
+      "RTK positioning",
       "Mapping"
     ],
     "payload": "Integrated wide camera with mechanical shutter; 56\u00d7 zoom on the 3E; 3T adds a thermal camera",
@@ -63,7 +63,7 @@
       "Compact",
       "Photogrammetry",
       "Mapping",
-      "RTK"
+      "RTK positioning"
     ],
     "payload": "Integrated multi-sensor mapping payload (official Matrice 4E geospatial model)",
     "flightTime": "See official Matrice 4 Series specifications",
@@ -119,7 +119,7 @@
       "US-made",
       "Heavy lift",
       "Mapping",
-      "RTK"
+      "RTK positioning"
     ],
     "payload": "Open payload bay for mapping cameras and third-party sensors",
     "flightTime": "See official Astro specifications",
@@ -172,7 +172,7 @@
     "maker": "Wingtra",
     "knownFor": "The current Wingtra VTOL mapping drone (successor to WingtraOne), used for large-site photogrammetry and optional LiDAR from a single operator.",
     "tags": [
-      "VTOL",
+      "VTOL (vertical takeoff)",
       "Photogrammetry",
       "LiDAR",
       "Mapping"
@@ -203,7 +203,7 @@
       "Fixed wing",
       "Photogrammetry",
       "Mapping",
-      "RTK"
+      "RTK positioning"
     ],
     "payload": "Swappable senseFly / AgEagle mapping cameras",
     "flightTime": "Fixed-wing mapping endurance; see official eBee X specifications",

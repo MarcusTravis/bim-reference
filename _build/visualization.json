@@ -4,7 +4,7 @@
     "maker": "Chaos",
     "knownFor": "Real-time rendering and VR used as the default visualizer in many Revit offices.",
     "tags": [
-      "Real-time",
+      "Real-time rendering",
       "Revit",
       "Rhino",
       "SketchUp",
@@ -29,7 +29,7 @@
     "maker": "Epic Games",
     "knownFor": "Unreal-based real-time visualization with a tight Revit and Datasmith link.",
     "tags": [
-      "Real-time",
+      "Real-time rendering",
       "Revit",
       "Rhino",
       "Windows",
@@ -77,7 +77,7 @@
     "maker": "Lumion (Act-3D)",
     "knownFor": "Fast cinematic architectural renderer, with a widely downloaded Revit LiveSync plugin.",
     "tags": [
-      "Real-time",
+      "Real-time rendering",
       "Revit",
       "Windows"
     ],
@@ -100,7 +100,7 @@
     "maker": "Dimension 5",
     "knownFor": "A fast GPU real-time renderer that has become a common Lumion-class alternative.",
     "tags": [
-      "Real-time",
+      "Real-time rendering",
       "Windows"
     ],
     "price": null,
@@ -122,9 +122,9 @@
     "maker": "EvolveLAB (Chaos)",
     "knownFor": "AI visualization from Revit, Forma, and the web, used for early design options and mood images.",
     "tags": [
-      "AI",
+      "AI rendering",
       "Revit",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 3.5,
@@ -170,7 +170,7 @@
     "maker": "Chaos",
     "knownFor": "Real-time ray tracing that plays with V-Ray scenes for fast cinematic walkthroughs.",
     "tags": [
-      "Real-time",
+      "Real-time rendering",
       "Windows"
     ],
     "price": null,
@@ -192,8 +192,8 @@
     "maker": "Kalloc Studios",
     "knownFor": "Real-time coordination plus 4D and visualization from BIM models.",
     "tags": [
-      "Real-time",
-      "4D",
+      "Real-time rendering",
+      "4D scheduling",
       "Coordination",
       "Windows"
     ],

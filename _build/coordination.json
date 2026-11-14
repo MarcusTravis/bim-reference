@@ -4,9 +4,9 @@
     "maker": "Autodesk",
     "knownFor": "The default federated-model clash and 4D coordination tool in many US firms.",
     "tags": [
-      "Clash",
+      "Clash detection",
       "Coordination",
-      "4D",
+      "4D scheduling",
       "Windows"
     ],
     "price": null,
@@ -28,10 +28,10 @@
     "maker": "Autodesk",
     "knownFor": "Cloud worksharing and model coordination inside Autodesk Construction Cloud.",
     "tags": [
-      "CDE",
+      "Common data environment",
       "Coordination",
-      "Clash",
-      "Web"
+      "Clash detection",
+      "Web app"
     ],
     "price": null,
     "pop": 5,
@@ -52,11 +52,11 @@
     "maker": "Vizerra / Revizto",
     "knownFor": "Issue tracking plus clash review in an interactive, game-engine-like viewer for office and field.",
     "tags": [
-      "Clash",
-      "Issues",
+      "Clash detection",
+      "Issue tracking",
       "Coordination",
       "Windows",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 4,
@@ -77,9 +77,9 @@
     "maker": "Trimble",
     "knownFor": "Model federation and issue sharing across Trimble, Tekla, SketchUp, and IFC tools.",
     "tags": [
-      "CDE",
+      "Common data environment",
       "Coordination",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 3.5,
@@ -100,9 +100,9 @@
     "maker": "Newforma",
     "knownFor": "BIM issue tracking connected to Revit, Navisworks, and other viewers, now under the Newforma name.",
     "tags": [
-      "Issues",
+      "Issue tracking",
       "Coordination",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 3.5,
@@ -124,8 +124,8 @@
     "knownFor": "Rule-based model checking and IFC quality control, especially in openBIM workflows.",
     "tags": [
       "Model checking",
-      "IFC",
-      "Clash",
+      "IFC / openBIM",
+      "Clash detection",
       "Windows"
     ],
     "price": null,
@@ -148,9 +148,9 @@
     "knownFor": "Coordination, documents, and a well-regarded field app, especially in Europe and the Nordics.",
     "tags": [
       "Coordination",
-      "Field",
-      "CDE",
-      "Web",
+      "Field app",
+      "Common data environment",
+      "Web app",
       "Mobile"
     ],
     "price": null,
@@ -172,11 +172,11 @@
     "maker": "BIMcollab",
     "knownFor": "Open BCF issue management and clash/model review, with connections into authoring tools.",
     "tags": [
-      "Issues",
-      "Clash",
-      "IFC",
+      "Issue tracking",
+      "Clash detection",
+      "IFC / openBIM",
       "Windows",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 3,
@@ -198,7 +198,7 @@
     "knownFor": "Compares the coordinated model to laser scans to find what was actually installed.",
     "tags": [
       "Scan vs model",
-      "QA",
+      "Quality checks",
       "Windows"
     ],
     "price": null,

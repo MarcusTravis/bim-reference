@@ -27,9 +27,9 @@
     "maker": "Avail",
     "knownFor": "Firm-wide content and family management so teams insert approved Revit content.",
     "tags": [
-      "Content",
+      "Content library",
       "Windows",
-      "Web"
+      "Web app"
     ],
     "price": null,
     "pop": 4.5,
@@ -50,8 +50,8 @@
     "maker": "DiRoots",
     "knownFor": "A popular pack of Revit utilities, including SheetLink for Excel round-trips.",
     "tags": [
-      "Production",
-      "Data",
+      "Productivity",
+      "Excel & data",
       "Windows"
     ],
     "price": null,
@@ -73,8 +73,8 @@
     "maker": "Ideate Software",
     "knownFor": "Excel/BIM data (BIMLink), model audit (Explorer), and view/sheet tools used by BIM managers.",
     "tags": [
-      "Production",
-      "Data",
+      "Productivity",
+      "Excel & data",
       "BIM management",
       "Windows"
     ],
@@ -97,7 +97,7 @@
     "maker": "CTC Software",
     "knownFor": "Long-standing production and BIM-management toolkits (Project, Manager, Batch, and Data suites).",
     "tags": [
-      "Production",
+      "Productivity",
       "BIM management",
       "Windows"
     ],
@@ -144,7 +144,7 @@
     "knownFor": "Batch Navisworks export, tag cleanup, and in-session clash prevention add-ins.",
     "tags": [
       "Coordination",
-      "Production",
+      "Productivity",
       "Windows"
     ],
     "price": null,
@@ -166,7 +166,7 @@
     "maker": "COINS",
     "knownFor": "A long-time favorite for quickly building and toggling 3D section boxes, including in links.",
     "tags": [
-      "Production",
+      "Productivity",
       "Windows"
     ],
     "price": null,
@@ -188,7 +188,7 @@
     "maker": "Kiwi Codes",
     "knownFor": "A large collection of everyday Revit utilities sold as one add-in pack.",
     "tags": [
-      "Production",
+      "Productivity",
       "Windows"
     ],
     "price": null,
@@ -210,7 +210,7 @@
     "maker": "UNIFI Labs",
     "knownFor": "An older generation of firm-wide Revit content management (the Confluence survey marks it as legacy).",
     "tags": [
-      "Content",
+      "Content library",
       "Windows"
     ],
     "price": null,
@@ -232,7 +232,7 @@
     "maker": "Xrev / RTV Tools",
     "knownFor": "Batch printing, PDF/DWF export, and transmittals from Revit.",
     "tags": [
-      "Production",
+      "Productivity",
       "Documentation",
       "Windows"
     ],
@@ -255,7 +255,7 @@
     "maker": "AGACAD",
     "knownFor": "Wood and metal framing, cut openings, and other construction-oriented Revit automation.",
     "tags": [
-      "Production",
+      "Productivity",
       "Structure",
       "Windows"
     ],

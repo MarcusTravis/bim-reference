@@ -4,7 +4,7 @@
     "maker": "Leica Geosystems (Hexagon)",
     "knownFor": "The Leica terrestrial flagship most BIM firms reach for when they need fast, field-registered site scans.",
     "tags": [
-      "Terrestrial",
+      "Terrestrial laser",
       "Tripod",
       "Scan-to-BIM",
       "As-built"
@@ -32,7 +32,7 @@
     "maker": "FARO Technologies",
     "knownFor": "The long-running AEC tripod scanner, with 70 m, 150 m, and 350 m range options and FARO SCENE workflows.",
     "tags": [
-      "Terrestrial",
+      "Terrestrial laser",
       "Tripod",
       "Scan-to-BIM",
       "As-built"
@@ -60,7 +60,7 @@
     "maker": "Leica Geosystems (Hexagon)",
     "knownFor": "The compact imaging scanner that brought terrestrial LiDAR into more BIM offices and smaller as-built jobs.",
     "tags": [
-      "Terrestrial",
+      "Terrestrial laser",
       "Tripod",
       "Compact",
       "As-built"
@@ -88,7 +88,7 @@
     "maker": "Matterport (CoStar)",
     "knownFor": "The LiDAR-plus-camera kit many firms use for digital twins, walkthroughs, and lighter as-builts.",
     "tags": [
-      "Terrestrial",
+      "Terrestrial laser",
       "Digital twin",
       "LiDAR",
       "Photogrammetry"
@@ -116,7 +116,7 @@
     "maker": "Leica Geosystems (Hexagon)",
     "knownFor": "Handheld SLAM walking scanner for interiors, stairs, and places a tripod is slow to set up.",
     "tags": [
-      "SLAM",
+      "Mobile SLAM",
       "Handheld",
       "Interiors",
       "As-built"
@@ -144,7 +144,7 @@
     "maker": "Trimble",
     "knownFor": "Trimble\u2019s versatile mid-range terrestrial scanner for AEC and survey crews already in the Trimble Perspective / RealWorks world.",
     "tags": [
-      "Terrestrial",
+      "Terrestrial laser",
       "Tripod",
       "Scan-to-BIM"
     ],
@@ -171,7 +171,7 @@
     "maker": "NavVis",
     "knownFor": "Wearable SLAM capture for large buildings and campuses, used when a backpack or vest beats a tripod.",
     "tags": [
-      "SLAM",
+      "Mobile SLAM",
       "Wearable",
       "Interiors",
       "Digital twin"
@@ -199,7 +199,7 @@
     "maker": "FARO Technologies",
     "knownFor": "FARO\u2019s hybrid SLAM mobile scanner, with a flash/static mode for higher-quality stations in the same unit.",
     "tags": [
-      "SLAM",
+      "Mobile SLAM",
       "Handheld",
       "Mobile",
       "As-built"
@@ -227,7 +227,7 @@
     "maker": "FARO (formerly GeoSLAM)",
     "knownFor": "The GeoSLAM handheld SLAM scanner still widely seen on BIM as-built crews after FARO\u2019s acquisition.",
     "tags": [
-      "SLAM",
+      "Mobile SLAM",
       "Handheld",
       "Interiors",
       "As-built"
@@ -255,7 +255,7 @@
     "maker": "Trimble",
     "knownFor": "Trimble\u2019s high-end terrestrial scanner (Z+F imaging engine) for long-range, high-detail AEC and plant work.",
     "tags": [
-      "Terrestrial",
+      "Terrestrial laser",
       "Tripod",
       "High-end",
       "Scan-to-BIM"
@@ -283,7 +283,7 @@
     "maker": "Leica Geosystems (Hexagon)",
     "knownFor": "The long-range P-series ScanStation for survey-grade work, infrastructure, and very large sites \u2014 still the P-series name BIM firms ask about.",
     "tags": [
-      "Terrestrial",
+      "Terrestrial laser",
       "Tripod",
       "Long range",
       "Survey"
@@ -311,7 +311,7 @@
     "maker": "Emesent",
     "knownFor": "Autonomous SLAM LiDAR that mounts on a drone, a vehicle, or a handheld/backpack setup \u2014 used for complex, GPS-denied, or hard-to-reach spaces.",
     "tags": [
-      "SLAM",
+      "Mobile SLAM",
       "Drone-mounted",
       "Handheld",
       "Industrial"
@@ -339,7 +339,7 @@
     "maker": "NavVis",
     "knownFor": "NavVis\u2019s handheld mobile scanner, a lighter complement to the VLX wearable for mixed interior capture.",
     "tags": [
-      "SLAM",
+      "Mobile SLAM",
       "Handheld",
       "Interiors"
     ],

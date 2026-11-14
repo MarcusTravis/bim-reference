@@ -26,7 +26,7 @@
       ? '<a class="official" href="' + esc(d.url) + '" rel="noopener noreferrer">Official site →</a>'
       : "";
     return (
-      "<tr>" +
+      "<tr" + (d.id ? ' id="' + esc(d.id) + '"' : "") + ">" +
         '<td class="prod-cell"><div class="prod">' + icon +
           "<div><span class=\"cart\">" + esc(d.name) + '</span><span class="year">' + esc(d.maker) + "</span></div></div></td>" +
         '<td class="purpose">' + esc(d.knownFor) + '<div class="tags">' + tags + "</div></td>" +
@@ -99,6 +99,41 @@
         else b.removeAttribute("data-dir");
       });
     }
+    function resetFilters() {
+      filter = "all"; query = "";
+      document.querySelectorAll(".chip").forEach(function (c) {
+        c.setAttribute("aria-pressed", c.getAttribute("data-f") === "all" ? "true" : "false");
+      });
+      var s = document.getElementById("search");
+      if (s) s.value = "";
+    }
+    // Deep links: section.html#p-product-id scrolls to that row and flashes it.
+    var realign = function () {};
+    function focusHash(smooth) {
+      var id = decodeURIComponent((location.hash || "").slice(1));
+      if (!id || !/^p-/.test(id)) return;
+      if (!DATA.some(function (d) { return d.id === id; })) return;
+      var tr = document.getElementById(id);
+      if (!tr) { resetFilters(); render(); tr = document.getElementById(id); }
+      if (!tr) return;
+      var box = tr.closest(".table-box");
+      if (box) box.scrollLeft = 0;
+      function go(behavior) {
+        var nav = document.querySelector(".topnav");
+        var navH = nav ? nav.getBoundingClientRect().height : 0;
+        var y = tr.getBoundingClientRect().top + window.pageYOffset - navH - 20;
+        window.scrollTo({ top: Math.max(0, y), behavior: behavior });
+      }
+      realign = function () { go("instant"); };
+      go(smooth ? "smooth" : "instant");
+      // Re-align once fonts and icons have settled, unless the reader already scrolled away.
+      var settled = window.pageYOffset;
+      setTimeout(function () { if (Math.abs(window.pageYOffset - settled) < 4) go("instant"); }, 450);
+      document.querySelectorAll("tr.row-flash").forEach(function (r) { r.classList.remove("row-flash"); });
+      void tr.offsetWidth;
+      tr.classList.add("row-flash");
+      setTimeout(function () { tr.classList.remove("row-flash"); }, 3200);
+    }
     function render() {
       var rows = sorted(DATA.filter(matches));
       rowsEl.innerHTML = rows.map(row).join("") ||
@@ -140,5 +175,17 @@
       });
     });
     render();
+    if (location.hash) {
+      focusHash(false);
+      if (document.readyState !== "complete") {
+        var y0 = window.pageYOffset;
+        window.addEventListener("load", function () {
+          // Icons and fonts can shift rows a little; line up again if the reader has not scrolled.
+          if (Math.abs(window.pageYOffset - y0) < 4) realign();
+        });
+        setTimeout(function () { y0 = window.pageYOffset; }, 500);
+      }
+    }
+    window.addEventListener("hashchange", function () { focusHash(true); });
   };
 })();

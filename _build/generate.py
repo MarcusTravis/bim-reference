@@ -2,10 +2,15 @@
 import json, html as H
 from pathlib import Path
 
-ROOT = Path("/workspace/bim-reference")
+ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "_build"
 CANON = "https://bimchart.net"
-CHECKED, CHECKED_ISO = "Nov 13, 2026", "2026-11-13"
+CHECKED, CHECKED_ISO = "Nov 13, 2026", "2026-11-13"   # when product data was last researched
+UPDATED, UPDATED_ISO = "Nov 14, 2026", "2026-11-14"   # when the site itself last changed
+ASSET_V = "20261114"  # bump to bust browser caches for theme.css / *.js
+import re as _re
+def row_id(name):
+    return "p-" + _re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 NAV = [
     ("index.html", "Home"),
     ("modeling.html", "Modeling"),
@@ -58,7 +63,7 @@ def head(title, description, path):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap">
-<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="theme.css?v={ASSET_V}">
 </head>
 """
 
@@ -87,7 +92,7 @@ def footer(home=False):
     # Same wording and Ko-fi markup as ammo-reference (and date-calculator / tire-size-tool).
     updated = ""
     if home:
-        updated = f'<p class="kofi updated">Last updated <time datetime="{CHECKED_ISO}">{CHECKED}</time> · <a href="updates.html">See what changed →</a></p>\n'
+        updated = f'<p class="kofi updated">Last updated <time datetime="{UPDATED_ISO}">{UPDATED}</time> · <a href="updates.html">See what changed →</a></p>\n'
     return f"""<footer class="site-footer">
 {updated}<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
 </footer>
@@ -127,7 +132,7 @@ def write_catalog(sec):
     base_keys = ("name","maker","knownFor","tags","price","pop","popCaption","cost","costCaption","learn","pro","con","url","icon","iconOfficial")
     extra_cols = sec.get("extraCols") or []
     extra_keys = [c["key"] for c in extra_cols]
-    payload = [{k: d[k] for k in list(base_keys) + extra_keys if k in d} for d in data]
+    payload = [dict(id=row_id(d["name"]), **{k: d[k] for k in list(base_keys) + extra_keys if k in d}) for d in data]
     first_col = sec.get("firstCol", "Software")
     table_class = "chart chart-wide" if extra_cols else "chart"
     extra_ths = "".join(f'\n          <th>{e(c["label"])}</th>' for c in extra_cols)
@@ -215,8 +220,8 @@ def write_catalog(sec):
   </div>
 </div>
 {footer()}
-<script src="app.js"></script>
-<script src="scroll-hint.js"></script>
+<script src="app.js?v={ASSET_V}"></script>
+<script src="scroll-hint.js?v={ASSET_V}"></script>
 <script>
 const DATA = {json.dumps(payload, ensure_ascii=False)};
 initCatalog(DATA, {{ noun: {json.dumps(sec["noun"])}, defaultSort: "pop", extraCols: {extras_js} }});
@@ -232,7 +237,26 @@ initCatalog(DATA, {{ noun: {json.dumps(sec["noun"])}, defaultSort: "pop", extraC
     print(f"wrote {sec['file']}: {len(data)} products, pop sourced={sourced}, editorial={editorial}, cost sourced={cost_s}, official visuals={official}")
     return len(data), sourced, editorial, cost_s, official
 
-def write_home(counts):
+SECTION_LABELS = {
+    "modeling": "Modeling", "revit-addins": "Revit add-ins", "coordination": "Coordination & clash",
+    "spooling": "Spooling & fabrication", "visualization": "Visualization",
+    "scanning": "Scanning hardware", "drones": "Drones",
+}
+
+def search_index(sections):
+    idx = []
+    for sec in sections:
+        for d in json.loads((BUILD / sec["json"]).read_text()):
+            idx.append({
+                "name": d["name"], "maker": d["maker"], "tags": d["tags"], "icon": d.get("icon"),
+                "section": SECTION_LABELS[sec["slug"]],
+                "href": f'{sec["file"]}#{row_id(d["name"])}',
+            })
+    return idx
+
+def write_home(counts, sections):
+    index = search_index(sections)
+    index_js = json.dumps(index, ensure_ascii=False).replace("</", "<\\/")
     cards = [
         ("modeling.html", f"{counts['modeling'][0]} tools", "Modeling", "Revit, SketchUp, Archicad, Tekla, AutoCAD, Rhino, and other authoring platforms."),
         ("revit-addins.html", f"{counts['revit-addins'][0]} add-ins", "Revit add-ins", "pyRevit, DiRoots, Ideate, CTC, content managers, and other daily Revit tools."),
@@ -255,14 +279,21 @@ def write_home(counts):
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent BIM software guide", "BIM Reference Library",
                  "A free, ad-free field guide to the software and reality-capture hardware people actually use to design, capture, coordinate, fabricate, and visualize buildings. Popularity is cited, not invented.")
-    html += f"""  <section class="grp">
+    html += f"""  <section class="site-search" role="search" aria-labelledby="site-search-h">
+    <h2 id="site-search-h">Search every product</h2>
+    <label for="site-search">Software, scanners, and drones — by name, maker, or tag</label>
+    <input type="search" id="site-search" placeholder="Try Revit, Leica, DJI, MEP, LiDAR…" autocomplete="off" spellcheck="false" aria-describedby="site-status" aria-controls="site-results">
+    <p class="sr-status" id="site-status" aria-live="polite">Searches all {len(index)} products across every section.</p>
+    <ul class="sr-list" id="site-results" hidden></ul>
+  </section>
+  <section class="grp">
     <h2>Start here</h2>
     <div class="grid">{grid}</div>
   </section>
   <div class="notes">
     <section>
       <h2>How to use this site</h2>
-      <p>Each section opens as a compact, scrollable comparison chart — one row per product — that you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption. Learning-curve labels are editorial. Official-site links are not affiliate links.</p>
+      <p>Search above to jump straight to any product’s row, or open a section. Each section opens as a compact, scrollable comparison chart — one row per product — that you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption. Learning-curve labels are editorial. Official-site links are not affiliate links.</p>
     </section>
     <section>
       <h2>Where the numbers come from</h2>
@@ -275,6 +306,8 @@ def write_home(counts):
   </div>
 </div>
 {footer(home=True)}
+<script>window.SEARCH_INDEX = {index_js};</script>
+<script src="home-search.js?v={ASSET_V}"></script>
 </body>
 </html>
 """
@@ -336,6 +369,12 @@ def write_updates():
       <h3>Scanning hardware and AEC drones</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>Added two new guides — Scanning hardware and Drones for AEC and BIM — each with a homepage tile and the same scrollable comparison chart used on the software sections. First-column visuals are official product photos when we could fetch them, or a generated illustration if not. Popularity is editorial on these pages (the Confluence 2025 survey is software-only). Cost is a purchase-price band with official or reseller citations, or an estimate when the vendor only quotes.</p>
+    </div>
+    <div class="log">
+      <h3>Search every product, clearer charts</h3>
+      <p><time datetime="{UPDATED_ISO}">{UPDATED}</time></p>
+      <p>The homepage now has one search box that looks through every product on every chart — software, scanners, and drones — by name, maker, or tag. Each result shows the icon, name, and section, and jumps straight to that product’s row, which briefly lights up.</p>
+      <p>Every chart now has an obvious scrollbar that stays pinned to the bottom of the screen while the chart is in view, plus edge fades and a “scroll sideways” cue, on desktop and phones. The “Showing X of Y” line now names each section correctly (modeling tools, Revit add-ins, coordination tools, spooling tools, visualization tools, scanners, drones) and follows every filter and search. Some filter labels were spelled out so they make sense without BIM jargon — for example “Authoring” is now “Model authoring” and “Clash” is now “Clash detection.” No product data or ratings changed.</p>
     </div>
   </article>
 </div>
@@ -502,6 +541,14 @@ Popularity on both new pages is editorial. The Confluence 2025 AEC Tech Stack Su
 Cost uses a purchase-price band for one unit or a clearly described kit: $ under about $15,000; $$ about $15,000–40,000; $$$ about $40,000–80,000; $$$$ about $80,000+ or quote-only. Official Leica Geosystems shop prices checked November 2026: “Leica RTC” $46,000, BLK360 $26,500, BLK2GO $37,500 (BLK2GO PULSE $42,800). Official Matterport Pro3 starting at $1,995 plus a required Professional subscription from $245/month (matterport.com/pro3). Authorized reseller Moss Geospatial listings for FARO Focus Premium $41,860 / $51,950 / $63,900 (70 / 150 / 350 m) and Focus Core $32,940, and FARO Orbis $56,000. Authorized DJI reseller listings: Matrice 350 RTK aircraft $11,500 (Vertex Unmanned) / $11,129 drone-only (Indy Drone Supply), Zenmuse L2 $15,490, Zenmuse P1 $6,500, Mavic 3 Enterprise $4,509, Matrice 4E Worry-Free Plus Combo $5,189 (Vertex Unmanned). Other products are quote-only estimates with no invented dollar amount.
 
 First-column visuals are official vendor product photos, stored locally, when they could be fetched; FARO Focus, FARO Orbis, FARO ZEB Horizon, NavVis MLX, Autel EVO Max 4T, and WingtraRAY use generated illustration tiles because no clean official packshot was retrieved this session.
+
+## {UPDATED} — Site-wide search, sticky chart scrollbar, clearer filter labels
+
+- Homepage search box covers every product on all seven charts (software, scanners, drones) by name, maker, or tag. Results show the icon, name, and section and link to `section.html#p-<id>`; the chart page scrolls that row into view below the sticky nav and highlights it briefly. Every chart row now has a stable `id`.
+- `scroll-hint.js` rebuilt on the ammochart.net approach and fixed: the previous copy referenced an undefined `touch` variable, so the script stopped before adding any scroll cues. Every chart now gets a hint bar with ◀ ▶ buttons, edge fades, and a custom-drawn scrollbar (track + thumb) that sticks to the bottom of the viewport while the chart is on screen, so it is visible on phones and with overlay scrollbars too.
+- Results count line uses each section’s noun: modeling tools, Revit add-ins, coordination tools, spooling tools, visualization tools, scanners, drones (Modeling previously said “authoring tools”).
+- Filter chip / row tag renames (data otherwise unchanged): Modeling — Authoring → Model authoring, Conceptual → Concept design, Computational → Computational design, Planning → Site planning; Revit add-ins — Production → Productivity, Data → Excel & data, Content → Content library; Coordination — Clash → Clash detection, 4D → 4D scheduling, CDE → Common data environment, Issues → Issue tracking, Field → Field app, QA → Quality checks, IFC → IFC / openBIM; Spooling — Detailing → Steel detailing, Content → Content library; Visualization — Real-time → Real-time rendering, 4D → 4D scheduling, AI → AI rendering; Scanning — Terrestrial → Terrestrial laser, SLAM → Mobile SLAM; Drones — RTK → RTK positioning, VTOL → VTOL (vertical takeoff); all software charts — Web → Web app.
+- CSS/JS links carry a `?v=` version so browsers pick up the new files. Product data, ratings, and sources were not changed; “Data last checked” stays Nov 13, 2026.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 
@@ -510,7 +557,7 @@ def main():
     stats = {}
     for sec in sections:
         stats[sec["slug"]] = write_catalog(sec)
-    write_home(stats)
+    write_home(stats, sections)
     write_updates()
     write_404()
     write_meta(stats)
