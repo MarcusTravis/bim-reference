@@ -13,7 +13,7 @@
     "price": "Official list $3,005 / year or $380 / month (Autodesk, checked Nov 2026)",
     "pop": 5,
     "sourced": true,
-    "popCaption": "94.7% of firms in the Confluence 2025 AEC Tech Stack Survey · G2: 1,256 reviews, 4.6/5 · checked Nov 2026",
+    "popCaption": "94.7% of firms in the Confluence 2025 AEC Tech Stack Survey \u00b7 G2: 1,256 reviews, 4.6/5 \u00b7 checked Nov 2026",
     "learn": "Steep",
     "pro": "Deep documentation, worksharing, and a huge add-in ecosystem",
     "con": "Windows-only, heavy hardware needs, and a long learning curve",
@@ -22,7 +22,7 @@
     "costSourced": true,
     "costCaption": "Official Autodesk list: $3,005/year or $380/month for a standard subscription (autodesk.com Revit subscription FAQ, checked Nov 2026).",
     "icon": "revit",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "AutoCAD (including Architecture and MEP)",
@@ -38,7 +38,7 @@
     "price": null,
     "pop": 5,
     "sourced": true,
-    "popCaption": "AutoCAD 85.8% of firms; AutoCAD Architecture 53.1%; AutoCAD MEP 27.4% (Confluence 2025) · G2: about 1,800–2,012 AutoCAD reviews, 4.4/5 · checked Nov 2026",
+    "popCaption": "AutoCAD 85.8% of firms; AutoCAD Architecture 53.1%; AutoCAD MEP 27.4% (Confluence 2025) \u00b7 G2: about 1,800\u20132,012 AutoCAD reviews, 4.4/5 \u00b7 checked Nov 2026",
     "learn": "Moderate",
     "pro": "Universal DWG skills and huge existing drawing libraries",
     "con": "Not a full BIM authoring environment on its own",
@@ -63,7 +63,7 @@
     "price": null,
     "pop": 5,
     "sourced": true,
-    "popCaption": "73.5% of firms (Confluence 2025) · G2: 1,328 reviews, 4.5/5 · checked Nov 2026",
+    "popCaption": "73.5% of firms (Confluence 2025) \u00b7 G2: 1,328 reviews, 4.5/5 \u00b7 checked Nov 2026",
     "learn": "Gentler",
     "pro": "Quick to learn and excellent for massing and client conversation models",
     "con": "BIM documentation depth is limited compared with Revit or Archicad",
@@ -88,7 +88,7 @@
     "price": null,
     "pop": 4,
     "sourced": true,
-    "popCaption": "Rhino in 49.6% of firms; Grasshopper 51.3%; Rhino.Inside.Revit 45.1% (Confluence 2025). VisualARQ itself was listed by only 3 firms · checked Nov 2026",
+    "popCaption": "Rhino in 49.6% of firms; Grasshopper 51.3%; Rhino.Inside.Revit 45.1% (Confluence 2025). VisualARQ itself was listed by only 3 firms \u00b7 checked Nov 2026",
     "learn": "Moderate to steep",
     "pro": "Unmatched for complex geometry and Grasshopper workflows",
     "con": "The BIM layer (VisualARQ) is much less widely adopted than Rhino itself",
@@ -112,7 +112,7 @@
     "price": null,
     "pop": 4,
     "sourced": true,
-    "popCaption": "76 firms listed Forma (Autodesk) in the Confluence 2025 inventory (a second Autodesk Forma row shows 2; treated cautiously) · checked Nov 2026",
+    "popCaption": "76 firms listed Forma (Autodesk) in the Confluence 2025 inventory (a second Autodesk Forma row shows 2; treated cautiously) \u00b7 checked Nov 2026",
     "learn": "Gentler",
     "pro": "Fast contextual studies without opening a full authoring model",
     "con": "Inventory counts in the survey are inconsistently labeled, so the exact adoption figure is less clean than Revit's",
@@ -136,7 +136,7 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "17 firms (~15%) in the architecture-weighted Confluence 2025 survey · G2: 63 reviews, 4.5/5. Structural shops are under-counted in that sample · checked Nov 2026",
+    "popCaption": "17 firms (~15%) in the architecture-weighted Confluence 2025 survey \u00b7 G2: 63 reviews, 4.5/5. Structural shops are under-counted in that sample \u00b7 checked Nov 2026",
     "learn": "Steep",
     "pro": "Constructible steel and concrete detail that can go to the shop",
     "con": "A specialist tool; few architecture-firm survey respondents listed it",
@@ -160,7 +160,7 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "Only 10 firms in Confluence 2025 (US-heavy sample). European Architectural Barometer Q4 2025: e.g. 61% of French and 51% of German BIM-user firms reported Archicad · G2: 291–298 reviews, 4.6/5 · checked Nov 2026",
+    "popCaption": "Only 10 firms in Confluence 2025 (US-heavy sample). European Architectural Barometer Q4 2025: e.g. 61% of French and 51% of German BIM-user firms reported Archicad \u00b7 G2: 291\u2013298 reviews, 4.6/5 \u00b7 checked Nov 2026",
     "learn": "Moderate",
     "pro": "Native macOS, strong documentation, and solid IFC round-trips",
     "con": "Much less common than Revit in US production offices",
@@ -169,7 +169,7 @@
     "costSourced": true,
     "costCaption": "Official US list: Archicad Studio $2,414/year per seat; Collaborate $2,840; Max $5,700 (graphisoft.com/en-us/pricing/, checked Nov 2026). Rated on Studio, the entry commercial seat.",
     "icon": "archicad",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "Bentley OpenBuildings Designer",
@@ -184,16 +184,16 @@
     "price": null,
     "pop": 3,
     "sourced": true,
-    "popCaption": "11 firms listed OpenBuildings Designer (AECOsim) in Confluence 2025 · G2: 16 reviews, 4.3/5 · checked Nov 2026",
+    "popCaption": "11 firms listed OpenBuildings Designer (AECOsim) in Confluence 2025 \u00b7 G2: 16 reviews, 4.3/5 \u00b7 checked Nov 2026",
     "learn": "Steep",
     "pro": "Fits civil and campus projects already standardized on Bentley",
     "con": "Small presence in typical building-design office surveys",
     "url": "https://www.bentley.com/software/openbuildings-designer/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No public list price confirmed on Bentley.com this session; sold as a subscription or quote. Editorial estimate $$$$ (quote-only enterprise) · checked Nov 2026.",
+    "costCaption": "No public list price confirmed on Bentley.com this session; sold as a subscription or quote. Editorial estimate $$$$ (quote-only enterprise) \u00b7 checked Nov 2026.",
     "icon": "openbuildings",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "Vectorworks Architect",
@@ -208,7 +208,7 @@
     "price": null,
     "pop": 3,
     "sourced": true,
-    "popCaption": "6 firms listed Vectorworks Architect in Confluence 2025 · G2: 216–264 reviews, 4.4/5 · checked Nov 2026",
+    "popCaption": "6 firms listed Vectorworks Architect in Confluence 2025 \u00b7 G2: 216\u2013264 reviews, 4.4/5 \u00b7 checked Nov 2026",
     "learn": "Moderate",
     "pro": "Flexible 2D/3D in one file and a loyal design-firm user base",
     "con": "Low penetration in the large US AEC firms captured by Confluence 2025",
@@ -232,7 +232,7 @@
     "price": null,
     "pop": 3,
     "sourced": true,
-    "popCaption": "Not listed in the Confluence 2025 US-heavy inventory. European Architectural Barometer Q4 2025: 19% of German and 14% of Spanish BIM-user firms reported Allplan · G2: 25 reviews, 4.4/5 · checked Nov 2026",
+    "popCaption": "Not listed in the Confluence 2025 US-heavy inventory. European Architectural Barometer Q4 2025: 19% of German and 14% of Spanish BIM-user firms reported Allplan \u00b7 G2: 25 reviews, 4.4/5 \u00b7 checked Nov 2026",
     "learn": "Steep",
     "pro": "Strong concrete reinforcement and European documentation workflows",
     "con": "Uncommon in US architecture-firm stacks",
@@ -241,7 +241,7 @@
     "costSourced": true,
     "costCaption": "Official shop: Concept $2,892/year; Basic $1,680; Professional $3,588; Ultimate $4,848 (allplan.com/en-US/shop/products, checked Nov 2026, excl. VAT). Rated on Concept, the essential BIM edition.",
     "icon": "allplan",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "BricsCAD BIM",
@@ -258,7 +258,7 @@
     "price": null,
     "pop": 2.5,
     "sourced": true,
-    "popCaption": "Only 2 firms listed BricsCAD in Confluence 2025 · G2: 135 reviews, 4.5/5 for BricsCAD overall (not BIM-only) · checked Nov 2026",
+    "popCaption": "Only 2 firms listed BricsCAD in Confluence 2025 \u00b7 G2: 135 reviews, 4.5/5 for BricsCAD overall (not BIM-only) \u00b7 checked Nov 2026",
     "learn": "Moderate",
     "pro": "Familiar DWG workflows on Windows, macOS, and Linux",
     "con": "Very little evidence of use as a primary BIM platform in the 2025 firm survey",
@@ -267,6 +267,6 @@
     "costSourced": false,
     "costCaption": "US reseller Novedge lists $1,166/year for a 1-year single subscription (checked Nov 2026). A clear USD figure was not confirmed on bricsys.com this session. Editorial estimate $$.",
     "icon": "bricscad-bim",
-    "iconOfficial": false
+    "iconOfficial": true
   }
 ]

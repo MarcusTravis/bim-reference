@@ -151,7 +151,7 @@ def write_catalog(sec):
           <th>Known for</th>
           <th><button type="button" class="th-btn" data-k="pop">Popularity</button></th>
           <th><button type="button" class="th-btn" data-k="cost">Cost</button></th>
-          <th>Learning curve</th>
+          <th class="learn-th">Learning curve<span class="th-note">editorial rating</span></th>
           <th>Pros &amp; cons</th>
           <th>Official site</th>
         </tr>
@@ -300,6 +300,11 @@ def write_updates():
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>Section pages are now compact, horizontally scrollable comparison charts in the same style as the ammo reference charts: sticky headers, filter chips, click-to-sort columns, and a small visual in the first column. That visual is the product’s desktop or app icon when we could find an official one, or a generated initials tile if we could not.</p>
     </div>
+    <div class="log">
+      <h3>Official icons and learning-curve header</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>Replaced generated initials tiles with official app icons or official product/vendor marks on all five section charts wherever those assets could be found. The Learning curve column now notes “editorial rating” once in the header instead of repeating “editorial” on every row.</p>
+    </div>
   </article>
 </div>
 {footer()}
@@ -445,6 +450,14 @@ Official figures used include Autodesk list prices for Revit ($3,005/year), Auto
 ## {CHECKED} — Comparison charts
 
 Replaced the product-card grids on all five section pages with a compact, horizontally scrollable comparison chart in the same layout as the ammo reference charts (filter chips, count, sticky sortable headers, first-column visual, and a mobile scroll hint). The first column shows a 128 px desktop/app icon for each product, stored in /icons and not hotlinked. Official vendor or App Store icons were used when they could be found; the rest are generated initials tiles in the same rounded-square style. Popularity, cost, captions, filters, and cheapest/priciest sort options are unchanged.
+
+## {CHECKED} — Official icons and learning-curve header
+
+Replaced generated initials tiles with official app icons or official product/vendor marks for 17 products, stored locally in /icons and shown on all five section charts: Revit (official 3D R badge from the Autodesk Revit Logo SVG on Wikimedia Commons); Archicad (official Graphisoft icon, Commons File:Archicad.svg); OpenBuildings (official Bentley Systems logo fitted on a tile; no product-specific app icon found); ALLPLAN (official ring mark from the Commons logo SVG); BricsCAD BIM (official mark from the Commons BricsCAD logo); CTC (official CTC wordmark from ctcsoftware.com); RevitLookup (official ProductIcon.png from lookup-foundation/RevitLookup); Bird Tools (official logo from birdtools-developers.com); Xrev Transmit (official Xrev mark from xrev.com.au); Newforma Konekt (official Newforma App Store icon); Solibri (official S app icon from solibri.com); Enscape (official E mark from the Commons Enscape logo SVG); Twinmotion (official product mark; vendor icon paths returned HTTP 403); 3ds Max (official 2022 rebrand desktop icon on Commons); V-Ray (official Chaos product icon from static.chaos.com); Vantage (official Chaos Vantage logo from static.chaos.com); and Victaulic Tools for Revit (official Victaulic logo; the SpoolTracker app icon was not used because it is a different product).
+
+Nine tiles remain generated initials because no distinct official app icon or product mark could be fetched this session (Autodesk, UNIFI, AGACAD, COINS, SysQue, and Tekla PowerFab pages blocked a bot client or only exposed a parent-brand mark already used by another row): Navisworks, BIM Collaborate Pro, Advance Steel, Autodesk Fabrication, UNIFI, AGACAD, COINS Auto-Section Box, SysQue, and Tekla PowerFab.
+
+On all five section charts, the Learning curve column now carries a single “editorial rating” note in the header. The per-row “editorial” caption was removed. The notes section still explains that learning-curve labels are editorial.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 

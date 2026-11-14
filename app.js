@@ -32,7 +32,7 @@
         '<td class="purpose">' + esc(d.knownFor) + '<div class="tags">' + tags + "</div></td>" +
         "<td>" + stars(d.pop) + '<span class="sub">' + esc(d.popCaption) + "</span></td>" +
         "<td>" + dollars(d.cost) + '<span class="sub">' + esc(d.costCaption) + "</span></td>" +
-        "<td>" + (d.learn ? esc(d.learn) + ' <span class="sub">editorial</span>' : "") + "</td>" +
+        "<td>" + (d.learn ? esc(d.learn) : "") + "</td>" +
         '<td class="purpose"><div class="pc"><span class="pro">+ ' + esc(d.pro) + '</span><span class="con">− ' + esc(d.con) + "</span></div></td>" +
         "<td>" + site + "</td>" +
       "</tr>"

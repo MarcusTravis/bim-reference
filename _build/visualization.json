@@ -13,16 +13,16 @@
     "price": null,
     "pop": 5,
     "sourced": true,
-    "popCaption": "Enscape for Revit: 80.5% of firms (92 listings) in Confluence 2025; also SketchUp 60 and Rhino 48 · G2: 456 reviews, 4.6/5 · checked Nov 2026",
+    "popCaption": "Enscape for Revit: 80.5% of firms (92 listings) in Confluence 2025; also SketchUp 60 and Rhino 48 \u00b7 G2: 456 reviews, 4.6/5 \u00b7 checked Nov 2026",
     "learn": "Gentler",
     "pro": "Fast, inside the authoring tool, and already the market default on Revit",
     "con": "Specialist marketing stills may still move to a second renderer",
     "url": "https://enscape3d.com/",
     "cost": 2,
     "costSourced": true,
-    "costCaption": "Official Chaos pricing: Enscape Solo $47.90/month billed annually ($574.80/year); higher Enscape plans from $55.90–$60.90/month billed annually (chaos.com/pricing, checked Nov 2026). Rated on Solo.",
+    "costCaption": "Official Chaos pricing: Enscape Solo $47.90/month billed annually ($574.80/year); higher Enscape plans from $55.90\u2013$60.90/month billed annually (chaos.com/pricing, checked Nov 2026). Rated on Solo.",
     "icon": "enscape",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "Twinmotion",
@@ -38,7 +38,7 @@
     "price": null,
     "pop": 4.5,
     "sourced": true,
-    "popCaption": "Confluence 2025: Twinmotion for Revit 60 firms, Twinmotion 37, Twinmotion for Rhino 30. Named in the survey's next tier after Enscape · checked Nov 2026",
+    "popCaption": "Confluence 2025: Twinmotion for Revit 60 firms, Twinmotion 37, Twinmotion for Rhino 30. Named in the survey's next tier after Enscape \u00b7 checked Nov 2026",
     "learn": "Gentler",
     "pro": "Strong path, crowd, and environment tools once the model is in",
     "con": "Heavy scenes can be demanding; many firms keep it as a second renderer",
@@ -47,7 +47,7 @@
     "costSourced": true,
     "costCaption": "Official: free if last-12-month revenue is under $1 million USD; otherwise $445 per seat per year (twinmotion.com/license, checked Nov 2026). Rated on the paid commercial seat.",
     "icon": "twinmotion",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "Autodesk 3ds Max",
@@ -61,7 +61,7 @@
     "price": null,
     "pop": 4,
     "sourced": true,
-    "popCaption": "60 firms listed 3ds Max in Confluence 2025; V-Ray for 3ds Max 25 · checked Nov 2026",
+    "popCaption": "60 firms listed 3ds Max in Confluence 2025; V-Ray for 3ds Max 25 \u00b7 checked Nov 2026",
     "learn": "Steep",
     "pro": "Unmatched control for hero images and animation",
     "con": "A specialist skill set, not a daily design-iteration tool",
@@ -70,7 +70,7 @@
     "costSourced": true,
     "costCaption": "Official Autodesk list: $2,010/year or $255/month; 3-year $6,025 (autodesk.com/products/3ds-max/buy, checked Nov 2026).",
     "icon": "3ds-max",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "Lumion",
@@ -84,7 +84,7 @@
     "price": null,
     "pop": 4,
     "sourced": true,
-    "popCaption": "50 firms listed Lumion in Confluence 2025. Lumion LiveSync for Revit has been listed among the Autodesk App Store's most-downloaded apps (NTCLSoft recap) · checked Nov 2026",
+    "popCaption": "50 firms listed Lumion in Confluence 2025. Lumion LiveSync for Revit has been listed among the Autodesk App Store's most-downloaded apps (NTCLSoft recap) \u00b7 checked Nov 2026",
     "learn": "Gentler",
     "pro": "Quick, attractive stills and animations from a live model link",
     "con": "Windows-only, and one of several overlapping real-time tools firms must rationalize",
@@ -106,14 +106,14 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "40 firms listed D5 Render in Confluence 2025, in the survey's secondary real-time tier · checked Nov 2026",
+    "popCaption": "40 firms listed D5 Render in Confluence 2025, in the survey's secondary real-time tier \u00b7 checked Nov 2026",
     "learn": "Gentler",
     "pro": "Fast results and a growing asset library at a competitive price point",
     "con": "Newer than Enscape/Lumion; firm standards and plugins are still catching up",
     "url": "https://www.d5render.com/",
     "cost": 1,
     "costSourced": false,
-    "costCaption": "Community edition is free for non-commercial use; commercial work needs D5 Pro. A public USD Pro price was not clearly listed on d5render.com/pricing this session (the page notes upcoming plan changes). Editorial estimate $ · checked Nov 2026.",
+    "costCaption": "Community edition is free for non-commercial use; commercial work needs D5 Pro. A public USD Pro price was not clearly listed on d5render.com/pricing this session (the page notes upcoming plan changes). Editorial estimate $ \u00b7 checked Nov 2026.",
     "icon": "d5-render",
     "iconOfficial": true
   },
@@ -129,7 +129,7 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "32 firms listed Veras in Confluence 2025. It also appeared in a Feb 2025 Autodesk App Store recap of popular APS-powered Revit add-ins · checked Nov 2026",
+    "popCaption": "32 firms listed Veras in Confluence 2025. It also appeared in a Feb 2025 Autodesk App Store recap of popular APS-powered Revit add-ins \u00b7 checked Nov 2026",
     "learn": "Gentler",
     "pro": "Very fast optioneering and presentation imagery from a live model",
     "con": "AI images still need a human check for accuracy before they go to a client",
@@ -154,7 +154,7 @@
     "price": null,
     "pop": 3.5,
     "sourced": true,
-    "popCaption": "Confluence 2025: V-Ray for Revit 25, for 3ds Max 25, for Rhino 20, for SketchUp 17 (unique-firm overlap unknown) · checked Nov 2026",
+    "popCaption": "Confluence 2025: V-Ray for Revit 25, for 3ds Max 25, for Rhino 20, for SketchUp 17 (unique-firm overlap unknown) \u00b7 checked Nov 2026",
     "learn": "Steep",
     "pro": "The look and control people want for final marketing images",
     "con": "Slower daily workflow than a real-time viewport tool",
@@ -163,7 +163,7 @@
     "costSourced": true,
     "costCaption": "Official: V-Ray Solo $45/month billed annually ($540/year) (chaos.com/vray/buy-online, checked Nov 2026). Higher Collection plans cost more and can include Vantage.",
     "icon": "v-ray",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "Chaos Vantage",
@@ -176,7 +176,7 @@
     "price": null,
     "pop": 3,
     "sourced": true,
-    "popCaption": "10 firms listed Vantage (Chaos) in Confluence 2025 · checked Nov 2026",
+    "popCaption": "10 firms listed Vantage (Chaos) in Confluence 2025 \u00b7 checked Nov 2026",
     "learn": "Moderate if you already use V-Ray",
     "pro": "A real-time path for teams already invested in V-Ray assets",
     "con": "Much smaller installed base than Enscape or Twinmotion in the 2025 survey",
@@ -185,7 +185,7 @@
     "costSourced": false,
     "costCaption": "Chaos no longer sells new standalone Vantage subscriptions (as of 27 May 2026); Vantage is included with V-Ray Collection (Chaos Help, checked Nov 2026). Editorial estimate $$ based on a Collection seat, not a standalone list price.",
     "icon": "vantage",
-    "iconOfficial": false
+    "iconOfficial": true
   },
   {
     "name": "Fuzor",
@@ -200,14 +200,14 @@
     "price": null,
     "pop": 3,
     "sourced": false,
-    "popCaption": "Editorial estimate · checked Nov 2026. Not listed in the Confluence 2025 inventory.",
+    "popCaption": "Editorial estimate \u00b7 checked Nov 2026. Not listed in the Confluence 2025 inventory.",
     "learn": "Moderate",
     "pro": "Visualization and 4D construction sequencing in one environment",
     "con": "No firm-survey count found this session; sit it next to Navisworks/Revizto in a demo",
     "url": "https://www.kalloctech.com/",
     "cost": 4,
     "costSourced": false,
-    "costCaption": "No official USD list price found on kalloctech.com this session; sold by quote. Editorial estimate $$$$ (quote-only) · checked Nov 2026.",
+    "costCaption": "No official USD list price found on kalloctech.com this session; sold by quote. Editorial estimate $$$$ (quote-only) \u00b7 checked Nov 2026.",
     "icon": "fuzor",
     "iconOfficial": true
   }

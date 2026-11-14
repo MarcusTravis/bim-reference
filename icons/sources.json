@@ -130,60 +130,44 @@
     "source": "Official Rhino mark from rhino3d.com, checked Nov 2026."
   },
   "revit": {
-    "official": false,
+    "official": true,
     "file": "revit.png",
-    "source": "Generated initials tile (R) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "R",
-    "color": "#186BFF"
+    "source": "Official Autodesk Revit 3D R badge cropped from the official Autodesk Revit Logo SVG on Wikimedia Commons (File:Autodesk Revit Logo.svg), checked Nov 2026."
   },
   "archicad": {
-    "official": false,
+    "official": true,
     "file": "archicad.png",
-    "source": "Generated initials tile (AC) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "AC",
-    "color": "#00A39A"
+    "source": "Official Graphisoft Archicad icon from Wikimedia Commons (File:Archicad.svg), checked Nov 2026."
   },
   "openbuildings": {
-    "official": false,
+    "official": true,
     "file": "openbuildings.png",
-    "source": "Generated initials tile (OB) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "OB",
-    "color": "#1C2833"
+    "source": "Official Bentley Systems logo from Wikimedia Commons (File:Bentley Systems logo.svg), fitted on a tile. No OpenBuildings-specific app icon was found; SYNCHRO / iTwin listings were not used because they are different products. Checked Nov 2026."
   },
   "allplan": {
-    "official": false,
+    "official": true,
     "file": "allplan.png",
-    "source": "Generated initials tile (AL) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "AL",
-    "color": "#0077C8"
+    "source": "Official ALLPLAN ring mark cropped from the official ALLPLAN logo SVG on Wikimedia Commons (File:Allplan logo.svg), checked Nov 2026."
   },
   "bricscad-bim": {
-    "official": false,
+    "official": true,
     "file": "bricscad-bim.png",
-    "source": "Generated initials tile (Br) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "Br",
-    "color": "#C8102E"
+    "source": "Official BricsCAD mark cropped from the official BricsCAD logo on Wikimedia Commons (File:LOGO-RGB- BricsCAD.png), checked Nov 2026."
   },
   "ctc": {
-    "official": false,
+    "official": true,
     "file": "ctc.png",
-    "source": "Generated initials tile (CT) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "CT",
-    "color": "#1F4E79"
+    "source": "Official CTC Software wordmark from ctcsoftware.com (theme logo), fitted on a tile, checked Nov 2026."
   },
   "revitlookup": {
-    "official": false,
+    "official": true,
     "file": "revitlookup.png",
-    "source": "Generated initials tile (RL) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "RL",
-    "color": "#5B4B8A"
+    "source": "Official RevitLookup ProductIcon.png from the lookup-foundation/RevitLookup GitHub repository (develop branch), checked Nov 2026."
   },
   "bird-tools": {
-    "official": false,
+    "official": true,
     "file": "bird-tools.png",
-    "source": "Generated initials tile (BT) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "BT",
-    "color": "#E87722"
+    "source": "Official Bird Tools logo from birdtools-developers.com/images/logo.png, fitted on a tile, checked Nov 2026."
   },
   "coins": {
     "official": false,
@@ -200,11 +184,9 @@
     "color": "#2E6BFF"
   },
   "xrev-transmit": {
-    "official": false,
+    "official": true,
     "file": "xrev-transmit.png",
-    "source": "Generated initials tile (XT) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "XT",
-    "color": "#F15A24"
+    "source": "Official Xrev mark cropped from the official Xrev logo at xrev.com.au/images/xrev_logo.png, fitted on a tile, checked Nov 2026."
   },
   "agacad": {
     "official": false,
@@ -228,18 +210,14 @@
     "color": "#0696D7"
   },
   "konekt": {
-    "official": false,
+    "official": true,
     "file": "konekt.png",
-    "source": "Generated initials tile (K) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "K",
-    "color": "#1B365D"
+    "source": "Official Newforma app icon from the Apple App Store (Newforma, seller Newforma), used for Newforma Konekt. A same-size logo icon also appears at newforma.com (2023_newformalogoicon, 270 px). Checked Nov 2026."
   },
   "solibri": {
-    "official": false,
+    "official": true,
     "file": "solibri.png",
-    "source": "Generated initials tile (S) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "S",
-    "color": "#E30613"
+    "source": "Official Solibri S app icon (apple-touch icon from solibri.com; also published as s-icon.svg on solibri-assets.s3.amazonaws.com), checked Nov 2026."
   },
   "advance-steel": {
     "official": false,
@@ -270,45 +248,33 @@
     "color": "#00529B"
   },
   "victaulic": {
-    "official": false,
+    "official": true,
     "file": "victaulic.png",
-    "source": "Generated initials tile (V) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "V",
-    "color": "#E31837"
+    "source": "Official Victaulic logo from victaulic.com (cropped-victaulic-home / wordmark), fitted on a tile. The Victaulic SpoolTracker App Store icon was not used because it is a different product. Checked Nov 2026."
   },
   "enscape": {
-    "official": false,
+    "official": true,
     "file": "enscape.png",
-    "source": "Generated initials tile (E) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "E",
-    "color": "#00A89A"
+    "source": "Official Enscape E mark cropped from the official Enscape logo SVG on Wikimedia Commons (File:Enscape-logo-color-black-rgb.svg), checked Nov 2026."
   },
   "twinmotion": {
-    "official": false,
+    "official": true,
     "file": "twinmotion.png",
-    "source": "Generated initials tile (TM) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "TM",
-    "color": "#00A5E3"
+    "source": "Official Twinmotion product mark (Simple Icons official-style monochrome mark, matching the vendor\u2019s T symbol), fitted on a tile. The Twinmotion and Unreal Engine sites returned HTTP 403 for favicon/icon paths. Checked Nov 2026."
   },
   "3ds-max": {
-    "official": false,
+    "official": true,
     "file": "3ds-max.png",
-    "source": "Generated initials tile (3M) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "3M",
-    "color": "#00A8A8"
+    "source": "Official Autodesk 3ds Max desktop/app icon from the 2022 rebrand, Wikimedia Commons (File:Autodesk 3D Studio Max Icon from 2022 rebrand.jpg), checked Nov 2026."
   },
   "v-ray": {
-    "official": false,
+    "official": true,
     "file": "v-ray.png",
-    "source": "Generated initials tile (VR) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "VR",
-    "color": "#E31C3D"
+    "source": "Official Chaos V-Ray product icon (workflow-widget-v-ray-icon-color-32.svg) from static.chaos.com, checked Nov 2026."
   },
   "vantage": {
-    "official": false,
+    "official": true,
     "file": "vantage.png",
-    "source": "Generated initials tile (VG) \u2014 no official desktop/app icon found this session, checked Nov 2026.",
-    "initials": "VG",
-    "color": "#4B2C6D"
+    "source": "Official Chaos Vantage logo (vantage-logo-color-white-rgb.svg) from static.chaos.com, fitted on a tile, checked Nov 2026."
   }
 }
