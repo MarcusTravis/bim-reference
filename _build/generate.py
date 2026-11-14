@@ -13,6 +13,8 @@ NAV = [
     ("coordination.html", "Coordination"),
     ("spooling.html", "Spooling"),
     ("visualization.html", "Visualization"),
+    ("scanning.html", "Scanning"),
+    ("drones.html", "Drones"),
     ("updates.html", "Updates"),
 ]
 HERO_SVG = (BUILD / "hero.svg").read_text()
@@ -20,7 +22,7 @@ COMMON_HOW = """
 <li><strong>Popularity</strong> is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent firm surveys, review directories, or marketplace ranks — relative to the other products on this page, not a computed formula.</li>
 <li><strong>Captions</strong> name the source and a “checked Nov 2026” date. If there was no usable source, the caption says “Editorial estimate.”</li>
 <li><strong>Learning curve</strong> is editorial (Gentler / Moderate / Steep) based on typical new-user experience, not a test score.</li>
-<li><strong>Cost</strong> is a five-step scale (Free / $ / $$ / $$$ / $$$$) for a single commercial seat. See “How cost is rated.” Captions cite a source or say the rating is an estimate.</li>
+<li><strong>Cost</strong> is a five-step scale (Free / $ / $$ / $$$ / $$$$). See “How cost is rated” for the band definitions on this page. Captions cite a source or say the rating is an estimate.</li>
 """
 
 def e(s):
@@ -122,7 +124,34 @@ def wrap(inner):
 
 def write_catalog(sec):
     data = json.loads((BUILD / sec["json"]).read_text())
-    payload = [{k: d[k] for k in ("name","maker","knownFor","tags","price","pop","popCaption","cost","costCaption","learn","pro","con","url","icon","iconOfficial")} for d in data]
+    base_keys = ("name","maker","knownFor","tags","price","pop","popCaption","cost","costCaption","learn","pro","con","url","icon","iconOfficial")
+    extra_cols = sec.get("extraCols") or []
+    extra_keys = [c["key"] for c in extra_cols]
+    payload = [{k: d[k] for k in list(base_keys) + extra_keys if k in d} for d in data]
+    first_col = sec.get("firstCol", "Software")
+    table_class = "chart chart-wide" if extra_cols else "chart"
+    extra_ths = "".join(f'\n          <th>{e(c["label"])}</th>' for c in extra_cols)
+    colspan = 7 + len(extra_cols)
+    extras_js = json.dumps(extra_keys)
+    if sec.get("kind") == "hardware":
+        cost_how = """        <li>Cost on this page is a purchase-price band for one unit, or a clearly described kit, not an annual software seat. Always confirm current pricing with the vendor.</li>
+        <li><strong>$</strong> — under about $15,000.</li>
+        <li><strong>$$</strong> — about $15,000–40,000.</li>
+        <li><strong>$$$</strong> — about $40,000–80,000.</li>
+        <li><strong>$$$$</strong> — about $80,000+, or quote-only with no public list price found this session.</li>
+        <li>Captions cite an official shop, an authorized reseller listing, or say the band is an estimate. No dollar amounts were invented.</li>"""
+        visual_how = "The first column is a product photo from the vendor, stored locally and fitted to the same 128 px rounded tile used on the software charts. If no official photo could be fetched this session, the tile is a generated illustration in the same style."
+        visual_title = "About the photos"
+    else:
+        cost_how = """        <li>Cost uses a published annual price for one commercial seat when we could find one this session: the cheapest official annual rate, or monthly × 12 if only monthly is listed. Perpetual licenses are rated on the first-year purchase price.</li>
+        <li><strong>Free</strong> — no license fee for the core product (open source or free commercial use).</li>
+        <li><strong>$</strong> — under about $500 / year.</li>
+        <li><strong>$$</strong> — about $500–2,000 / year.</li>
+        <li><strong>$$$</strong> — about $2,000–5,000 / year.</li>
+        <li><strong>$$$$</strong> — about $5,000+ / year, or quote-only enterprise pricing with no public list price.</li>
+        <li>If the vendor only quotes, or no public figure turned up, the caption says so and the band is an editorial estimate — never an invented dollar amount. Always confirm current pricing with the vendor.</li>"""
+        visual_how = "The first column is meant to look like the software’s desktop shortcut. Official vendor or App Store app icons are used when we could find one this session. If not, the tile is a generated initials icon in the same rounded-square style."
+        visual_title = "About the icons"
     html = head(sec["title"] + " · BIM Reference Library", sec["description"], "/" + sec["slug"])
     html += "<body>\n" + wrap(nav(sec["file"]))
     html += '<div class="wrap chart-wrap" id="main">\n'
@@ -144,11 +173,11 @@ def write_catalog(sec):
   </div>
   <p class="count" id="count"></p>
   <div class="table-box">
-    <table class="chart">
+    <table class="{table_class}">
       <thead>
         <tr>
-          <th><button type="button" class="th-btn" data-k="name">Software</button></th>
-          <th>Known for</th>
+          <th><button type="button" class="th-btn" data-k="name">{e(first_col)}</button></th>
+          <th>Known for</th>{extra_ths}
           <th><button type="button" class="th-btn" data-k="pop">Popularity</button></th>
           <th><button type="button" class="th-btn" data-k="cost">Cost</button></th>
           <th class="learn-th">Learning curve<span class="th-note">editorial rating</span></th>
@@ -168,13 +197,7 @@ def write_catalog(sec):
     <section>
       <h2>How cost is rated</h2>
       <ul>
-        <li>Cost uses a published annual price for one commercial seat when we could find one this session: the cheapest official annual rate, or monthly × 12 if only monthly is listed. Perpetual licenses are rated on the first-year purchase price.</li>
-        <li><strong>Free</strong> — no license fee for the core product (open source or free commercial use).</li>
-        <li><strong>$</strong> — under about $500 / year.</li>
-        <li><strong>$$</strong> — about $500–2,000 / year.</li>
-        <li><strong>$$$</strong> — about $2,000–5,000 / year.</li>
-        <li><strong>$$$$</strong> — about $5,000+ / year, or quote-only enterprise pricing with no public list price.</li>
-        <li>If the vendor only quotes, or no public figure turned up, the caption says so and the band is an editorial estimate — never an invented dollar amount. Always confirm current pricing with the vendor.</li>
+{cost_how}
       </ul>
     </section>
     <section>
@@ -186,8 +209,8 @@ def write_catalog(sec):
       <p>This site is ad-free and has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement.</p>
     </section>
     <section>
-      <h2>About the icons</h2>
-      <p>The first column is meant to look like the software’s desktop shortcut. Official vendor or App Store app icons are used when we could find one this session. If not, the tile is a generated initials icon in the same rounded-square style.</p>
+      <h2>{e(visual_title)}</h2>
+      <p>{e(visual_how)}</p>
     </section>
   </div>
 </div>
@@ -196,7 +219,7 @@ def write_catalog(sec):
 <script src="scroll-hint.js"></script>
 <script>
 const DATA = {json.dumps(payload, ensure_ascii=False)};
-initCatalog(DATA, {{ noun: {json.dumps(sec["noun"])}, defaultSort: "pop" }});
+initCatalog(DATA, {{ noun: {json.dumps(sec["noun"])}, defaultSort: "pop", extraCols: {extras_js} }});
 </script>
 </body>
 </html>
@@ -204,8 +227,10 @@ initCatalog(DATA, {{ noun: {json.dumps(sec["noun"])}, defaultSort: "pop" }});
     (ROOT / sec["file"]).write_text(html)
     sourced = sum(1 for d in data if d["sourced"])
     editorial = len(data) - sourced
-    print(f"wrote {sec['file']}: {len(data)} products, sourced={sourced}, editorial={editorial}")
-    return len(data), sourced, editorial
+    cost_s = sum(1 for d in data if d.get("costSourced"))
+    official = sum(1 for d in data if d.get("iconOfficial"))
+    print(f"wrote {sec['file']}: {len(data)} products, pop sourced={sourced}, editorial={editorial}, cost sourced={cost_s}, official visuals={official}")
+    return len(data), sourced, editorial, cost_s, official
 
 def write_home(counts):
     cards = [
@@ -214,6 +239,8 @@ def write_home(counts):
         ("coordination.html", f"{counts['coordination'][0]} tools", "Coordination &amp; clash", "Navisworks, BIM Collaborate, Revizto, Solibri, and issue-tracking tools."),
         ("spooling.html", f"{counts['spooling'][0]} tools", "Spooling &amp; fabrication", "SysQue, Fabrication, EVOLVE, MSUITE, Stratus, and steel shop platforms."),
         ("visualization.html", f"{counts['visualization'][0]} tools", "Visualization", "Enscape, Twinmotion, Lumion, D5, V-Ray, and related renderers."),
+        ("scanning.html", f"{counts['scanning'][0]} scanners", "Scanning hardware", "Leica, FARO, Trimble, NavVis, Matterport, and other scan-to-BIM lasers."),
+        ("drones.html", f"{counts['drones'][0]} drones", "Drones for AEC &amp; BIM", "DJI enterprise platforms, Skydio, Wingtra, Autel, and other reality-capture aircraft."),
     ]
     grid = "".join(
         f'<a class="card" href="{href}"><span class="cnt">{cnt}</span><span class="nm">{name}</span><span class="ds">{ds}</span><span class="go">Open guide →</span></a>'
@@ -221,13 +248,13 @@ def write_home(counts):
     )
     html = head(
         "BIM Reference Library",
-        "Free, ad-free guide to BIM software: modeling tools, Revit add-ins, coordination, spooling, and visualization, with cited popularity ratings.",
+        "Free, ad-free guide to BIM software and reality-capture hardware: modeling, Revit add-ins, coordination, spooling, visualization, scanning, and drones, with cited ratings.",
         "/",
     )
     html += "<body>\n" + wrap(nav("index.html"))
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent BIM software guide", "BIM Reference Library",
-                 "A free, ad-free field guide to the software people actually use to design, coordinate, fabricate, and visualize buildings. Popularity is cited, not invented.")
+                 "A free, ad-free field guide to the software and reality-capture hardware people actually use to design, capture, coordinate, fabricate, and visualize buildings. Popularity is cited, not invented.")
     html += f"""  <section class="grp">
     <h2>Start here</h2>
     <div class="grid">{grid}</div>
@@ -239,7 +266,7 @@ def write_home(counts):
     </section>
     <section>
       <h2>Where the numbers come from</h2>
-      <p>The main firm-adoption source is the Confluence 2025 AEC Tech Stack Survey (Q4 2025). European figures for Archicad and ALLPLAN come from the European Architectural Barometer Q4 2025. Review counts come from G2, checked in November 2026. If a product has no usable source, the caption says “Editorial estimate.”</p>
+      <p>The main firm-adoption source for software is the Confluence 2025 AEC Tech Stack Survey (Q4 2025). European figures for Archicad and ALLPLAN come from the European Architectural Barometer Q4 2025. Review counts come from G2, checked in November 2026. Scanning and drone pages have no comparable product-level firm survey in that report, so popularity there is an editorial judgment unless a caption cites another source. If a product has no usable source, the caption says “Editorial estimate.”</p>
     </section>
     <section>
       <h2>What this is not</h2>
@@ -305,6 +332,11 @@ def write_updates():
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>Replaced generated initials tiles with official app icons or official product/vendor marks on all five section charts wherever those assets could be found. The Learning curve column now notes “editorial rating” once in the header instead of repeating “editorial” on every row.</p>
     </div>
+    <div class="log">
+      <h3>Scanning hardware and AEC drones</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>Added two new guides — Scanning hardware and Drones for AEC and BIM — each with a homepage tile and the same scrollable comparison chart used on the software sections. First-column visuals are official product photos when we could fetch them, or a generated illustration if not. Popularity is editorial on these pages (the Confluence 2025 survey is software-only). Cost is a purchase-price band with official or reseller citations, or an estimate when the vendor only quotes.</p>
+    </div>
   </article>
 </div>
 {footer()}
@@ -344,6 +376,8 @@ def write_404():
     <a class="card" href="{CANON}/coordination"><span class="nm">Coordination</span><span class="go">Open →</span></a>
     <a class="card" href="{CANON}/spooling"><span class="nm">Spooling</span><span class="go">Open →</span></a>
     <a class="card" href="{CANON}/visualization"><span class="nm">Visualization</span><span class="go">Open →</span></a>
+    <a class="card" href="{CANON}/scanning"><span class="nm">Scanning</span><span class="go">Open →</span></a>
+    <a class="card" href="{CANON}/drones"><span class="nm">Drones</span><span class="go">Open →</span></a>
   </div>
 </div>
 {footer()}
@@ -354,7 +388,7 @@ def write_404():
     print("wrote 404.html")
 
 def write_meta(stats):
-    pages = ["/", "/modeling", "/revit-addins", "/coordination", "/spooling", "/visualization", "/updates"]
+    pages = ["/", "/modeling", "/revit-addins", "/coordination", "/spooling", "/visualization", "/scanning", "/drones", "/updates"]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p in pages:
         sm.append(f"  <url><loc>{CANON}{p}</loc></url>")
@@ -373,7 +407,7 @@ def write_meta(stats):
 
 **Live site:** [{CANON}]({CANON})
 
-A free, ad-free field guide to BIM software — modeling tools, Revit add-ins, coordination and clash detection, spooling and fabrication, and visualization. Built as a plain static site (HTML, CSS, and JavaScript, no build step).
+A free, ad-free field guide to BIM software and reality-capture hardware — modeling tools, Revit add-ins, coordination and clash detection, spooling and fabrication, visualization, scanning hardware, and AEC drones. Built as a plain static site (HTML, CSS, and JavaScript, no build step).
 
 There are no ads and no affiliate links. Official-site links go to the vendor.
 
@@ -458,6 +492,16 @@ Replaced generated initials tiles with official app icons or official product/ve
 Nine tiles remain generated initials because no distinct official app icon or product mark could be fetched this session (Autodesk, UNIFI, AGACAD, COINS, SysQue, and Tekla PowerFab pages blocked a bot client or only exposed a parent-brand mark already used by another row): Navisworks, BIM Collaborate Pro, Advance Steel, Autodesk Fabrication, UNIFI, AGACAD, COINS Auto-Section Box, SysQue, and Tekla PowerFab.
 
 On all five section charts, the Learning curve column now carries a single “editorial rating” note in the header. The per-row “editorial” caption was removed. The notes section still explains that learning-curve labels are editorial.
+
+## {CHECKED} — Scanning hardware and AEC drones
+
+Added two new section guides — Scanning hardware and Drones for AEC and BIM — with homepage tiles, nav links on every page, sitemap entries, and the same ammo-style comparison chart used on the software sections (filter chips, search, sort, sticky sortable headers, mobile scroll hint, first-column visual, popularity and cost with source captions, and a header-level “editorial rating” note on Learning curve). Hardware charts add comparison columns for type, range, accuracy, and scan speed (scanners) or payload, flight time, RTK, and LiDAR (drones). Those extra columns appear only on the new pages; the five software charts are unchanged.
+
+Popularity on both new pages is editorial. The Confluence 2025 AEC Tech Stack Survey is software-only. BuiltWorlds 2026 Field Solutions reported category-level reality-capture use (drones 100%, 360 photography 88%, LiDAR scanners 81% among organizations already using reality capture) but not product shares. No firm-percentage or review counts were invented.
+
+Cost uses a purchase-price band for one unit or a clearly described kit: $ under about $15,000; $$ about $15,000–40,000; $$$ about $40,000–80,000; $$$$ about $80,000+ or quote-only. Official Leica Geosystems shop prices checked November 2026: “Leica RTC” $46,000, BLK360 $26,500, BLK2GO $37,500 (BLK2GO PULSE $42,800). Official Matterport Pro3 starting at $1,995 plus a required Professional subscription from $245/month (matterport.com/pro3). Authorized reseller Moss Geospatial listings for FARO Focus Premium $41,860 / $51,950 / $63,900 (70 / 150 / 350 m) and Focus Core $32,940, and FARO Orbis $56,000. Authorized DJI reseller listings: Matrice 350 RTK aircraft $11,500 (Vertex Unmanned) / $11,129 drone-only (Indy Drone Supply), Zenmuse L2 $15,490, Zenmuse P1 $6,500, Mavic 3 Enterprise $4,509, Matrice 4E Worry-Free Plus Combo $5,189 (Vertex Unmanned). Other products are quote-only estimates with no invented dollar amount.
+
+First-column visuals are official vendor product photos, stored locally, when they could be fetched; FARO Focus, FARO Orbis, FARO ZEB Horizon, NavVis MLX, Autel EVO Max 4T, and WingtraRAY use generated illustration tiles because no clean official packshot was retrieved this session.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Drones for AEC and BIM · BIM Reference Library</title>
+<meta name="description" content="Reality-capture, photogrammetry, and LiDAR drones commonly used by BIM and AEC firms for site survey and as-builts.">
+<link rel="canonical" href="https://bimchart.net/drones">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BIM Reference Library">
+<meta property="og:title" content="Drones for AEC and BIM · BIM Reference Library">
+<meta property="og:description" content="Reality-capture, photogrammetry, and LiDAR drones commonly used by BIM and AEC firms for site survey and as-builts.">
+<meta property="og:url" content="https://bimchart.net/drones">
+<meta property="og:image" content="https://bimchart.net/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BIM Reference Library: a dark blueprint grid and city skyline">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Drones for AEC and BIM · BIM Reference Library">
+<meta name="twitter:description" content="Reality-capture, photogrammetry, and LiDAR drones commonly used by BIM and AEC firms for site survey and as-builts.">
+<meta name="twitter:image" content="https://bimchart.net/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="page-bg"></div>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topnav" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" fill="none" stroke="#3de8ff" stroke-width="1"/>
+        <path d="M4 24 V12 H8 V24 M10 24 V8 H16 V24 M18 24 V14 H24 V24" fill="#3de8ff"/>
+        <path d="M4 24 H24" stroke="#3de8ff" fill="none"/>
+      </svg>
+      BIM Reference Library
+    </a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="modeling.html">Modeling</a></li><li><a href="revit-addins.html">Revit add-ins</a></li><li><a href="coordination.html">Coordination</a></li><li><a href="spooling.html">Spooling</a></li><li><a href="visualization.html">Visualization</a></li><li><a href="scanning.html">Scanning</a></li><li><a href="drones.html" aria-current="page">Drones</a></li><li><a href="updates.html">Updates</a></li></ul>
+  </div>
+</nav>
+<div class="wrap chart-wrap" id="main">
+<header class="hero">
+  <div class="hero-art"><svg class="hero-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07131c"/>
+      <stop offset="55%" stop-color="#0a1824"/>
+      <stop offset="100%" stop-color="#05080c"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3de8ff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#3de8ff" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="bldg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#152433"/>
+      <stop offset="100%" stop-color="#0b141c"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <g stroke="#3de8ff" stroke-opacity="0.28" fill="none" stroke-width="1">
+    <path d="M-80,410 L1280,410"/>
+    <path d="M-40,382 L1240,382" stroke-opacity="0.26"/>
+    <path d="M0,356 L1200,356" stroke-opacity="0.24"/>
+    <path d="M40,332 L1160,332" stroke-opacity="0.22"/>
+    <path d="M80,310 L1120,310" stroke-opacity="0.2"/>
+    <path d="M120,290 L1080,290" stroke-opacity="0.18"/>
+    <path d="M160,272 L1040,272" stroke-opacity="0.16"/>
+    <path d="M200,256 L1000,256" stroke-opacity="0.14"/>
+    <path d="M240,242 L960,242" stroke-opacity="0.12"/>
+    <path d="M280,230 L920,230" stroke-opacity="0.1"/>
+    <path d="M600,200 L-200,420" stroke-opacity="0.16"/>
+    <path d="M600,200 L0,420" stroke-opacity="0.18"/>
+    <path d="M600,200 L200,420" stroke-opacity="0.2"/>
+    <path d="M600,200 L400,420" stroke-opacity="0.22"/>
+    <path d="M600,200 L600,420" stroke-opacity="0.24"/>
+    <path d="M600,200 L800,420" stroke-opacity="0.22"/>
+    <path d="M600,200 L1000,420" stroke-opacity="0.2"/>
+    <path d="M600,200 L1200,420" stroke-opacity="0.18"/>
+    <path d="M600,200 L1400,420" stroke-opacity="0.16"/>
+  </g>
+  <g fill="none" stroke="#8cefff" stroke-opacity="0.55" stroke-width="1.2">
+    <rect x="40" y="300" width="160" height="90"/>
+    <rect x="70" y="318" width="50" height="40"/>
+    <rect x="128" y="318" width="50" height="54"/>
+    <circle cx="95" cy="338" r="6" stroke-opacity="0.7"/>
+    <path d="M40,345 H200"/>
+    <path d="M210,300 v90"/>
+    <rect x="220" y="328" width="110" height="62"/>
+    <path d="M220,350 h110"/>
+    <path d="M70,410 h280" stroke-opacity="0.35"/>
+    <path d="M70,410 v-8 M140,410 v-8 M210,410 v-8 M280,410 v-8" stroke-opacity="0.4"/>
+  </g>
+  <g fill="url(#bldg)" stroke="#3de8ff" stroke-opacity="0.45" stroke-width="1">
+    <rect x="560" y="118" width="36" height="140"/>
+    <rect x="598" y="86" width="44" height="172"/>
+    <rect x="644" y="130" width="30" height="128"/>
+    <rect x="676" y="70" width="52" height="188"/>
+    <rect x="730" y="100" width="38" height="158"/>
+    <rect x="770" y="48" width="48" height="210"/>
+    <rect x="820" y="92" width="34" height="166"/>
+    <rect x="856" y="64" width="58" height="194"/>
+    <rect x="916" y="110" width="40" height="148"/>
+    <rect x="958" y="80" width="46" height="178"/>
+    <rect x="1006" y="128" width="28" height="130"/>
+    <rect x="1036" y="96" width="50" height="162"/>
+    <rect x="1088" y="140" width="32" height="118"/>
+    <rect x="1122" y="108" width="42" height="150"/>
+  </g>
+  <g fill="#3de8ff" filter="url(#soft)" opacity="0.85">
+    <rect x="566" y="128" width="3" height="4"/><rect x="574" y="128" width="3" height="4"/>
+    <rect x="582" y="128" width="3" height="4"/><rect x="566" y="140" width="3" height="4"/>
+    <rect x="574" y="140" width="3" height="4"/><rect x="582" y="152" width="3" height="4"/>
+    <rect x="566" y="164" width="3" height="4"/><rect x="582" y="176" width="3" height="4"/>
+    <rect x="606" y="96" width="3" height="4"/><rect x="616" y="96" width="3" height="4"/>
+    <rect x="626" y="108" width="3" height="4"/><rect x="606" y="120" width="3" height="4"/>
+    <rect x="616" y="132" width="3" height="4"/><rect x="626" y="144" width="3" height="4"/>
+    <rect x="606" y="156" width="3" height="4"/><rect x="616" y="180" width="3" height="4"/>
+    <rect x="686" y="82" width="4" height="5"/><rect x="698" y="82" width="4" height="5"/>
+    <rect x="710" y="94" width="4" height="5"/><rect x="686" y="106" width="4" height="5"/>
+    <rect x="698" y="118" width="4" height="5"/><rect x="710" y="130" width="4" height="5"/>
+    <rect x="686" y="154" width="4" height="5"/><rect x="698" y="178" width="4" height="5"/>
+    <rect x="780" y="60" width="4" height="5"/><rect x="792" y="60" width="4" height="5"/>
+    <rect x="804" y="72" width="4" height="5"/><rect x="780" y="84" width="4" height="5"/>
+    <rect x="792" y="96" width="4" height="5"/><rect x="804" y="120" width="4" height="5"/>
+    <rect x="780" y="144" width="4" height="5"/><rect x="792" y="168" width="4" height="5"/>
+    <rect x="868" y="76" width="4" height="5"/><rect x="880" y="76" width="4" height="5"/>
+    <rect x="892" y="88" width="4" height="5"/><rect x="868" y="100" width="4" height="5"/>
+    <rect x="880" y="124" width="4" height="5"/><rect x="892" y="148" width="4" height="5"/>
+    <rect x="968" y="92" width="4" height="5"/><rect x="980" y="104" width="4" height="5"/>
+    <rect x="992" y="116" width="4" height="5"/><rect x="968" y="140" width="4" height="5"/>
+    <rect x="1046" y="108" width="4" height="5"/><rect x="1058" y="120" width="4" height="5"/>
+    <rect x="1070" y="144" width="4" height="5"/><rect x="1046" y="168" width="4" height="5"/>
+    <rect x="1132" y="120" width="3" height="4"/><rect x="1142" y="132" width="3" height="4"/>
+    <rect x="1152" y="156" width="3" height="4"/>
+  </g>
+  <rect x="0" y="250" width="1200" height="170" fill="url(#glow)" opacity="0.25"/>
+</svg>
+</div>
+  <div class="hero-copy">
+    <span class="eyebrow">Independent BIM software guide</span>
+    <h1>Drones for AEC and BIM</h1>
+    <p class="lede">The aircraft BIM and survey teams fly for photogrammetry and aerial LiDAR — DJI enterprise platforms first, plus the US-made, VTOL, and fixed-wing options that show up beside them.</p>
+    <p class="checked">Data last checked: <time datetime="2026-11-13">Nov 13, 2026</time> · <a href="updates.html">What changed</a></p>
+  </div>
+</header>
+  <div id="catalog">
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Filter"><button class="chip" data-f="all" aria-pressed="true">All</button>
+<button class="chip" data-f="Enterprise" aria-pressed="false">Enterprise</button>
+<button class="chip" data-f="LiDAR" aria-pressed="false">LiDAR</button>
+<button class="chip" data-f="Photogrammetry" aria-pressed="false">Photogrammetry</button>
+<button class="chip" data-f="RTK" aria-pressed="false">RTK</button>
+<button class="chip" data-f="Compact" aria-pressed="false">Compact</button>
+<button class="chip" data-f="Mapping" aria-pressed="false">Mapping</button>
+<button class="chip" data-f="Autonomous" aria-pressed="false">Autonomous</button>
+<button class="chip" data-f="US-made" aria-pressed="false">US-made</button>
+<button class="chip" data-f="Inspection" aria-pressed="false">Inspection</button>
+<button class="chip" data-f="Heavy lift" aria-pressed="false">Heavy lift</button>
+<button class="chip" data-f="Thermal" aria-pressed="false">Thermal</button>
+<button class="chip" data-f="VTOL" aria-pressed="false">VTOL</button>
+<button class="chip" data-f="Fixed wing" aria-pressed="false">Fixed wing</button></div>
+    <label class="search">Search
+      <input type="search" id="search" placeholder="Name, maker, or tag" autocomplete="off">
+    </label>
+    <label class="sort">Sort
+      <select id="sort">
+        <option value="pop">Popularity</option>
+        <option value="name">Name</option>
+        <option value="cost-asc">Cost: cheapest first</option>
+        <option value="cost-desc">Cost: priciest first</option>
+      </select>
+    </label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="table-box">
+    <table class="chart chart-wide">
+      <thead>
+        <tr>
+          <th><button type="button" class="th-btn" data-k="name">Drone</button></th>
+          <th>Known for</th>
+          <th>Sensor / payload</th>
+          <th>Flight time</th>
+          <th>RTK</th>
+          <th>LiDAR</th>
+          <th><button type="button" class="th-btn" data-k="pop">Popularity</button></th>
+          <th><button type="button" class="th-btn" data-k="cost">Cost</button></th>
+          <th class="learn-th">Learning curve<span class="th-note">editorial rating</span></th>
+          <th>Pros &amp; cons</th>
+          <th>Official site</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  </div>
+  <div class="notes">
+    <section>
+      <h2>How the ratings work</h2>
+      <ul>
+<li><strong>Popularity</strong> is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent firm surveys, review directories, or marketplace ranks — relative to the other products on this page, not a computed formula.</li>
+<li><strong>Captions</strong> name the source and a “checked Nov 2026” date. If there was no usable source, the caption says “Editorial estimate.”</li>
+<li><strong>Learning curve</strong> is editorial (Gentler / Moderate / Steep) based on typical new-user experience, not a test score.</li>
+<li><strong>Cost</strong> is a five-step scale (Free / $ / $$ / $$$ / $$$$). See “How cost is rated” for the band definitions on this page. Captions cite a source or say the rating is an estimate.</li>
+<li>Scores are relative to the other AEC/BIM reality-capture drones on this page.</li></ul>
+    </section>
+    <section>
+      <h2>How cost is rated</h2>
+      <ul>
+        <li>Cost on this page is a purchase-price band for one unit, or a clearly described kit, not an annual software seat. Always confirm current pricing with the vendor.</li>
+        <li><strong>$</strong> — under about $15,000.</li>
+        <li><strong>$$</strong> — about $15,000–40,000.</li>
+        <li><strong>$$$</strong> — about $40,000–80,000.</li>
+        <li><strong>$$$$</strong> — about $80,000+, or quote-only with no public list price found this session.</li>
+        <li>Captions cite an official shop, an authorized reseller listing, or say the band is an estimate. No dollar amounts were invented.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sources and limits</h2>
+      <p>The Confluence 2025 AEC Tech Stack Survey covers software only and has no product-level drone penetration figures. BuiltWorlds 2026 reported that drones were used by 100% of surveyed organizations that already use reality capture — again a category-level figure, not a brand share. Popularity here is an editorial judgment; no firm-percentage or review counts were invented. Cost is a purchase-price band for one aircraft or a clearly described kit. DJI figures are authorized-reseller listings from Vertex Unmanned and Indy Drone Supply, checked November 2026, because the official DJI store did not return a public US list price to this session. Quote-only aircraft are marked as estimates. Flight time and payload notes come from official vendor pages checked this session.</p>
+    </section>
+    <section>
+      <h2>Independence</h2>
+      <p>This site is ad-free and has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement.</p>
+    </section>
+    <section>
+      <h2>About the photos</h2>
+      <p>The first column is a product photo from the vendor, stored locally and fitted to the same 128 px rounded tile used on the software charts. If no official photo could be fetched this session, the tile is a generated illustration in the same style.</p>
+    </section>
+  </div>
+</div>
+<footer class="site-footer">
+<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
+</footer>
+
+<script src="app.js"></script>
+<script src="scroll-hint.js"></script>
+<script>
+const DATA = [{"name": "DJI Matrice 350 RTK", "maker": "DJI Enterprise", "knownFor": "The enterprise workhorse BIM and survey teams put a Zenmuse L2 (LiDAR) or P1 (photogrammetry) on for site capture.", "tags": ["Enterprise", "LiDAR", "Photogrammetry", "RTK"], "price": null, "pop": 5, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 2, "costCaption": "Authorized reseller listings, checked Nov 2026: Matrice 350 RTK aircraft $11,500 (store.vertexunmanned.com) / $11,129 drone-only (indydronesupply.com); Zenmuse L2 $15,490 and Zenmuse P1 $6,500 (Vertex). Rated on a typical aircraft + L2 kit (about $27,000).", "learn": "Moderate", "pro": "IP55 airframe, long endurance, and the standard mount for L2 / P1 site work", "con": "A full LiDAR kit is a much larger check than the aircraft alone, and US availability is through dealers", "url": "https://enterprise.dji.com/matrice-350-rtk", "icon": "dji-m350", "iconOfficial": true, "payload": "Zenmuse L2 LiDAR or Zenmuse P1 45 MP photogrammetry (and other Zenmuse payloads)", "flightTime": "Up to 55 minutes max (official M350 page, with noted conditions)", "rtk": "Yes, built-in RTK", "lidar": "Yes, with Zenmuse L2"}, {"name": "DJI Mavic 3 Enterprise", "maker": "DJI Enterprise", "knownFor": "The compact RTK mapping drone most AEC teams start with for site photogrammetry.", "tags": ["Compact", "Photogrammetry", "RTK", "Mapping"], "price": null, "pop": 5, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 1, "costCaption": "Authorized reseller Vertex Unmanned lists the DJI Mavic 3 Enterprise at $4,509 (store.vertexunmanned.com, checked Nov 2026).", "learn": "Gentler", "pro": "Portable, RTK-capable, and the usual first mapping drone in a BIM/survey kit", "con": "No native LiDAR payload; larger or vegetated sites may need an L2-class system", "url": "https://enterprise.dji.com/mavic-3-enterprise", "icon": "dji-mavic-3e", "iconOfficial": true, "payload": "Integrated wide camera with mechanical shutter; 56× zoom on the 3E; 3T adds a thermal camera", "flightTime": "Compact enterprise endurance; see official Mavic 3 Enterprise specs", "rtk": "Yes, with the official RTK module (centimeter-level, official page)", "lidar": "No"}, {"name": "DJI Matrice 4E", "maker": "DJI Enterprise", "knownFor": "The current compact Matrice 4 mapping model, aimed at geospatial, construction, and mining work.", "tags": ["Compact", "Photogrammetry", "Mapping", "RTK"], "price": null, "pop": 4.5, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 1, "costCaption": "Authorized reseller Vertex Unmanned lists the DJI Matrice 4E Worry-Free Plus Combo at $5,189 (store.vertexunmanned.com, checked Nov 2026).", "learn": "Moderate", "pro": "Newer compact flagship for mapping, with the usual DJI Terra / enterprise workflow", "con": "Newer than the Mavic 3E, so fleet standards and used-market supply are still catching up", "url": "https://enterprise.dji.com/matrice-4-series", "icon": "dji-matrice-4e", "iconOfficial": true, "payload": "Integrated multi-sensor mapping payload (official Matrice 4E geospatial model)", "flightTime": "See official Matrice 4 Series specifications", "rtk": "Yes, enterprise RTK workflow", "lidar": "No onboard LiDAR (L2 stays on the Matrice 350/400 class)"}, {"name": "Skydio X10", "maker": "Skydio", "knownFor": "The leading US-made autonomous enterprise drone, used for inspection and reality capture when obstacle avoidance and NDAA-style procurement matter.", "tags": ["Autonomous", "US-made", "Inspection", "Photogrammetry"], "price": null, "pop": 4, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 2, "costCaption": "Vendor quotes; no public list price was found this session. Band is an editorial estimate, not an invented dollar amount · checked Nov 2026", "learn": "Moderate", "pro": "Excellent autonomy and a US-made alternative to DJI for inspection and documentation", "con": "Quote-only this session, and it is not a drop-in L2 LiDAR mapping platform", "url": "https://www.skydio.com/x10", "icon": "skydio-x10", "iconOfficial": true, "payload": "Integrated multi-camera inspection / mapping sensors (official X10 page)", "flightTime": "See official Skydio X10 specifications", "rtk": "Yes, enterprise positioning options — confirm current kit with Skydio", "lidar": "No topographic LiDAR payload in the usual AEC sense"}, {"name": "Freefly Astro", "maker": "Freefly Systems", "knownFor": "US-made heavy-lift enterprise aircraft used for mapping payloads and cinema-grade cameras on AEC and industrial sites.", "tags": ["US-made", "Heavy lift", "Mapping", "RTK"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 2, "costCaption": "Vendor quotes; no public list price was found this session. Band is an editorial estimate, not an invented dollar amount · checked Nov 2026", "learn": "Moderate", "pro": "US-built, flexible payloads, and a serious alternative when DJI is not an option", "con": "Quote-only this session; less turnkey than a DJI L2/P1 kit", "url": "https://freeflysystems.com/astro", "icon": "freefly-astro", "iconOfficial": true, "payload": "Open payload bay for mapping cameras and third-party sensors", "flightTime": "See official Astro specifications", "rtk": "Yes, RTK / GNSS mapping configurations are sold with the platform", "lidar": "Possible with a third-party payload, not a built-in DJI L2-style kit"}, {"name": "Autel EVO Max 4T", "maker": "Autel Robotics", "knownFor": "A foldable enterprise hex-camera / thermal platform often shortlisted as the main non-DJI alternative for inspection and site documentation.", "tags": ["Enterprise", "Inspection", "Thermal", "Photogrammetry"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 1, "costCaption": "Vendor quotes; no public list price was found this session. Band is an editorial estimate, not an invented dollar amount · checked Nov 2026", "learn": "Moderate", "pro": "A capable, widely sold alternative when teams do not want a DJI airframe", "con": "No official public USD list price or clean product packshot was fetched this session", "url": "https://www.autelrobotics.com/", "icon": "autel-evo-max-4t", "iconOfficial": false, "payload": "Integrated wide, zoom, and thermal sensors (4T configuration)", "flightTime": "See official EVO Max Series specifications", "rtk": "RTK module available — confirm current kit with Autel", "lidar": "No"}, {"name": "WingtraRAY", "maker": "Wingtra", "knownFor": "The current Wingtra VTOL mapping drone (successor to WingtraOne), used for large-site photogrammetry and optional LiDAR from a single operator.", "tags": ["VTOL", "Photogrammetry", "LiDAR", "Mapping"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 3, "costCaption": "Vendor quotes; no public list price was found this session. Band is an editorial estimate, not an invented dollar amount · checked Nov 2026", "learn": "Moderate", "pro": "Covers large corridors and sites more efficiently than a multirotor, with a survey-grade workflow", "con": "Quote-only this session, and VTOL ops are a different skill than a Mavic-class aircraft", "url": "https://wingtra.com/mapping-drone-wingtraone/", "icon": "wingtra-ray", "iconOfficial": false, "payload": "Swappable mapping cameras and a LiDAR option (official WingtraRAY payload family)", "flightTime": "VTOL mapping endurance; see official WingtraRAY specifications", "rtk": "Yes, survey-grade GNSS / RTK workflow", "lidar": "Yes, with the official LiDAR payload option"}, {"name": "AgEagle eBee X", "maker": "AgEagle (formerly senseFly)", "knownFor": "The long-running senseFly fixed-wing mapper, still used by survey and AEC teams for corridor and site photogrammetry.", "tags": ["Fixed wing", "Photogrammetry", "Mapping", "RTK"], "price": null, "pop": 3, "popCaption": "Editorial estimate. Confluence 2025 is software-only; no product-level firm-penetration figure was found this session · checked Nov 2026", "cost": 2, "costCaption": "Vendor quotes; no public list price was found this session. Band is an editorial estimate, not an invented dollar amount · checked Nov 2026", "learn": "Moderate", "pro": "Efficient coverage of large sites, with a long official/senseFly heritage in survey shops", "con": "Fixed-wing ops need more space than a VTOL or multirotor; quote-only this session", "url": "https://eaglenxt.com/", "icon": "ebee-x", "iconOfficial": true, "payload": "Swappable senseFly / AgEagle mapping cameras", "flightTime": "Fixed-wing mapping endurance; see official eBee X specifications", "rtk": "Yes, RTK / PPK mapping configurations", "lidar": "No (camera-based photogrammetry platform)"}];
+initCatalog(DATA, { noun: "drones", defaultSort: "pop", extraCols: ["payload", "flightTime", "rtk", "lidar"] });
+</script>
+</body>
+</html>

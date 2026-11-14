@@ -2,7 +2,7 @@
 
 **Live site:** [https://bimchart.net](https://bimchart.net)
 
-A free, ad-free field guide to BIM software — modeling tools, Revit add-ins, coordination and clash detection, spooling and fabrication, and visualization. Built as a plain static site (HTML, CSS, and JavaScript, no build step).
+A free, ad-free field guide to BIM software and reality-capture hardware — modeling tools, Revit add-ins, coordination and clash detection, spooling and fabrication, visualization, scanning hardware, and AEC drones. Built as a plain static site (HTML, CSS, and JavaScript, no build step).
 
 There are no ads and no affiliate links. Official-site links go to the vendor.
 

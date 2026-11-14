@@ -505,3 +505,13 @@ body .sh-edge.r { background: linear-gradient(to left, var(--bg-2), transparent)
   html { scroll-behavior: auto; }
   a.card, a.pcard, a.card:hover { transition: none; transform: none; }
 }
+
+/* Extra comparison columns on hardware charts only */
+table.chart.chart-wide { min-width: 1960px; }
+.chart td.hw {
+  max-width: 22ch;
+  min-width: 11ch;
+  font-size: 13.5px;
+  color: var(--fg);
+  white-space: normal;
+}

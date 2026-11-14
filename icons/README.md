@@ -59,3 +59,25 @@ Nine products still use generated initials tiles. No distinct official app icon 
 - `sysque.png` — generated initials tile (SQ). No official SysQue app icon was found; the Trimble corporate mark was not reused because Trimble Connect already has its own icon.
 - `tekla-powerfab.png` — generated initials tile (PF). No official PowerFab-specific app icon was found; the Tekla corporate mark was not reused because Tekla Structures already uses it.
 - `unifi.png` — generated initials tile (U). unifilabs.com redirects to autodesk.com/products/autodesk-docs/features/content-catalog, which returned HTTP 403.
+
+## Hardware photos (scanning and drones)
+
+Official vendor product photos, stored as 128×128 rounded tiles, checked Nov 2026:
+
+- `matterport-pro3.png` — Official Matterport Pro3 product photo from matterport.com.
+- `leica-rtc360.png` — Official Leica RTC360 photograph from leica-geosystems.com, cropped to the scanner.
+- `leica-blk360.png` — Official Leica BLK360 product image from leica-geosystems.com.
+- `leica-blk2go.png` — Official Leica BLK2GO product image from leica-geosystems.com.
+- `leica-p50.png` — Official Leica ScanStation P-series product image from leica-geosystems.com.
+- `trimble-x9.png` — Official Trimble X9 product image from geospatial.trimble.com.
+- `trimble-x12.png` — Official Trimble X12 product image from geospatial.trimble.com.
+- `navvis-vlx.png` — Official NavVis VLX product image from navvis.com.
+- `emesent-hovermap.png` — Official Emesent Hovermap photograph from emesent.com.
+- `dji-m350.png` — Official DJI Matrice 350 RTK product image from enterprise.dji.com.
+- `dji-mavic-3e.png` — Official DJI Mavic 3 Enterprise product image from enterprise.dji.com.
+- `dji-matrice-4e.png` — Official DJI Matrice 4 Series product image from enterprise.dji.com.
+- `skydio-x10.png` — Official Skydio X10 product image from skydio.com, cropped to the aircraft.
+- `freefly-astro.png` — Official Freefly Astro photograph from freeflysystems.com, cropped to the aircraft.
+- `ebee-x.png` — Official eBee X product image from eaglenxt.com (AgEagle).
+
+Generated illustration tiles (no clean official packshot fetched this session): `faro-focus.png`, `faro-orbis.png`, `faro-zeb-horizon.png`, `navvis-mlx.png`, `autel-evo-max-4t.png`, `wingtra-ray.png`.

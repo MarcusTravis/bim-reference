@@ -53,5 +53,67 @@
     "lede": "The renderers and real-time viewers used with BIM models, from Enscape and Twinmotion to V-Ray, Lumion, and D5.",
     "relative": "Scores are relative to the other visualization tools on this page.",
     "limits": "Primary source: Confluence 2025 Visualization and Rendering section. Enscape for Revit 80.5% of firms, far ahead of the next tier (Twinmotion, Lumion, D5 Render, 3ds Max). Inventory counts are cited on each card. G2 review count for Enscape (456, 4.6/5) was checked in November 2026. Fuzor is an editorial estimate (not in that inventory). Generative AI tools appeared in the same survey category but are not listed as BIM visualization products here."
+  },
+  {
+    "file": "scanning.html",
+    "slug": "scanning",
+    "json": "scanning.json",
+    "title": "Scanning hardware",
+    "noun": "scanners",
+    "description": "Laser, LiDAR, and point-cloud scanners commonly used by BIM and AEC firms for scan-to-BIM and as-builts.",
+    "lede": "The terrestrial, SLAM, and handheld scanners BIM teams actually take to site for as-builts and scan-to-BIM \u2014 from Leica and FARO tripods to NavVis wearables and Matterport.",
+    "relative": "Scores are relative to the other scanners on this page, not a universal ranking of all survey instruments.",
+    "limits": "The Confluence 2025 AEC Tech Stack Survey covers software only and has no product-level scanner penetration figures. A BuiltWorlds 2026 Field Solutions reality-capture report found that among organizations already using reality capture, LiDAR scanners were used by 81% (drones 100%, 360 photography 88%) \u2014 a category-level figure, not a product share. Popularity on this page is therefore an editorial judgment, with no invented firm-percentage or review counts. Cost uses a purchase-price band for one unit; official Leica shop prices and clearly labeled reseller listings are cited where they could be checked in November 2026. Quote-only products are marked as estimates. Specs in the Type, Range, Accuracy, and Scan speed columns are taken from official vendor pages checked this session, or left qualitative when a number was not on the page.",
+    "firstCol": "Scanner",
+    "kind": "hardware",
+    "extraCols": [
+      {
+        "key": "hwType",
+        "label": "Type"
+      },
+      {
+        "key": "range",
+        "label": "Range"
+      },
+      {
+        "key": "accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "key": "speed",
+        "label": "Scan speed"
+      }
+    ]
+  },
+  {
+    "file": "drones.html",
+    "slug": "drones",
+    "json": "drones.json",
+    "title": "Drones for AEC and BIM",
+    "noun": "drones",
+    "description": "Reality-capture, photogrammetry, and LiDAR drones commonly used by BIM and AEC firms for site survey and as-builts.",
+    "lede": "The aircraft BIM and survey teams fly for photogrammetry and aerial LiDAR \u2014 DJI enterprise platforms first, plus the US-made, VTOL, and fixed-wing options that show up beside them.",
+    "relative": "Scores are relative to the other AEC/BIM reality-capture drones on this page.",
+    "limits": "The Confluence 2025 AEC Tech Stack Survey covers software only and has no product-level drone penetration figures. BuiltWorlds 2026 reported that drones were used by 100% of surveyed organizations that already use reality capture \u2014 again a category-level figure, not a brand share. Popularity here is an editorial judgment; no firm-percentage or review counts were invented. Cost is a purchase-price band for one aircraft or a clearly described kit. DJI figures are authorized-reseller listings from Vertex Unmanned and Indy Drone Supply, checked November 2026, because the official DJI store did not return a public US list price to this session. Quote-only aircraft are marked as estimates. Flight time and payload notes come from official vendor pages checked this session.",
+    "firstCol": "Drone",
+    "kind": "hardware",
+    "extraCols": [
+      {
+        "key": "payload",
+        "label": "Sensor / payload"
+      },
+      {
+        "key": "flightTime",
+        "label": "Flight time"
+      },
+      {
+        "key": "rtk",
+        "label": "RTK"
+      },
+      {
+        "key": "lidar",
+        "label": "LiDAR"
+      }
+    ]
   }
 ]

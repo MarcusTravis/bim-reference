@@ -30,6 +30,7 @@
         '<td class="prod-cell"><div class="prod">' + icon +
           "<div><span class=\"cart\">" + esc(d.name) + '</span><span class="year">' + esc(d.maker) + "</span></div></div></td>" +
         '<td class="purpose">' + esc(d.knownFor) + '<div class="tags">' + tags + "</div></td>" +
+        extraCells(d) +
         "<td>" + stars(d.pop) + '<span class="sub">' + esc(d.popCaption) + "</span></td>" +
         "<td>" + dollars(d.cost) + '<span class="sub">' + esc(d.costCaption) + "</span></td>" +
         "<td>" + (d.learn ? esc(d.learn) : "") + "</td>" +
@@ -38,6 +39,12 @@
       "</tr>"
     );
   }
+  function extraCells(d) {
+    return extraCols.map(function (k) {
+      return '<td class="hw">' + esc(d[k]) + "</td>";
+    }).join("");
+  }
+  var extraCols = [];
   function norm(s) { return String(s || "").toLowerCase(); }
 
   function dirFor(sortKey) {
@@ -55,6 +62,7 @@
   window.initCatalog = function (DATA, opts) {
     opts = opts || {};
     var noun = opts.noun || "products";
+    extraCols = opts.extraCols || [];
     var filter = "all", query = "", sortKey = opts.defaultSort || "pop";
     var rowsEl = document.getElementById("rows");
     var countEl = document.getElementById("count");
@@ -63,7 +71,8 @@
     function matches(d) {
       if (filter !== "all" && !(d.tags || []).includes(filter)) return false;
       if (!query) return true;
-      var blob = [d.name, d.maker, d.knownFor, (d.tags || []).join(" "), d.pro, d.con].join(" ");
+      var extras = extraCols.map(function (k) { return d[k]; }).join(" ");
+      var blob = [d.name, d.maker, d.knownFor, (d.tags || []).join(" "), d.pro, d.con, extras].join(" ");
       return norm(blob).indexOf(query) !== -1;
     }
     function sorted(rows) {
@@ -93,7 +102,7 @@
     function render() {
       var rows = sorted(DATA.filter(matches));
       rowsEl.innerHTML = rows.map(row).join("") ||
-        '<tr><td colspan="7" class="empty">No products match those filters. Clear search or choose All.</td></tr>';
+        '<tr><td colspan="' + (7 + extraCols.length) + '" class="empty">No products match those filters. Clear search or choose All.</td></tr>';
       if (countEl) countEl.textContent = "Showing " + rows.length + " of " + DATA.length + " " + noun;
       syncControls();
     }

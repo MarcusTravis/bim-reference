@@ -276,5 +276,110 @@
     "official": true,
     "file": "vantage.png",
     "source": "Official Chaos Vantage logo (vantage-logo-color-white-rgb.svg) from static.chaos.com, fitted on a tile, checked Nov 2026."
+  },
+  "matterport-pro3": {
+    "official": true,
+    "file": "matterport-pro3.png",
+    "source": "Official Matterport Pro3 product photo from matterport.com (Contentful CDN, pro3_front_1.png), checked Nov 2026."
+  },
+  "leica-blk360": {
+    "official": true,
+    "file": "leica-blk360.png",
+    "source": "Official Leica BLK360 product image from leica-geosystems.com, checked Nov 2026."
+  },
+  "leica-blk2go": {
+    "official": true,
+    "file": "leica-blk2go.png",
+    "source": "Official Leica BLK2GO product image from leica-geosystems.com, checked Nov 2026."
+  },
+  "leica-p50": {
+    "official": true,
+    "file": "leica-p50.png",
+    "source": "Official Leica ScanStation P-series product image from leica-geosystems.com, checked Nov 2026."
+  },
+  "leica-rtc360": {
+    "official": true,
+    "file": "leica-rtc360.png",
+    "source": "Official Leica RTC360 product photograph from leica-geosystems.com, cropped to the scanner, checked Nov 2026."
+  },
+  "trimble-x12": {
+    "official": true,
+    "file": "trimble-x12.png",
+    "source": "Official Trimble X12 product image from geospatial.trimble.com, checked Nov 2026."
+  },
+  "trimble-x9": {
+    "official": true,
+    "file": "trimble-x9.png",
+    "source": "Official Trimble X9 product image from geospatial.trimble.com, checked Nov 2026."
+  },
+  "navvis-vlx": {
+    "official": true,
+    "file": "navvis-vlx.png",
+    "source": "Official NavVis VLX product image from navvis.com (datasheet hero), checked Nov 2026."
+  },
+  "dji-m350": {
+    "official": true,
+    "file": "dji-m350.png",
+    "source": "Official DJI Matrice 350 RTK product image from enterprise.dji.com, checked Nov 2026."
+  },
+  "dji-mavic-3e": {
+    "official": true,
+    "file": "dji-mavic-3e.png",
+    "source": "Official DJI Mavic 3 Enterprise product image from enterprise.dji.com, checked Nov 2026."
+  },
+  "dji-matrice-4e": {
+    "official": true,
+    "file": "dji-matrice-4e.png",
+    "source": "Official DJI Matrice 4 Series product image from enterprise.dji.com, checked Nov 2026."
+  },
+  "freefly-astro": {
+    "official": true,
+    "file": "freefly-astro.png",
+    "source": "Official Freefly Astro product photograph from freeflysystems.com, cropped to the aircraft, checked Nov 2026."
+  },
+  "skydio-x10": {
+    "official": true,
+    "file": "skydio-x10.png",
+    "source": "Official Skydio X10 product image from skydio.com, cropped to the aircraft, checked Nov 2026."
+  },
+  "ebee-x": {
+    "official": true,
+    "file": "ebee-x.png",
+    "source": "Official eBee X product image from eaglenxt.com (AgEagle), checked Nov 2026."
+  },
+  "emesent-hovermap": {
+    "official": true,
+    "file": "emesent-hovermap.png",
+    "source": "Official Emesent Hovermap photograph from emesent.com, cropped to the scanner and aircraft, checked Nov 2026."
+  },
+  "faro-focus": {
+    "official": false,
+    "file": "faro-focus.png",
+    "source": "Generated illustration tile. No clean official Focus packshot was fetched this session (faro.com timed out), checked Nov 2026."
+  },
+  "faro-orbis": {
+    "official": false,
+    "file": "faro-orbis.png",
+    "source": "Generated illustration tile. No clean official Orbis packshot was fetched this session (faro.com timed out), checked Nov 2026."
+  },
+  "faro-zeb-horizon": {
+    "official": false,
+    "file": "faro-zeb-horizon.png",
+    "source": "Generated illustration tile. No clean official ZEB Horizon packshot was fetched this session, checked Nov 2026."
+  },
+  "navvis-mlx": {
+    "official": false,
+    "file": "navvis-mlx.png",
+    "source": "Generated illustration tile. Official MLX pages showed lifestyle photos rather than a clean product packshot, checked Nov 2026."
+  },
+  "autel-evo-max-4t": {
+    "official": false,
+    "file": "autel-evo-max-4t.png",
+    "source": "Generated illustration tile. No official EVO Max 4T packshot was fetched this session, checked Nov 2026."
+  },
+  "wingtra-ray": {
+    "official": false,
+    "file": "wingtra-ray.png",
+    "source": "Generated illustration tile. Official Wingtra pages showed in-flight / payload photos rather than a clean airframe packshot, checked Nov 2026."
   }
 }
