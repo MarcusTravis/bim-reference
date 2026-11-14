@@ -7,7 +7,7 @@ BUILD = ROOT / "_build"
 CANON = "https://bimchart.net"
 CHECKED, CHECKED_ISO = "Nov 13, 2026", "2026-11-13"   # when product data was last researched
 UPDATED, UPDATED_ISO = "Nov 14, 2026", "2026-11-14"   # when the site itself last changed
-ASSET_V = "20261114"  # bump to bust browser caches for theme.css / *.js
+ASSET_V = "20261114b"  # bump to bust browser caches for theme.css / *.js
 import re as _re
 def row_id(name):
     return "p-" + _re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -64,18 +64,20 @@ def head(title, description, path):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap">
 <link rel="stylesheet" href="theme.css?v={ASSET_V}">
+<script src="nav.js?v={ASSET_V}" defer></script>
 </head>
 """
 
-def nav(current):
+def nav(current, prefix=""):
     items = []
     for href, label in NAV:
         cur = ' aria-current="page"' if href == current else ""
-        items.append(f'<li><a href="{href}"{cur}>{e(label)}</a></li>')
+        items.append(f'<li><a href="{prefix}{href}"{cur}>{e(label)}</a></li>')
+    brand = f"{prefix}index.html"
     return f"""<a class="skip" href="#main">Skip to content</a>
 <nav class="topnav" aria-label="Primary">
   <div class="inner">
-    <a class="brand" href="index.html">
+    <a class="brand" href="{brand}">
       <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
         <rect x="1" y="1" width="26" height="26" fill="none" stroke="#3de8ff" stroke-width="1"/>
         <path d="M4 24 V12 H8 V24 M10 24 V8 H16 V24 M18 24 V14 H24 V24" fill="#3de8ff"/>
@@ -83,7 +85,10 @@ def nav(current):
       </svg>
       BIM Reference Library
     </a>
-    <ul class="nav-links">{''.join(items)}</ul>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <ul id="primary-nav" class="nav-links">{''.join(items)}</ul>
   </div>
 </nav>
 """
@@ -376,6 +381,11 @@ def write_updates():
       <p>The homepage now has one search box that looks through every product on every chart — software, scanners, and drones — by name, maker, or tag. Each result shows the icon, name, and section, and jumps straight to that product’s row, which briefly lights up.</p>
       <p>Every chart now has an obvious scrollbar that stays pinned to the bottom of the screen while the chart is in view, plus edge fades and a “scroll sideways” cue, on desktop and phones. The “Showing X of Y” line now names each section correctly (modeling tools, Revit add-ins, coordination tools, spooling tools, visualization tools, scanners, drones) and follows every filter and search. Some filter labels were spelled out so they make sense without BIM jargon — for example “Authoring” is now “Model authoring” and “Clash” is now “Clash detection.” No product data or ratings changed.</p>
     </div>
+    <div class="log">
+      <h3>Compact mobile navigation</h3>
+      <p><time datetime="{UPDATED_ISO}">{UPDATED}</time></p>
+      <p>On phones, the top navigation no longer wraps across several sticky lines. It stays a single compact bar with a keyboard-accessible menu button (Esc and click-outside close it). The open menu lists every section and marks the page you are on. The desktop nav is unchanged. This applies on every page, including Updates and the 404 page.</p>
+    </div>
   </article>
 </div>
 {footer()}
@@ -397,13 +407,15 @@ def write_404():
 <link rel="icon" href="{CANON}/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{CANON}/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Rajdhani:wght@600;700&amp;display=swap">
-<link rel="stylesheet" href="{CANON}/theme.css">
+<link rel="stylesheet" href="{CANON}/theme.css?v={ASSET_V}">
+<script src="{CANON}/nav.js?v={ASSET_V}" defer></script>
 <script>
 (function(){{var p=location.pathname;if(p.length>1&&p.charAt(p.length-1)==="/")location.replace(p.slice(0,-1)+location.search+location.hash);}})();
 </script>
 </head>
 <body>
 <div class="page-bg"></div>
+{nav("", prefix=CANON + "/")}
 <div class="wrap" id="main">
   <span class="eyebrow">Error 404</span>
   <h1>Page not found</h1>
@@ -549,6 +561,10 @@ First-column visuals are official vendor product photos, stored locally, when th
 - Results count line uses each section’s noun: modeling tools, Revit add-ins, coordination tools, spooling tools, visualization tools, scanners, drones (Modeling previously said “authoring tools”).
 - Filter chip / row tag renames (data otherwise unchanged): Modeling — Authoring → Model authoring, Conceptual → Concept design, Computational → Computational design, Planning → Site planning; Revit add-ins — Production → Productivity, Data → Excel & data, Content → Content library; Coordination — Clash → Clash detection, 4D → 4D scheduling, CDE → Common data environment, Issues → Issue tracking, Field → Field app, QA → Quality checks, IFC → IFC / openBIM; Spooling — Detailing → Steel detailing, Content → Content library; Visualization — Real-time → Real-time rendering, 4D → 4D scheduling, AI → AI rendering; Scanning — Terrestrial → Terrestrial laser, SLAM → Mobile SLAM; Drones — RTK → RTK positioning, VTOL → VTOL (vertical takeoff); all software charts — Web → Web app.
 - CSS/JS links carry a `?v=` version so browsers pick up the new files. Product data, ratings, and sources were not changed; “Data last checked” stays Nov 13, 2026.
+
+## {UPDATED} — Compact mobile navigation
+
+On viewports 1099 px and narrower, the sticky top navigation collapses to a single compact bar with a hamburger menu button instead of wrapping to multiple lines. The menu is a keyboard-accessible disclosure (aria-expanded, aria-controls, Escape and click-outside to close) and the current page stays marked with aria-current. Desktop navigation is unchanged. Applied to every page, including the homepage, all seven section guides, Updates, and the 404 page.
 """)
     print("wrote sitemap, robots, _headers, README, CHANGELOG")
 

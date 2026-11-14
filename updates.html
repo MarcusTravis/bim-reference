@@ -25,7 +25,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261114">
+<link rel="stylesheet" href="theme.css?v=20261114b">
+<script src="nav.js?v=20261114b" defer></script>
 </head>
 <body>
 <div class="page-bg"></div>
@@ -40,7 +41,10 @@
       </svg>
       BIM Reference Library
     </a>
-    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="modeling.html">Modeling</a></li><li><a href="revit-addins.html">Revit add-ins</a></li><li><a href="coordination.html">Coordination</a></li><li><a href="spooling.html">Spooling</a></li><li><a href="visualization.html">Visualization</a></li><li><a href="scanning.html">Scanning</a></li><li><a href="drones.html">Drones</a></li><li><a href="updates.html" aria-current="page">Updates</a></li></ul>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <ul id="primary-nav" class="nav-links"><li><a href="index.html">Home</a></li><li><a href="modeling.html">Modeling</a></li><li><a href="revit-addins.html">Revit add-ins</a></li><li><a href="coordination.html">Coordination</a></li><li><a href="spooling.html">Spooling</a></li><li><a href="visualization.html">Visualization</a></li><li><a href="scanning.html">Scanning</a></li><li><a href="drones.html">Drones</a></li><li><a href="updates.html" aria-current="page">Updates</a></li></ul>
   </div>
 </nav>
 <div class="wrap chart-wrap" id="main">
@@ -205,6 +209,11 @@
       <p><time datetime="2026-11-14">Nov 14, 2026</time></p>
       <p>The homepage now has one search box that looks through every product on every chart — software, scanners, and drones — by name, maker, or tag. Each result shows the icon, name, and section, and jumps straight to that product’s row, which briefly lights up.</p>
       <p>Every chart now has an obvious scrollbar that stays pinned to the bottom of the screen while the chart is in view, plus edge fades and a “scroll sideways” cue, on desktop and phones. The “Showing X of Y” line now names each section correctly (modeling tools, Revit add-ins, coordination tools, spooling tools, visualization tools, scanners, drones) and follows every filter and search. Some filter labels were spelled out so they make sense without BIM jargon — for example “Authoring” is now “Model authoring” and “Clash” is now “Clash detection.” No product data or ratings changed.</p>
+    </div>
+    <div class="log">
+      <h3>Compact mobile navigation</h3>
+      <p><time datetime="2026-11-14">Nov 14, 2026</time></p>
+      <p>On phones, the top navigation no longer wraps across several sticky lines. It stays a single compact bar with a keyboard-accessible menu button (Esc and click-outside close it). The open menu lists every section and marks the page you are on. The desktop nav is unchanged. This applies on every page, including Updates and the 404 page.</p>
     </div>
   </article>
 </div>
