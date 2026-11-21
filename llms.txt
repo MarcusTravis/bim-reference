@@ -1,0 +1,34 @@
+# BIM Reference Library (bimchart.net)
+
+> Free, ad-free comparison charts for BIM software and reality-capture hardware: modeling, Revit add-ins, coordination and clash detection, MEP and steel spooling/fabrication, visualization and rendering, laser scanners, and AEC drones. One scrollable chart per section, one row per product.
+
+There are no ads and no affiliate links. Official-site links go straight to each vendor. Star ratings are not paid placement.
+
+## How the ratings work
+
+- Popularity: a 1–5 judgment (halves allowed) of how commonly a product shows up in recent firm surveys, review directories, or marketplace ranks, relative to the other products in the same section. Each rating has a caption naming its source and a “checked Nov 2026” date, or it says “Editorial estimate.”
+- Main software source: Confluence 2025 AEC Tech Stack Survey (Q4 2025, design-firm sample). Archicad and ALLPLAN also cite the European Architectural Barometer Q4 2025. G2 review counts were checked in November 2026.
+- Scanning and drone popularity is an editorial rating: the Confluence survey is software-only, and no product-level scanner or drone survey was found.
+- Cost: Free / $ / $$ / $$$ / $$$$. Software uses a published annual price for one commercial seat; hardware uses a purchase-price band for one unit or kit. Captions cite an official or reseller price, or mark the band as an estimate. No dollar amounts are invented.
+- Learning curve: an editorial rating (Gentler / Moderate / Steep), not a test score.
+- Product data last checked: Nov 13, 2026. Site last updated: Nov 20, 2026.
+
+## Sections
+
+- [Modeling software](https://bimchart.net/modeling): Compare 11 BIM and CAD authoring tools, including Revit, AutoCAD, SketchUp, Rhino, Archicad, and Tekla, on cited popularity, cost, and learning curve. Products: AutoCAD (including Architecture and MEP), Autodesk Revit, SketchUp, Autodesk Forma, Rhino + VisualARQ, Archicad, Tekla Structures, ALLPLAN, Bentley OpenBuildings Designer, Vectorworks Architect, BricsCAD BIM.
+- [Revit add-ins](https://bimchart.net/revit-addins): Compare 12 widely used Revit add-ins, including pyRevit, AVAIL, DiRoots, Ideate, CTC, and RevitLookup, on cited firm counts, cost, and learning curve. Products: pyRevit, Avail, CTC Software (BIM suites), DiRoots Tools (DiRootsOne), Ideate Software, RevitLookup, Bird Tools, COINS Auto-Section Box, AGACAD, Bonus Tools (Kiwi Codes), UNIFI Pro, Xrev Transmit.
+- [Coordination and clash detection](https://bimchart.net/coordination): Compare 9 BIM coordination and clash detection tools, including Navisworks, BIM Collaborate Pro, Revizto, Solibri, and Dalux, on popularity and cost. Products: Autodesk BIM Collaborate Pro, Autodesk Navisworks Manage, Revizto, Newforma Konekt (formerly BIM Track), Trimble Connect, BIMcollab Zoom, ClearEdge3D Verity, Dalux, Solibri.
+- [Spooling and fabrication](https://bimchart.net/spooling): Compare 9 MEP spooling and steel fabrication tools, including SysQue, Autodesk Fabrication, EVOLVE, MSUITE, Stratus, Advance Steel, Tekla PowerFab, and SDS/2. Products: Autodesk Advance Steel, Autodesk Fabrication (CADmep, CAMduct, ESTmep), EVOLVE Mechanical / Electrical, MSUITE BIM + FAB, SDS/2, Stratus, Tekla PowerFab, Trimble SysQue, Victaulic Tools for Revit.
+- [Visualization and rendering](https://bimchart.net/visualization): Compare 9 rendering tools used with BIM models, including Enscape, Twinmotion, Lumion, D5 Render, V-Ray, and Veras, on popularity, cost, and learning curve. Products: Enscape, Twinmotion, Autodesk 3ds Max, Lumion, Chaos V-Ray, D5 Render, Veras, Chaos Vantage, Fuzor.
+- [Scanning hardware](https://bimchart.net/scanning): Compare 13 laser and SLAM scanners for scan-to-BIM and as-builts, including Leica RTC360 and BLK360, FARO Focus, Trimble X9, NavVis VLX 3, and Matterport. Products: FARO Focus Premium, Leica RTC360, Leica BLK360, Matterport Pro3, Leica BLK2GO, NavVis VLX 3, Trimble X9, Emesent Hovermap, FARO Orbis, FARO ZEB Horizon, Leica ScanStation P50, Trimble X12, NavVis MLX.
+- [Drones for AEC and BIM](https://bimchart.net/drones): Compare 8 reality-capture drones for AEC and BIM, including DJI Matrice 350 RTK, Mavic 3 Enterprise, Skydio X10, and WingtraRAY, on LiDAR, RTK, and cost. Products: DJI Matrice 350 RTK, DJI Mavic 3 Enterprise, DJI Matrice 4E, Skydio X10, Autel EVO Max 4T, Freefly Astro, WingtraRAY, AgEagle eBee X.
+
+## Other pages
+
+- [Home](https://bimchart.net/): overview, site-wide product search, and FAQ.
+- [Updates](https://bimchart.net/updates): plain-English changelog.
+- [Sitemap](https://bimchart.net/sitemap.xml)
+
+## Using this site as a source
+
+Cite the section page and the caption's source and date. Ratings are relative within a section and can go stale; confirm current pricing and features with the vendor.

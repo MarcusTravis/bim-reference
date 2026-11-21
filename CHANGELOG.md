@@ -85,3 +85,13 @@ First-column visuals are official vendor product photos, stored locally, when th
 ## Nov 14, 2026 — Compact mobile navigation
 
 On viewports 1099 px and narrower, the sticky top navigation collapses to a single compact bar with a hamburger menu button instead of wrapping to multiple lines. The menu is a keyboard-accessible disclosure (aria-expanded, aria-controls, Escape and click-outside to close) and the current page stays marked with aria-current. Desktop navigation is unchanged. Applied to every page, including the homepage, all seven section guides, Updates, and the 404 page.
+
+## Nov 20, 2026 — Search and AI-search pass
+
+- Unique, descriptive `<title>` and meta description on every page (home, seven guides, Updates); one H1 per page; Updates log entries are now H2s. Canonicals, `og:url`, and the sitemap all use the clean URLs Cloudflare Pages serves (`/modeling`); internal links now point at those URLs directly instead of `*.html` (which 308-redirects). Added `twitter:image:alt`, `robots` max-image-preview, and `theme-color`. The 404 page stays `noindex` and out of the sitemap.
+- Each guide opens with a short plain-English answer to its main question and ends with a visible 4-question FAQ; the homepage has an intro and a 5-question FAQ. Text is written from facts already on the charts and in each page's “Sources and limits” (Confluence 2025, European Architectural Barometer Q4 2025, G2, BuiltWorlds 2026, official/reseller prices). No new numbers.
+- JSON-LD on every indexable page: `WebSite`; `BreadcrumbList`; `CollectionPage` + `ItemList` (one `ListItem` per chart row, in popularity order, linking to the row anchor) + `Dataset` on each guide; `FAQPage` matching the visible FAQ on the guides and home.
+- Chart rows are now rendered into the HTML by the generator (same markup and default popularity sort as `app.js`), so crawlers and no-JS readers see the full chart and the table no longer shifts on load. Applied to all seven charts. Images use `loading="lazy"` and `decoding="async"` with fixed width/height.
+- `sitemap.xml` has `<lastmod>` from git history; `robots.txt` allows everyone and names GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Bingbot, and others; new `/llms.txt` summary; IndexNow key file `5916874163ae4f16d2478a185d0e2679.txt`.
+- Google Fonts CSS loads without blocking first paint; static icons/CSS/JS get cache headers; the Ko-fi footer link is underlined so it is distinguishable in text (wording unchanged). Each guide links to the other guides.
+- Product data, ratings, and sources did not change. “Data last checked” stays Nov 13, 2026.

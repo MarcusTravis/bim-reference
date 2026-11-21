@@ -431,7 +431,7 @@ a.card:hover, a.card:focus-visible,
 }
 .site-footer p { margin: 0 0 10px; }
 .kofi { text-align: center; color: var(--muted); }
-.kofi a { color: var(--cyan); text-decoration: none; }
+.kofi a { color: var(--cyan); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .kofi a:hover { color: var(--cyan-2); text-decoration: underline; }
 .kofi.updated { margin-bottom: 4px; }
 
@@ -439,7 +439,7 @@ a.card:hover, a.card:focus-visible,
 article.wrap h2 { font-family: var(--display); letter-spacing: 0.03em; }
 article.wrap time { color: var(--cyan); font-family: var(--mono); font-size: 13px; }
 .log { border-left: 2px solid var(--line); padding-left: 16px; margin: 24px 0; }
-.log h3 { margin: 0 0 6px; font-size: 20px; font-family: var(--display); }
+.log h2, .log h3 { margin: 0 0 6px; font-size: 20px; font-family: var(--display); letter-spacing: 0.03em; }
 
 .back {
   display: inline-block;
@@ -674,3 +674,32 @@ table.chart.chart-wide { min-width: 1960px; }
   color: var(--fg);
   white-space: normal;
 }
+
+/* Short answer intro, FAQ, and related-guide links (Nov 2026 search pass) */
+.intro {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--cyan);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 16px 20px;
+  margin: 0 0 22px;
+}
+.intro h2 { font-family: var(--display); font-size: 21px; letter-spacing: 0.03em; margin: 0 0 6px; }
+.intro p { color: var(--muted); font-size: 15px; margin: 0; max-width: 80ch; }
+.faq {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 20px 22px;
+  margin-top: 16px;
+}
+.faq > h2 { font-family: var(--display); font-size: 22px; letter-spacing: 0.03em; margin: 0 0 10px; }
+.faq-item { padding: 12px 0; border-top: 1px solid var(--line); }
+.faq-item:first-of-type { border-top: 0; padding-top: 4px; }
+.faq-item h3 { font-size: 16px; margin: 0 0 4px; }
+.faq-item p { color: var(--muted); font-size: 14.5px; margin: 0; max-width: 90ch; }
+.related { margin: 16px 0 8px; }
+.related h2 { font-family: var(--display); font-size: 18px; letter-spacing: 0.03em; margin: 0 0 8px; }
+.related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.related a { display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-size: 14px; }
+.related a:hover { border-color: var(--cyan); }

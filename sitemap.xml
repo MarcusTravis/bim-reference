@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bimchart.net/</loc></url>
-  <url><loc>https://bimchart.net/modeling</loc></url>
-  <url><loc>https://bimchart.net/revit-addins</loc></url>
-  <url><loc>https://bimchart.net/coordination</loc></url>
-  <url><loc>https://bimchart.net/spooling</loc></url>
-  <url><loc>https://bimchart.net/visualization</loc></url>
-  <url><loc>https://bimchart.net/scanning</loc></url>
-  <url><loc>https://bimchart.net/drones</loc></url>
-  <url><loc>https://bimchart.net/updates</loc></url>
+  <url><loc>https://bimchart.net/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/modeling</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/revit-addins</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/coordination</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/spooling</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/visualization</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/scanning</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/drones</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://bimchart.net/updates</loc><lastmod>2026-11-20</lastmod></url>
 </urlset>

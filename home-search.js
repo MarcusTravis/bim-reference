@@ -54,7 +54,7 @@
     out.hidden = !hits.length;
     out.innerHTML = hits.map(function (h) {
       var d = h.d;
-      var icon = d.icon ? '<img class="sr-icon" src="icons/' + esc(d.icon) + '.png" width="40" height="40" alt="" loading="lazy">' : '<span class="sr-icon"></span>';
+      var icon = d.icon ? '<img class="sr-icon" src="/icons/' + esc(d.icon) + '.png" width="40" height="40" alt="" loading="lazy" decoding="async">' : '<span class="sr-icon"></span>';
       var tags = (d.tags || []).slice(0, 4).map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("");
       return '<li><a class="sr-item" href="' + esc(d.href) + '">' + icon +
         '<span class="sr-main"><span class="sr-name">' + esc(d.name) + '</span>' +

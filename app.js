@@ -20,7 +20,7 @@
   function row(d) {
     var tags = (d.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("");
     var icon = d.icon
-      ? '<img class="app-icon" src="icons/' + esc(d.icon) + '.png" width="52" height="52" alt="">'
+      ? '<img class="app-icon" src="/icons/' + esc(d.icon) + '.png" width="52" height="52" alt="" loading="lazy" decoding="async">'
       : "";
     var site = d.url
       ? '<a class="official" href="' + esc(d.url) + '" rel="noopener noreferrer">Official site →</a>'
